@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Our Services | MNSAI (SMC-Private) Limited",
+  description:
+    "Comprehensive audit, accounting, taxation, financial advisory, business advisory, and ERP implementation services by MNSAI — Lahore's trusted CA firm.",
+};
 
 const services = [
   {
@@ -143,7 +150,7 @@ export default function ServicesPage() {
             className={`py-20 ${index % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className={`grid md:grid-cols-2 gap-12 items-center ${service.reverse ? "md:flex-row-reverse" : ""}`}>
+              <div className="grid md:grid-cols-2 gap-12 items-center">
                 {/* Image */}
                 <div className={`relative rounded-2xl overflow-hidden shadow-xl h-72 md:h-96 ${service.reverse ? "md:order-2" : ""}`}>
                   <Image

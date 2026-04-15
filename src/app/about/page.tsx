@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About Us | MNSAI (SMC-Private) Limited",
+  description:
+    "Learn about MNSAI — a professional CA firm in Lahore with 12+ years of experience in audit, tax, financial advisory, and ERP services across Pakistan.",
+};
 
 const values = [
   {

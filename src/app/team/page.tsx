@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Meet the Team | MNSAI (SMC-Private) Limited",
+  description:
+    "Meet the leadership team at MNSAI — experienced Chartered Accountants with decades of expertise in audit, taxation, financial advisory, and organizational development.",
+};
 
 const team = [
   {

@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Our Clients | MNSAI (SMC-Private) Limited",
+  description:
+    "MNSAI has proudly served 200+ clients across industries — from local SMEs to international organizations. See who trusts us with their financial and advisory needs.",
+};
 
 const clients = [
   { name: "Umoja International", domain: "umojainternational.org", sector: "International NGO" },

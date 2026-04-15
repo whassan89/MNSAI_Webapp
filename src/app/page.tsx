@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "MNSAI (SMC-Private) Limited | Audit, Accounting, Advisory, Tax & ERP",
+  description:
+    "MNSAI is a professional CA firm in Lahore offering Audit, Accounting, Tax Advisory, Financial Services, Business Advisory, and ERP Implementation across Pakistan.",
+};
 
 const stats = [
   { value: "12+", label: "Years of Experience" },
@@ -21,6 +28,7 @@ const clients = [
   "Umoja International", "Big Life Journal", "RUDA", "Accruent",
   "Master", "Mushandi", "Groundup.AI", "ASPIRx",
   "Ambassify", "Gomoon", "Paragon Actuarial", "Parse Biosciences",
+  "Nyonda Enterprises Inc.", "Active Prime",
 ];
 
 export default function Home() {
