@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | MNSAI (SMC-Private) Limited",
@@ -141,47 +142,7 @@ export default function ContactPage() {
             </div>
 
             {/* Form */}
-            <form className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 space-y-5">
-              <h3 className="font-heading text-xl font-bold text-navy-800 mb-2">Send Us a Message</h3>
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="text-gray-600 text-sm font-medium block mb-1.5">Full Name</label>
-                  <input type="text" placeholder="Your name"
-                    className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors" />
-                </div>
-                <div>
-                  <label className="text-gray-600 text-sm font-medium block mb-1.5">Email Address</label>
-                  <input type="email" placeholder="you@example.com"
-                    className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors" />
-                </div>
-              </div>
-              <div>
-                <label className="text-gray-600 text-sm font-medium block mb-1.5">Phone Number</label>
-                <input type="tel" placeholder="+92 XXX XXXXXXX"
-                  className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors" />
-              </div>
-              <div>
-                <label className="text-gray-600 text-sm font-medium block mb-1.5">Service Required</label>
-                <select className="w-full border border-gray-200 text-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors bg-white">
-                  <option value="">Select a service...</option>
-                  <option>Audit & Assurance</option>
-                  <option>Accounting & Bookkeeping</option>
-                  <option>Taxation & Corporate Advisory</option>
-                  <option>Financial Services</option>
-                  <option>Business Advisory</option>
-                  <option>ERP Implementation</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div>
-                <label className="text-gray-600 text-sm font-medium block mb-1.5">Message</label>
-                <textarea rows={4} placeholder="Tell us about your requirements..."
-                  className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors resize-none" />
-              </div>
-              <button type="submit" className="w-full btn-primary text-center">
-                Send Message
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>
