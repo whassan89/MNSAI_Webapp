@@ -30,10 +30,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid email address." }, { status: 400 });
   }
 
-  const { GMAIL_USER, GMAIL_APP_PASSWORD } = process.env;
+  const { BREVO_LOGIN, BREVO_SMTP_KEY } = process.env;
 
-  if (!GMAIL_USER || !GMAIL_APP_PASSWORD) {
-    console.error("Missing GMAIL_USER or GMAIL_APP_PASSWORD environment variables.");
+  if (!BREVO_LOGIN || !BREVO_SMTP_KEY) {
+    console.error("Missing BREVO_LOGIN or BREVO_SMTP_KEY environment variables.");
     return NextResponse.json(
       { error: "Mail service is not configured. Please contact us directly at ceo@mnsai.com." },
       { status: 503 }
@@ -41,13 +41,15 @@ export async function POST(req: NextRequest) {
   }
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: { user: GMAIL_USER, pass: GMAIL_APP_PASSWORD },
+    host: "smtp-relay.brevo.com",
+    port: 587,
+    secure: false,
+    auth: { user: BREVO_LOGIN, pass: BREVO_SMTP_KEY },
   });
 
   // Email to the firm
   const internalMail = {
-    from: `"MNSAI Website" <${GMAIL_USER}>`,
+    from: `"MNSAI Website" <${BREVO_LOGIN}>`,
     to: FIRM_EMAIL,
     replyTo: email,
     subject: `New Enquiry${service ? ` — ${service}` : ""} from ${name}`,
@@ -90,7 +92,7 @@ export async function POST(req: NextRequest) {
 
   // Auto-reply to the enquirer
   const autoReply = {
-    from: `"MNSAI (SMC-Private) Limited" <${GMAIL_USER}>`,
+    from: `"MNSAI (SMC-Private) Limited" <${BREVO_LOGIN}>`,
     to: email,
     subject: "We've received your message — MNSAI",
     html: `
