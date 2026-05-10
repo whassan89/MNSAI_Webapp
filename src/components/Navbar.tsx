@@ -19,7 +19,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-purple-800 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-navy-800 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -39,7 +39,7 @@ export default function Navbar() {
               <span className="text-white font-heading font-bold text-xl leading-tight block">
                 MNSAI
               </span>
-              <span className="text-teal-400 text-xs font-medium tracking-wider">
+              <span className="text-gold-400 text-xs font-medium tracking-wider">
                 (SMC-PRIVATE) LIMITED
               </span>
             </div>
@@ -53,8 +53,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`font-medium text-sm tracking-wide transition-colors duration-200 ${
                   pathname === link.href
-                    ? "text-teal-400 border-b-2 border-teal-400 pb-0.5"
-                    : "text-gray-300 hover:text-teal-400"
+                    ? "text-gold-400 border-b-2 border-gold-400 pb-0.5"
+                    : "text-gray-300 hover:text-gold-400"
                 }`}
               >
                 {link.label}
@@ -89,8 +89,8 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`font-medium py-2.5 text-sm border-b border-purple-700 transition-colors duration-200 ${
-                  pathname === link.href ? "text-teal-400" : "text-gray-300 hover:text-teal-400"
+                className={`font-medium py-2.5 text-sm border-b border-navy-700 transition-colors duration-200 ${
+                  pathname === link.href ? "text-gold-400" : "text-gray-300 hover:text-gold-400"
                 }`}
               >
                 {link.label}

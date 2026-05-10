@@ -131,9 +131,9 @@ export default function ServicesPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-purple-800 py-20">
+      <section className="bg-navy-800 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-teal-400 font-semibold text-sm tracking-widest uppercase mb-3">What We Offer</p>
+          <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">What We Offer</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Comprehensive financial, audit, tax, and advisory solutions — designed to support your
@@ -160,9 +160,9 @@ export default function ServicesPage() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-purple-800/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-800/40 to-transparent" />
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-teal-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    <span className="bg-gold-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
                       {service.tagline}
                     </span>
                   </div>
@@ -170,7 +170,7 @@ export default function ServicesPage() {
 
                 {/* Content */}
                 <div className={service.reverse ? "md:order-1" : ""}>
-                  <h2 className="font-heading text-2xl md:text-3xl font-bold text-purple-800 mb-3">
+                  <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy-800 mb-3">
                     {service.title}
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-3">{service.description}</p>
@@ -178,7 +178,7 @@ export default function ServicesPage() {
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {service.points.map((pt) => (
                       <li key={pt} className="flex items-start gap-2 text-sm text-gray-700">
-                        <svg className="w-4 h-4 text-teal-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         {pt}
@@ -193,7 +193,7 @@ export default function ServicesPage() {
       </div>
 
       {/* CTA */}
-      <section className="py-16 bg-purple-800">
+      <section className="py-16 bg-navy-800">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl font-bold text-white mb-4">Need a Specific Service?</h2>
           <p className="text-gray-300 mb-8">Talk to our team and we&apos;ll design a solution tailored to your business needs.</p>

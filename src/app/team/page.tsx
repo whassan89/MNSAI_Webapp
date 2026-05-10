@@ -62,9 +62,9 @@ export default function TeamPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-purple-800 py-20">
+      <section className="bg-navy-800 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-teal-400 font-semibold text-sm tracking-widest uppercase mb-3">Our People</p>
+          <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">Our People</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Meet the Team</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Our leadership team combines decades of experience across audit, taxation, financial
@@ -82,32 +82,32 @@ export default function TeamPage() {
               className={`grid md:grid-cols-3 gap-10 items-start ${index % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
             >
               {/* Profile Card */}
-              <div className={`bg-purple-800 rounded-2xl p-8 text-center ${index % 2 !== 0 ? "md:order-3" : ""}`}>
-                <div className="w-24 h-24 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className={`bg-navy-800 rounded-2xl p-8 text-center ${index % 2 !== 0 ? "md:order-3" : ""}`}>
+                <div className="w-24 h-24 bg-gold-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-heading font-bold text-4xl">{member.initial}</span>
                 </div>
                 <h3 className="font-heading font-bold text-white text-xl mb-1">{member.name}</h3>
-                <p className="text-teal-400 text-sm font-medium mb-4">{member.role}</p>
-                <div className="border-t border-purple-700 pt-4 space-y-2">
+                <p className="text-gold-400 text-sm font-medium mb-4">{member.role}</p>
+                <div className="border-t border-navy-700 pt-4 space-y-2">
                   {member.qualifications.map((q) => (
                     <p key={q} className="text-gray-300 text-xs leading-relaxed">{q}</p>
                   ))}
                 </div>
-                <div className="mt-4 bg-purple-700 rounded-lg px-4 py-2 inline-block">
-                  <span className="text-teal-400 text-xs font-semibold">{member.experience} Experience</span>
+                <div className="mt-4 bg-navy-700 rounded-lg px-4 py-2 inline-block">
+                  <span className="text-gold-400 text-xs font-semibold">{member.experience} Experience</span>
                 </div>
               </div>
 
               {/* Bio & Expertise */}
               <div className={`md:col-span-2 ${index % 2 !== 0 ? "md:order-1 md:col-start-1" : ""}`}>
-                <p className="text-teal-500 font-semibold text-sm tracking-widest uppercase mb-2">{member.role}</p>
-                <h2 className="font-heading text-2xl md:text-3xl font-bold text-purple-800 mb-4">{member.name}</h2>
+                <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-2">{member.role}</p>
+                <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy-800 mb-4">{member.name}</h2>
                 <p className="text-gray-600 leading-relaxed mb-6">{member.bio}</p>
-                <h4 className="font-semibold text-purple-800 mb-3">Areas of Expertise</h4>
+                <h4 className="font-semibold text-navy-800 mb-3">Areas of Expertise</h4>
                 <ul className="grid sm:grid-cols-2 gap-2">
                   {member.expertise.map((e) => (
                     <li key={e} className="flex items-start gap-2 text-sm text-gray-700">
-                      <svg className="w-4 h-4 text-teal-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                       {e}
@@ -121,7 +121,7 @@ export default function TeamPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-purple-800">
+      <section className="py-16 bg-navy-800">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl font-bold text-white mb-4">Work With Our Experts</h2>
           <p className="text-gray-300 mb-8">Our team is ready to bring their expertise to your business challenges.</p>

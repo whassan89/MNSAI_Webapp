@@ -14,7 +14,7 @@
 }
 
 @layer components {
-  /* ── ORIGINAL THEME (Navy + Gold) ──────────────────────────────
+  /* ── ORIGINAL THEME (Navy + Gold) ────────────────────────────── */
   .btn-primary {
     @apply bg-gold-500 hover:bg-gold-600 text-white font-semibold px-6 py-3 rounded transition-colors duration-200;
   }
@@ -27,9 +27,9 @@
   .section-subheading {
     @apply text-gray-500 mt-3 text-lg max-w-2xl mx-auto;
   }
-  ── END ORIGINAL THEME ────────────────────────────────────────── */
+  /* ── END ORIGINAL THEME ─────────────────────────────────────────*/
 
-  /* ── THEME 1 (Deep Purple + Teal) ────────────────────────────── */
+  /* ── THEME 1 (Deep Purple + Teal) ──────────────────────────────
   .btn-primary {
     @apply bg-teal-500 hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded transition-colors duration-200;
   }
@@ -42,5 +42,5 @@
   .section-subheading {
     @apply text-gray-500 mt-3 text-lg max-w-2xl mx-auto;
   }
-  /* ── END THEME 1 ─────────────────────────────────────────────── */
+  ── END THEME 1 ───────────────────────────────────────────────── */
 }

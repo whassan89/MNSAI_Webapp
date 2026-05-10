@@ -61,12 +61,12 @@ export default function ContactForm() {
   if (status === "success") {
     return (
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 flex flex-col items-center justify-center text-center min-h-[420px]">
-        <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mb-5">
+        <div className="w-16 h-16 bg-gold-500 rounded-full flex items-center justify-center mb-5">
           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="font-heading text-xl font-bold text-purple-800 mb-2">Message Sent!</h3>
+        <h3 className="font-heading text-xl font-bold text-navy-800 mb-2">Message Sent!</h3>
         <p className="text-gray-500 text-sm max-w-xs leading-relaxed mb-6">
           Thank you for reaching out. Our team will get back to you shortly.
         </p>
@@ -85,12 +85,12 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 space-y-5"
     >
-      <h3 className="font-heading text-xl font-bold text-purple-800 mb-2">Send Us a Message</h3>
+      <h3 className="font-heading text-xl font-bold text-navy-800 mb-2">Send Us a Message</h3>
 
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
           <label className="text-gray-600 text-sm font-medium block mb-1.5">
-            Full Name <span className="text-teal-500">*</span>
+            Full Name <span className="text-gold-500">*</span>
           </label>
           <input
             type="text"
@@ -99,12 +99,12 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="Your name"
             required
-            className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-colors"
+            className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors"
           />
         </div>
         <div>
           <label className="text-gray-600 text-sm font-medium block mb-1.5">
-            Email Address <span className="text-teal-500">*</span>
+            Email Address <span className="text-gold-500">*</span>
           </label>
           <input
             type="email"
@@ -113,7 +113,7 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="you@example.com"
             required
-            className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-colors"
+            className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors"
           />
         </div>
       </div>
@@ -126,7 +126,7 @@ export default function ContactForm() {
           value={form.phone}
           onChange={handleChange}
           placeholder="+92 XXX XXXXXXX"
-          className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-colors"
+          className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors"
         />
       </div>
 
@@ -136,7 +136,7 @@ export default function ContactForm() {
           name="service"
           value={form.service}
           onChange={handleChange}
-          className="w-full border border-gray-200 text-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-colors bg-white"
+          className="w-full border border-gray-200 text-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors bg-white"
         >
           <option value="">Select a service...</option>
           {services.map((s) => (
@@ -147,7 +147,7 @@ export default function ContactForm() {
 
       <div>
         <label className="text-gray-600 text-sm font-medium block mb-1.5">
-          Message <span className="text-teal-500">*</span>
+          Message <span className="text-gold-500">*</span>
         </label>
         <textarea
           name="message"
@@ -156,7 +156,7 @@ export default function ContactForm() {
           rows={4}
           placeholder="Tell us about your requirements..."
           required
-          className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400 transition-colors resize-none"
+          className="w-full border border-gray-200 text-gray-800 placeholder-gray-400 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gold-400 transition-colors resize-none"
         />
       </div>
 
