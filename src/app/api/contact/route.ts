@@ -93,7 +93,7 @@ export async function POST(req: NextRequest) {
 
   // Auto-reply to the enquirer
   const autoReply = {
-    from: `"MNSAI (SMC-Private) Limited" <${SENDER}>`,
+    from: `"MNSAI" <${SENDER}>`,
     to: email,
     subject: "We've received your message — MNSAI",
     html: `
