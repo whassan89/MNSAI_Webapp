@@ -36,14 +36,17 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center bg-navy-800 overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0"
-            style={{
-              backgroundImage: "repeating-linear-gradient(45deg,#d4af37 0,#d4af37 1px,transparent 0,transparent 50%)",
-              backgroundSize: "20px 20px",
-            }}
-          />
-        </div>
+        {/* Background photo */}
+        <Image
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&q=80"
+          alt="Professional business meeting"
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="100vw"
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-navy-800/80" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
           <div className="max-w-3xl">
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
