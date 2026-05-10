@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const FIRM_EMAIL = "ceo@mnsai.com";
+const FIRM_EMAIL = "mnsai.official@gmail.com";
+const SENDER = "no-reply@mnsai.com";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function esc(s: string) {
@@ -49,7 +50,7 @@ export async function POST(req: NextRequest) {
 
   // Email to the firm
   const internalMail = {
-    from: `"MNSAI Website" <${BREVO_LOGIN}>`,
+    from: `"MNSAI Website" <${SENDER}>`,
     to: FIRM_EMAIL,
     replyTo: email,
     subject: `New Enquiry${service ? ` — ${service}` : ""} from ${name}`,
@@ -92,7 +93,7 @@ export async function POST(req: NextRequest) {
 
   // Auto-reply to the enquirer
   const autoReply = {
-    from: `"MNSAI (SMC-Private) Limited" <${BREVO_LOGIN}>`,
+    from: `"MNSAI (SMC-Private) Limited" <${SENDER}>`,
     to: email,
     subject: "We've received your message — MNSAI",
     html: `
@@ -105,7 +106,7 @@ export async function POST(req: NextRequest) {
           <p style="color:#374151;margin:0 0 16px;">
             Thank you for reaching out to <strong>MNSAI (SMC-Private) Limited</strong>.
             We have received your enquiry and our team will get back to you within
-            <strong>1–2 business days</strong>.
+            <strong>48 hours</strong>.
           </p>
           <p style="color:#374151;margin:0 0 8px;">For urgent matters, please contact us directly:</p>
           <table style="border-collapse:collapse;margin-bottom:24px;">
