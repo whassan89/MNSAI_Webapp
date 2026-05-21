@@ -9,20 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ── THEME: Deep Burgundy + Champagne ──────────────────────
+        // ── THEME: Warm Charcoal + Sage Green (Piktochart #10) ────
+        // Palette: #767771 Charcoal · #E0D9D2 Linen · #9EB371 Sage · #E17878 Dusty Rose
         navy: {
-          50:  "#fef1f5",
-          100: "#fce0e9",
-          600: "#6b1535",
-          700: "#4a0e26",
-          800: "#2d0f1e",
-          900: "#1a0811",
+          50:  "#f5f4f3",   // warm off-white tint
+          100: "#e8e6e4",   // light warm grey
+          600: "#767771",   // warm charcoal (exact swatch)
+          700: "#5a5955",   // dark charcoal
+          800: "#3d3c39",   // deep charcoal — navbar / hero / dark sections
+          900: "#252422",   // darkest — footer bg
         },
         gold: {
-          50:  "#fdf8f4",
-          400: "#e2c9a0",
-          500: "#d4b896",
-          600: "#c4a47e",
+          50:  "#e0d9d2",   // warm linen (exact swatch) — light section bg tints
+          400: "#b5ca8e",   // light sage — text labels on dark bg
+          500: "#9eb371",   // sage green (exact swatch) — buttons & accents
+          600: "#7d9059",   // dark sage — hover states
         },
         // ── END THEME ─────────────────────────────────────────────
 
