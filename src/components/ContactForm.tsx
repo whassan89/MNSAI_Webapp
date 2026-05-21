@@ -4,10 +4,10 @@ import { useState } from "react";
 
 const services = [
   "Audit & Assurance",
-  "Accounting & Bookkeeping",
-  "Taxation & Corporate Advisory",
-  "Financial Services",
-  "Business Advisory",
+  "Virtual CFO & Managed Finance",
+  "Tax & Business Consulting",
+  "Financial Modeling & Valuation",
+  "IFRS Advisory & Reporting",
   "ERP Implementation",
   "Other",
 ];

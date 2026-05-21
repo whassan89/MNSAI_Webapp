@@ -4,11 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "MNSAI (SMC-Private) Limited | Audit, Accounting, Advisory, Tax & ERP",
+  title: "MNSAI (SMC-Private) Limited | Virtual CFO · Financial Modeling · IFRS Advisory · Tax Consulting",
   description:
-    "MNSAI (SMC-Private) Limited is a professional CA firm based in Lahore offering Audit, Accounting, Advisory, Tax and ERP services.",
+    "MNSAI is a specialist CA advisory firm in Lahore delivering Virtual CFO services, Financial Modeling, IFRS Advisory, and Tax & Business Consulting to businesses across Pakistan.",
   keywords:
-    "CA firm Lahore, audit firm Pakistan, tax advisory Lahore, accounting firm, ERP consultants",
+    "Virtual CFO Pakistan, financial modeling Lahore, IFRS advisory Pakistan, tax consulting Lahore, CA firm Pakistan, business consulting Lahore, financial modeling firm, IFRS reporting Pakistan",
 };
 
 export default function RootLayout({

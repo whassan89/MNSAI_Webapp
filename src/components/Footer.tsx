@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const services = [
   { label: "Audit & Assurance", href: "/services" },
-  { label: "Accounting & Bookkeeping", href: "/services" },
-  { label: "Taxation & Corporate Advisory", href: "/services" },
-  { label: "Financial Services", href: "/services" },
-  { label: "Business Advisory", href: "/services" },
+  { label: "Virtual CFO & Managed Finance", href: "/services" },
+  { label: "Tax & Business Consulting", href: "/services" },
+  { label: "Financial Modeling & Valuation", href: "/services" },
+  { label: "IFRS Advisory & Reporting", href: "/services" },
   { label: "ERP Implementation", href: "/services" },
 ];
 
@@ -90,8 +90,8 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm leading-relaxed mb-6">
-              Professional CA firm delivering Audit, Accounting, Tax, Advisory, and ERP services
-              to businesses across Pakistan.
+              Specialist CA advisors delivering Virtual CFO, Financial Modeling, IFRS Advisory,
+              and Tax &amp; Business Consulting to businesses across Pakistan.
             </p>
             {/* Memberships */}
             <div className="space-y-1.5">

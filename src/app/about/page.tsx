@@ -55,9 +55,9 @@ export default function AboutPage() {
               <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Vision Statement</p>
               <h2 className="section-heading mb-5">Value Your Business Today</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                We are Chartered Accountants having experience in Taxation, Financial Advisory,
-                Internal Audit, Risk Assessment, ERP Solutions and Business Plans ranging from
-                small to large scale businesses.
+                We are specialist CA advisors — Virtual CFO practitioners, financial modelers,
+                IFRS experts, and tax consultants — with Big Four-trained professionals serving
+                SMEs and international organizations across Pakistan.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Business in today's world has been changing tremendously due to innovation and
@@ -103,15 +103,15 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-xl p-7 border border-gray-100 shadow-sm">
               <p className="text-gray-600 leading-relaxed mb-4">
-                We are qualified professionals with diversified experience in Accounting, Finance,
-                Strategy, Risk and Assurance. We have served in numerous organizations from small
-                to large scale and national to multinational companies at senior &amp; strategic levels
-                where we have played our roles for the success of the organizations.
+                We are specialist CA advisors with Big Four-trained professionals. Our expertise spans
+                Virtual CFO services, financial modeling, IFRS advisory, and tax consulting — delivered
+                to SMEs, startups, and international organizations across Pakistan. We have served at
+                senior and strategic levels in leading national and multinational companies.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                With the inception of Tech Industry all over the world, AI and Blockchain are
-                revolutionizing the overall structure of how organizations would evolve in the future.
-                We are now more focused towards long-term solutions for our clients in their respective businesses.
+                With the inception of AI and Blockchain revolutionizing how businesses operate, we are
+                fully equipped with the latest technology, qualification, and skill set to future-proof
+                our clients' businesses with long-term, specialist-led solutions.
               </p>
             </div>
             <div className="bg-navy-800 rounded-xl p-7 text-white">

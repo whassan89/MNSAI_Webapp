@@ -17,11 +17,11 @@ const stats = [
 
 const servicePreview = [
   { title: "Audit & Assurance", icon: "✓", href: "/services" },
-  { title: "Accounting & Bookkeeping", icon: "⊞", href: "/services" },
-  { title: "Tax Advisory", icon: "⊙", href: "/services" },
-  { title: "Business Advisory", icon: "◈", href: "/services" },
+  { title: "Virtual CFO Services", icon: "⊞", href: "/services" },
+  { title: "Tax & Business Consulting", icon: "⊙", href: "/services" },
+  { title: "IFRS Advisory", icon: "◈", href: "/services" },
   { title: "ERP Implementation", icon: "⊛", href: "/services" },
-  { title: "Financial Services", icon: "◉", href: "/services" },
+  { title: "Financial Modeling", icon: "◉", href: "/services" },
 ];
 
 const clients = [
@@ -52,18 +52,20 @@ export default function Home() {
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
               MNSAI (SMC-Private) Limited
             </p>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-3">
               Value Your{" "}
               <span className="text-gold-400">Business</span> Today
             </h1>
+            <p className="text-gray-400 text-xs font-medium tracking-widest uppercase mb-6">
+              Virtual CFO · Financial Modeling · IFRS Advisory · Tax &amp; Business Consulting
+            </p>
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4 max-w-2xl">
-              We are Chartered Accountants having experience in Taxation, Financial Advisory,
-              Internal Audit, Risk Assessment, ERP Solutions and Business Plans ranging from
-              small to large scale businesses.
+              Specialist CA advisors delivering Virtual CFO services, financial modeling,
+              IFRS-compliant reporting, and strategic tax consulting to businesses across Pakistan.
             </p>
             <p className="text-gray-400 text-base leading-relaxed mb-10 max-w-2xl">
-              We aim to provide our valued clients with latest methods and tools to achieve
-              effectiveness in their operations so that they can keep abreast of current market trends.
+              Big Four-trained professionals bringing institutional-grade expertise to growing
+              businesses — at a fraction of the cost of an in-house finance team.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/services" className="btn-primary">Our Services</Link>
@@ -94,16 +96,16 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-14 items-center">
             <div>
               <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Who We Are</p>
-              <h2 className="section-heading mb-5">Competence and Experience</h2>
+              <h2 className="section-heading mb-5">Specialists, Not Generalists</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                We are qualified professionals with diversified experience in Accounting, Finance,
-                Strategy, Risk and Assurance. We have served in numerous organizations from small
-                to large scale and national to multinational companies at senior &amp; strategic levels.
+                We are specialist CA advisors — Virtual CFO practitioners, financial modelers,
+                IFRS experts, and tax consultants — with Big Four-trained professionals serving
+                SMEs and international organizations across Pakistan.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                With the inception of Tech Industry all over the world and AI and Blockchain
-                revolutionizing business structure, we are fully equipped with the latest technology,
-                qualification and skill set to perform and implement these for our respected clients.
+                Our team has held senior roles at KPMG, PwC, and Fatima Group. We bring
+                that institutional expertise directly to your business — so you get more
+                than a bookkeeper, you get a strategic finance partner.
               </p>
               <Link href="/about" className="btn-primary inline-block">Learn More</Link>
             </div>
