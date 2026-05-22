@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@marsidev/react-turnstile": "^1.5.2",
     "next": "^16.2.1",
     "nodemailer": "^8.0.5",
     "react": "^19.0.0",

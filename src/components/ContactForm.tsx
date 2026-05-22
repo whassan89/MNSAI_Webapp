@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 
 const services = [
   "Audit & Assurance",
@@ -17,6 +18,8 @@ type Status = "idle" | "loading" | "success" | "error";
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [token, setToken] = useState("");
+  const turnstileRef = useRef<TurnstileInstance>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -33,6 +36,11 @@ export default function ContactForm() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (!token) {
+      setErrorMsg("Security check not complete. Please wait a moment and try again.");
+      setStatus("error");
+      return;
+    }
     setStatus("loading");
     setErrorMsg("");
 
@@ -40,13 +48,15 @@ export default function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, cfToken: token }),
       });
       const data = await res.json();
 
       if (!res.ok) {
         setErrorMsg(data.error || "Something went wrong.");
         setStatus("error");
+        turnstileRef.current?.reset();
+        setToken("");
         return;
       }
 
@@ -55,6 +65,8 @@ export default function ContactForm() {
     } catch {
       setErrorMsg("Network error. Please check your connection and try again.");
       setStatus("error");
+      turnstileRef.current?.reset();
+      setToken("");
     }
   }
 
@@ -160,13 +172,22 @@ export default function ContactForm() {
         />
       </div>
 
+      <Turnstile
+        ref={turnstileRef}
+        siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+        onSuccess={setToken}
+        onError={() => setToken("")}
+        onExpire={() => setToken("")}
+        options={{ theme: "light" }}
+      />
+
       {status === "error" && (
         <p className="text-red-500 text-sm">{errorMsg}</p>
       )}
 
       <button
         type="submit"
-        disabled={status === "loading"}
+        disabled={status === "loading" || !token}
         className="w-full btn-primary text-center disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === "loading" ? "Sending..." : "Send Message"}

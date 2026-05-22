@@ -18,7 +18,25 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
-  const { name = "", email = "", phone = "", service = "", message = "" } = body;
+  const { name = "", email = "", phone = "", service = "", message = "", cfToken = "" } = body;
+
+  // Verify Cloudflare Turnstile token
+  const { TURNSTILE_SECRET_KEY } = process.env;
+  if (!TURNSTILE_SECRET_KEY) {
+    console.error("Missing TURNSTILE_SECRET_KEY environment variable.");
+    return NextResponse.json({ error: "Security check not configured." }, { status: 503 });
+  }
+
+  const turnstileRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ secret: TURNSTILE_SECRET_KEY, response: cfToken }),
+  });
+  const turnstileData = await turnstileRes.json();
+
+  if (!turnstileData.success) {
+    return NextResponse.json({ error: "Security check failed. Please refresh and try again." }, { status: 400 });
+  }
 
   if (!name.trim() || !email.trim() || !message.trim()) {
     return NextResponse.json(
