@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     subject: `New Enquiry${service ? ` — ${service}` : ""} from ${name}`,
     html: `
       <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
-        <div style="background:#3d3c39;padding:24px 32px;">
+        <div style="background:#383838;padding:24px 32px;">
           <h1 style="color:#9eb371;font-size:20px;margin:0;">MNSAI — New Website Enquiry</h1>
         </div>
         <div style="background:#f9fafb;padding:32px;border:1px solid #e5e7eb;">
@@ -82,7 +82,7 @@ export async function POST(req: NextRequest) {
           <p style="color:#6b7280;font-size:13px;margin:0 0 8px;">Message</p>
           <p style="color:#111827;white-space:pre-line;margin:0;">${esc(message)}</p>
         </div>
-        <div style="background:#3d3c39;padding:16px 32px;">
+        <div style="background:#383838;padding:16px 32px;">
           <p style="color:#6b7280;font-size:12px;margin:0;">
             Sent from the contact form at www.mnsai.com — Reply to this email to respond to ${esc(name)}.
           </p>
@@ -98,7 +98,7 @@ export async function POST(req: NextRequest) {
     subject: "We've received your message — MNSAI",
     html: `
       <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
-        <div style="background:#3d3c39;padding:24px 32px;">
+        <div style="background:#383838;padding:24px 32px;">
           <h1 style="color:#9eb371;font-size:20px;margin:0;">MNSAI (SMC-Private) Limited</h1>
         </div>
         <div style="background:#f9fafb;padding:32px;border:1px solid #e5e7eb;">
@@ -127,7 +127,7 @@ export async function POST(req: NextRequest) {
             </span>
           </p>
         </div>
-        <div style="background:#3d3c39;padding:16px 32px;">
+        <div style="background:#383838;padding:16px 32px;">
           <p style="color:#6b7280;font-size:12px;margin:0;">
             This is an automated confirmation. Please do not reply to this email.
           </p>

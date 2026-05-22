@@ -16,7 +16,7 @@ const config: Config = {
           100: "#e8e6e4",   // light warm grey
           600: "#767771",   // warm charcoal (exact swatch)
           700: "#5a5955",   // dark charcoal
-          800: "#3d3c39",   // deep charcoal — navbar / hero / dark sections
+          800: "#383838",   // deep charcoal — navbar / hero / dark sections
           900: "#252422",   // darkest — footer bg
         },
         gold: {
