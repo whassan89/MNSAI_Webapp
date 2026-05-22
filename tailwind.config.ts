@@ -9,21 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ── THEME: Warm Charcoal + Sage Green (Piktochart #10) ────
-        // Palette: #767771 Charcoal · #E0D9D2 Linen · #9EB371 Sage · #E17878 Dusty Rose
+        // ── THEME: Steel Blue + Emerald Green (Adobe Color) ───────
+        // Palette: #284F70 Steel Blue · #D9DB7F Lime · #FFFFFF White · #36B54A Emerald · #F2EBE1 Warm Cream
         navy: {
-          50:  "#f5f4f3",   // warm off-white tint
-          100: "#e8e6e4",   // light warm grey
-          600: "#767771",   // warm charcoal (exact swatch)
-          700: "#5a5955",   // dark charcoal
-          800: "#383838",   // deep charcoal — navbar / hero / dark sections
-          900: "#252422",   // darkest — footer bg
+          50:  "#e8f0f7",   // very light steel blue tint
+          100: "#c5d7e8",   // light steel blue
+          600: "#2d5f85",   // medium steel blue
+          700: "#1e3d57",   // dark steel blue
+          800: "#284F70",   // Steel Blue (exact swatch) — navbar / hero / dark sections
+          900: "#162d42",   // darkest — footer bg & button text
         },
         gold: {
-          50:  "#e0d9d2",   // warm linen (exact swatch) — light section bg tints
-          400: "#b5ca8e",   // light sage — text labels on dark bg
-          500: "#9eb371",   // sage green (exact swatch) — buttons & accents
-          600: "#7d9059",   // dark sage — hover states
+          50:  "#F2EBE1",   // Warm Cream (exact swatch) — light section bg tints
+          400: "#D9DB7F",   // Lime Yellow-Green (exact swatch) — labels on dark bg
+          500: "#36B54A",   // Emerald Green (exact swatch) — buttons & accents
+          600: "#2a9039",   // dark emerald — hover states
         },
         // ── END THEME ─────────────────────────────────────────────
 

@@ -56,8 +56,8 @@ export async function POST(req: NextRequest) {
     subject: `New Enquiry${service ? ` — ${service}` : ""} from ${name}`,
     html: `
       <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
-        <div style="background:#383838;padding:24px 32px;">
-          <h1 style="color:#9eb371;font-size:20px;margin:0;">MNSAI — New Website Enquiry</h1>
+        <div style="background:#284F70;padding:24px 32px;">
+          <h1 style="color:#36B54A;font-size:20px;margin:0;">MNSAI — New Website Enquiry</h1>
         </div>
         <div style="background:#f9fafb;padding:32px;border:1px solid #e5e7eb;">
           <table style="width:100%;border-collapse:collapse;">
@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
             </tr>
             <tr>
               <td style="padding:10px 0;color:#6b7280;font-size:13px;vertical-align:top;">Email</td>
-              <td style="padding:10px 0;"><a href="mailto:${esc(email)}" style="color:#9eb371;">${esc(email)}</a></td>
+              <td style="padding:10px 0;"><a href="mailto:${esc(email)}" style="color:#36B54A;">${esc(email)}</a></td>
             </tr>
             ${phone ? `<tr>
               <td style="padding:10px 0;color:#6b7280;font-size:13px;vertical-align:top;">Phone</td>
@@ -82,7 +82,7 @@ export async function POST(req: NextRequest) {
           <p style="color:#6b7280;font-size:13px;margin:0 0 8px;">Message</p>
           <p style="color:#111827;white-space:pre-line;margin:0;">${esc(message)}</p>
         </div>
-        <div style="background:#383838;padding:16px 32px;">
+        <div style="background:#284F70;padding:16px 32px;">
           <p style="color:#6b7280;font-size:12px;margin:0;">
             Sent from the contact form at www.mnsai.com — Reply to this email to respond to ${esc(name)}.
           </p>
@@ -98,8 +98,8 @@ export async function POST(req: NextRequest) {
     subject: "We've received your message — MNSAI",
     html: `
       <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
-        <div style="background:#383838;padding:24px 32px;">
-          <h1 style="color:#9eb371;font-size:20px;margin:0;">MNSAI (SMC-Private) Limited</h1>
+        <div style="background:#284F70;padding:24px 32px;">
+          <h1 style="color:#36B54A;font-size:20px;margin:0;">MNSAI (SMC-Private) Limited</h1>
         </div>
         <div style="background:#f9fafb;padding:32px;border:1px solid #e5e7eb;">
           <p style="color:#111827;margin:0 0 16px;">Dear ${esc(name)},</p>
@@ -112,11 +112,11 @@ export async function POST(req: NextRequest) {
           <table style="border-collapse:collapse;margin-bottom:24px;">
             <tr>
               <td style="padding:4px 16px 4px 0;color:#6b7280;font-size:13px;">Phone</td>
-              <td><a href="tel:+923324452894" style="color:#9eb371;">+92-332-4452894</a></td>
+              <td><a href="tel:+923324452894" style="color:#36B54A;">+92-332-4452894</a></td>
             </tr>
             <tr>
               <td style="padding:4px 16px 4px 0;color:#6b7280;font-size:13px;">Email</td>
-              <td><a href="mailto:ceo@mnsai.com" style="color:#9eb371;">ceo@mnsai.com</a></td>
+              <td><a href="mailto:ceo@mnsai.com" style="color:#36B54A;">ceo@mnsai.com</a></td>
             </tr>
           </table>
           <p style="color:#374151;margin:0;">
@@ -127,7 +127,7 @@ export async function POST(req: NextRequest) {
             </span>
           </p>
         </div>
-        <div style="background:#383838;padding:16px 32px;">
+        <div style="background:#284F70;padding:16px 32px;">
           <p style="color:#6b7280;font-size:12px;margin:0;">
             This is an automated confirmation. Please do not reply to this email.
           </p>
