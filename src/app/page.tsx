@@ -45,8 +45,6 @@ export default function Home() {
           priority
           sizes="100vw"
         />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-navy-800/80" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
           <div className="max-w-3xl">
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
