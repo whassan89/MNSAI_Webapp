@@ -41,10 +41,11 @@ export default function Home() {
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&q=80"
           alt="Professional business meeting"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center scale-105"
           priority
           sizes="100vw"
         />
+        <div className="absolute inset-0 backdrop-blur-sm" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
           <div className="max-w-3xl">
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
