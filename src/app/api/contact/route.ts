@@ -10,7 +10,7 @@ function esc(s: string) {
 }
 
 export async function POST(req: NextRequest) {
-  let body: { name?: string; email?: string; phone?: string; service?: string; message?: string };
+  let body: { name?: string; email?: string; phone?: string; service?: string; message?: string; cfToken?: string };
 
   try {
     body = await req.json();
