@@ -3,201 +3,502 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Virtual CFO Services Pakistan | MNSAI (SMC-Private) Limited",
+  title: "Virtual CFO Services | Strategic Finance for Growing Businesses | MNSAI",
   description:
-    "Outsource your entire finance function to Big Four-trained CFOs. MNSAI delivers Virtual CFO services — management accounts, cash flow, reporting, and financial leadership — for SMEs across Pakistan.",
+    "Chartered Accountants providing Virtual CFO, financial planning, budgeting, cash flow management, and strategic advisory for startups, SMEs, and growing businesses in Pakistan and UAE.",
   keywords:
-    "virtual CFO Pakistan, outsourced CFO Lahore, managed finance Pakistan, CFO services SME Pakistan",
+    "virtual CFO Pakistan, outsourced CFO Lahore, cash flow management Pakistan, financial planning SME Pakistan, management reporting Pakistan, CFO services UAE",
 };
 
-const whyNeeds = [
+const painPoints = [
   {
-    title: "You're scaling but lack a finance team",
-    desc: "Revenue is growing but your books are behind and decisions are made on gut feel — not numbers.",
+    title: "Revenue Growing But Cash Always Tight",
+    desc: "Sales are up but the bank account never reflects it. Poor cash flow visibility is the number one business killer.",
   },
   {
-    title: "Your investor wants IFRS-compliant reports",
-    desc: "Banks, PE firms, and international investors require structured financials. We deliver them on time, every time.",
+    title: "No Financial Visibility",
+    desc: "You don't have a clear, real-time picture of your financial position — making every major decision a guessing game.",
   },
   {
-    title: "Cash flow surprises you every month",
-    desc: "You earn well but never know where the money is. A Virtual CFO builds the visibility and controls to fix that.",
+    title: "No Budgeting or Forecasting Process",
+    desc: "Decisions are made reactively. There's no annual budget, no cash flow forecast, and no financial roadmap.",
   },
   {
-    title: "You need a finance head but can't justify the salary",
-    desc: "A full-time CFO in Pakistan costs PKR 4–8M per year. Our Virtual CFO retainer starts at a fraction of that.",
+    title: "Weak Management Reporting",
+    desc: "Your monthly accounts arrive weeks late, lack detail, and don't tell you what's actually driving performance.",
+  },
+  {
+    title: "Difficulty Making Financial Decisions",
+    desc: "Hiring, expansion, new product lines — without reliable financial data, every big decision carries unnecessary risk.",
+  },
+  {
+    title: "Uncontrolled Costs & Expenses",
+    desc: "Costs creep up without visibility. By the time you notice, margins have already been squeezed.",
+  },
+  {
+    title: "Delayed Receivables & Cash Flow Pressure",
+    desc: "Customers pay late, your payables pile up, and working capital gets stuck in a cycle you can't break out of.",
+  },
+  {
+    title: "No CFO-Level Financial Guidance",
+    desc: "Your accountant files returns. But no one is giving you strategic financial advice, challenging your assumptions, or planning ahead.",
+  },
+  {
+    title: "Investor or Bank Reporting Challenges",
+    desc: "Lenders and investors want structured financials, forecasts, and KPIs. Producing these without a finance function is exhausting.",
   },
 ];
 
-const included = [
-  { label: "Virtual CFO Retainer", detail: "Dedicated senior advisor as your finance lead" },
-  { label: "Monthly Management Accounts", detail: "P&L, balance sheet, and cash flow on time, every month" },
-  { label: "KPI Dashboards", detail: "Custom metrics that track what actually moves your business" },
-  { label: "Cash Flow Forecasting", detail: "13-week rolling forecasts and liquidity management" },
-  { label: "Payroll & Payables", detail: "End-to-end payroll processing and vendor payments" },
-  { label: "Financial Controls", detail: "SOPs, approval workflows, and internal controls that scale" },
-  { label: "Board & Investor Reporting", detail: "Investor-ready packs and lender reporting prepared for you" },
-  { label: "Budget vs Actual Analysis", detail: "Monthly variance reviews with commentary and recommendations" },
+const services = [
+  {
+    title: "Financial Reporting & Dashboards",
+    icon: "📊",
+    points: [
+      "Monthly management accounts delivered on time",
+      "Custom KPI dashboards tailored to your business",
+      "Business performance analysis with commentary",
+      "Board-ready reporting packs",
+    ],
+  },
+  {
+    title: "Budgeting & Forecasting",
+    icon: "📋",
+    points: [
+      "Annual budget preparation and review",
+      "Rolling cash flow forecasts (13-week and annual)",
+      "Budget vs. actual variance analysis",
+      "Scenario and sensitivity modelling",
+    ],
+  },
+  {
+    title: "Cash Flow Management",
+    icon: "💧",
+    points: [
+      "Receivables tracking and collection support",
+      "Expense optimisation and cost review",
+      "Working capital analysis and improvement",
+      "Cash conversion cycle management",
+    ],
+  },
+  {
+    title: "Business Performance Analysis",
+    icon: "📈",
+    points: [
+      "Profitability analysis by product, channel, or department",
+      "Margin analysis and pricing review",
+      "Cost centre and overhead allocation",
+      "Actionable recommendations, not just reports",
+    ],
+  },
+  {
+    title: "Investor & Bank Reporting",
+    icon: "🏦",
+    points: [
+      "Investor update packs and board presentations",
+      "Financial forecasts for fundraising and lending",
+      "Covenant compliance monitoring",
+      "Data room financial preparation",
+    ],
+  },
+  {
+    title: "Internal Controls & Finance Processes",
+    icon: "⚙",
+    points: [
+      "Finance SOPs and approval workflows",
+      "Reporting system design and implementation",
+      "Finance team oversight and mentoring",
+      "Month-end close process improvement",
+    ],
+  },
+  {
+    title: "Strategic Advisory",
+    icon: "🎯",
+    points: [
+      "Growth planning and expansion feasibility",
+      "New market and product financial analysis",
+      "Make vs. buy and outsourcing decisions",
+      "Strategic financial decision-making support",
+    ],
+  },
 ];
 
-const faqs = [
-  {
-    q: "How is a Virtual CFO different from a bookkeeper?",
-    a: "A bookkeeper records transactions. A Virtual CFO interprets what those transactions mean, builds forecasts, manages your finance team, and gives you the financial leadership to make better decisions.",
-  },
-  {
-    q: "What size of company benefits most?",
-    a: "SMEs and growing businesses with PKR 50M–2B in revenue get the most value — large enough to need structured finance, not yet large enough to justify a full-time CFO.",
-  },
-  {
-    q: "Do you work with international businesses?",
-    a: "Yes. We work with international organizations operating in Pakistan and Pakistani businesses with overseas investors or reporting requirements.",
-  },
-  {
-    q: "Can you take over from our existing accountant?",
-    a: "Absolutely. We handle the transition professionally, review existing records, and onboard cleanly without disruption to your operations.",
-  },
+const whyMNSAI = [
+  "Chartered Accountants with practical, hands-on business experience — not just compliance",
+  "Experience across Pakistan, UAE, and Saudi Arabia",
+  "Big Four-trained professionals — KPMG and PwC background",
+  "CFO-level insights and leadership without the full-time hiring cost",
+  "Business-focused and practical — we speak your language, not just accountant-speak",
+  "Proven track record with startups, SMEs, and established businesses",
+  "Strong financial modelling and reporting background to support strategic decisions",
 ];
+
+const whoWeServe = [
+  "Startups",
+  "SMEs",
+  "E-commerce Businesses",
+  "Software Houses",
+  "Manufacturing Companies",
+  "Trading Businesses",
+  "Solar & Energy Companies",
+  "Family-Owned Businesses",
+];
+
+const outcomes = [
+  { title: "Better Cash Flow Visibility", desc: "Know exactly where your cash is, where it's going, and when you'll run tight — before it happens." },
+  { title: "Improved Profitability", desc: "Understand which parts of your business make money and which ones erode it." },
+  { title: "Smarter Business Decisions", desc: "Every major decision backed by reliable numbers, forecasts, and financial analysis." },
+  { title: "Stronger Financial Controls", desc: "SOPs, approval workflows, and reporting systems that prevent leakage and reduce risk." },
+  { title: "Better Investor Confidence", desc: "Structured financials and investor-ready reporting that builds credibility with lenders and backers." },
+  { title: "Improved Budgeting Discipline", desc: "An annual budget you actually track against — with monthly variance analysis and course corrections." },
+  { title: "Faster Business Growth", desc: "Financial clarity frees you to focus on the business. We handle the numbers so you can handle the growth." },
+  { title: "Reduced Financial Risk", desc: "Early identification of cash flow risks, cost overruns, and compliance gaps before they become problems." },
+];
+
+const caseStudy = {
+  title: "Improved Cash Flow Visibility for a Growing SME",
+  context:
+    "A Lahore-based trading company with PKR 250M in annual revenue had no structured reporting, no cash flow forecasts, and a receivable cycle stretching beyond 90 days. The owner was making decisions based on gut feel, with no financial visibility.",
+  results: [
+    "Established a monthly management reporting system delivered within 5 days of month-end",
+    "Reduced the receivable collection cycle from 90+ days to under 45 days within two quarters",
+    "Introduced an annual budget with monthly variance tracking — overspend reduced by 18%",
+    "Owner gained clear financial visibility to make a PKR 30M expansion decision with confidence",
+  ],
+};
 
 export default function VirtualCFOPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-navy-800 pt-32 pb-20 overflow-hidden">
+      <section className="relative bg-navy-800 pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1920&q=80"
-            alt="CFO reviewing financial dashboards"
+            alt="Strategic financial leadership and CFO services"
             fill
-            className="object-cover object-center opacity-20"
+            className="object-cover object-center opacity-15"
             priority
             sizes="100vw"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-800/90 to-navy-800/60" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
               Virtual CFO Services
             </p>
-            <h1 className="font-heading text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-              CFO-Level Leadership.{" "}
-              <span className="text-gold-400">Without the Full-Time Cost.</span>
+            <h1 className="font-heading text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
+              Strategic Financial Leadership{" "}
+              <span className="text-gold-400">Without Hiring a Full-Time CFO</span>
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
-              Big Four-trained professionals take ownership of your entire finance function —
-              delivering the financial clarity, reporting, and strategic insight that growing
-              businesses need to scale with confidence.
+              Chartered Accountants providing Virtual CFO, financial planning, budgeting,
+              cash flow management, and strategic advisory for startups, SMEs, and growing
+              businesses in Pakistan and UAE.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="btn-primary">Book a Free Discovery Call</Link>
-              <Link href="/services" className="btn-outline">View All Services</Link>
+              <Link href="/contact" className="btn-primary">Book a Free CFO Consultation</Link>
+              <Link
+                href="/contact"
+                className="border-2 border-white text-white hover:bg-white hover:text-navy-800 font-semibold px-6 py-3 rounded transition-colors duration-200"
+              >
+                Get Free Financial Health Review
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who Needs This */}
+      {/* Pain Points */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Is This You?</p>
-            <h2 className="section-heading">Who Needs a Virtual CFO?</h2>
+            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Does This Sound Familiar?</p>
+            <h2 className="section-heading">Is Your Business Facing These Financial Challenges?</h2>
             <p className="section-subheading">
-              You don't need to be struggling to need a CFO. You need one when you're growing faster than your finance function.
+              These are the problems most growing businesses face before they bring in CFO-level support.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-6">
-            {whyNeeds.map((item) => (
-              <div key={item.title} className="bg-gray-50 border border-gray-100 rounded-xl p-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {painPoints.map((p) => (
+              <div key={p.title} className="bg-gray-50 border border-gray-100 rounded-xl p-5 hover:border-gold-400 hover:shadow-sm transition-all">
+                <div className="w-8 h-8 bg-red-50 border border-red-100 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-heading font-semibold text-navy-800 text-sm mb-2">{p.title}</h3>
+                <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What Is a Virtual CFO */}
+      <section className="py-16 bg-navy-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">The Solution</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
+            What Is a Virtual CFO?
+          </h2>
+          <p className="text-gray-300 text-lg leading-relaxed mb-6">
+            A Virtual CFO provides strategic financial leadership, reporting, planning, and business
+            advisory — without the cost of hiring a full-time executive. You get a senior finance
+            professional embedded in your business on a flexible retainer, managing your numbers and
+            helping you act on them.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-6 mt-10">
+            {[
+              { label: "Not a Bookkeeper", detail: "A Virtual CFO interprets your numbers and drives decisions — not just records transactions." },
+              { label: "Not a Part-Time Accountant", detail: "You get a dedicated senior advisor with full ownership of your finance function." },
+              { label: "Not a Consultant", detail: "We're embedded in your business — your numbers, your team, your outcomes." },
+            ].map((item) => (
+              <div key={item.label} className="bg-navy-700 rounded-xl p-5 text-left">
+                <p className="font-heading font-semibold text-gold-400 mb-2">{item.label}</p>
+                <p className="text-gray-400 text-sm leading-relaxed">{item.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">What We Deliver</p>
+            <h2 className="section-heading">Our Virtual CFO Services</h2>
+            <p className="section-subheading">
+              A comprehensive finance function — from monthly reporting to strategic growth decisions.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((s) => (
+              <div key={s.title} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-gold-400 transition-all">
+                <p className="text-2xl mb-4">{s.icon}</p>
+                <h3 className="font-heading font-semibold text-navy-800 mb-4">{s.title}</h3>
+                <ul className="space-y-2">
+                  {s.points.map((pt) => (
+                    <li key={pt} className="flex items-start gap-2">
+                      <div className="w-4 h-4 bg-gold-500 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-2.5 h-2.5 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-600 text-sm leading-relaxed">{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why MNSAI */}
+      <section className="py-20 bg-navy-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-14 items-center">
+            <div>
+              <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">Why Us</p>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-8">
+                Why Businesses Choose MNSAI
+              </h2>
+              <ul className="space-y-4">
+                {whyMNSAI.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <div className="w-5 h-5 bg-gold-500 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { value: "12+", label: "Years of CFO-level experience" },
+                { value: "Big Four", label: "Trained — KPMG & PwC" },
+                { value: "3", label: "Countries — PK, UAE, KSA" },
+                { value: "200+", label: "Businesses served" },
+              ].map((stat) => (
+                <div key={stat.label} className="bg-navy-700 rounded-xl p-6 text-center">
+                  <p className="font-heading text-3xl font-bold text-gold-400 mb-1">{stat.value}</p>
+                  <p className="text-gray-400 text-xs leading-relaxed">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Serve */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Our Clients</p>
+            <h2 className="section-heading">Who We Serve</h2>
+            <p className="section-subheading">
+              From early-stage startups to established family businesses — if you need financial clarity and leadership, we can help.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {whoWeServe.map((type) => (
+              <span
+                key={type}
+                className="bg-gray-50 border border-gray-200 text-gray-700 font-medium text-sm px-5 py-2.5 rounded-full hover:border-gold-400 hover:text-navy-800 transition-colors"
+              >
+                {type}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Business Outcomes */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">The Impact</p>
+            <h2 className="section-heading">How Our Virtual CFO Services Help Businesses</h2>
+            <p className="section-subheading">
+              Not features — outcomes. This is what changes in your business when you have the right financial leadership.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {outcomes.map((o) => (
+              <div key={o.title} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-gold-400 hover:shadow-sm transition-all">
                 <div className="w-8 h-8 bg-gold-500 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-4 h-4 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="font-heading font-semibold text-navy-800 text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="font-heading font-semibold text-navy-800 text-sm mb-2">{o.title}</h3>
+                <p className="text-gray-500 text-xs leading-relaxed">{o.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* What's Included */}
-      <section className="py-20 bg-navy-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">The Service</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">What's Included</h2>
-            <p className="text-gray-400 mt-3 text-lg max-w-2xl mx-auto">
-              A comprehensive finance function — not just a monthly report.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {included.map((item) => (
-              <div key={item.label} className="bg-navy-700 rounded-xl p-5">
-                <div className="w-6 h-6 bg-gold-500 rounded mb-3 flex items-center justify-center">
-                  <svg className="w-3.5 h-3.5 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="font-semibold text-white text-sm mb-1">{item.label}</p>
-                <p className="text-gray-400 text-xs leading-relaxed">{item.detail}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Credential Strip */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 items-center text-center">
-            <div>
-              <p className="font-heading text-4xl font-bold text-navy-800 mb-1">12+</p>
-              <p className="text-gray-500 text-sm">Years delivering CFO-level work</p>
-            </div>
-            <div>
-              <p className="font-heading text-4xl font-bold text-navy-800 mb-1">Big Four</p>
-              <p className="text-gray-500 text-sm">Trained — KPMG & PwC background</p>
-            </div>
-            <div>
-              <p className="font-heading text-4xl font-bold text-navy-800 mb-1">200+</p>
-              <p className="text-gray-500 text-sm">Businesses served across Pakistan</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
+      {/* Case Study */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Questions</p>
-            <h2 className="section-heading">Frequently Asked</h2>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">In Practice</p>
+            <h2 className="section-heading">Results We've Delivered</h2>
           </div>
-          <div className="space-y-6">
-            {faqs.map((faq) => (
-              <div key={faq.q} className="border border-gray-200 rounded-xl p-6">
-                <h3 className="font-heading font-semibold text-navy-800 mb-3">{faq.q}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="w-10 h-10 bg-gold-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
               </div>
-            ))}
+              <div>
+                <p className="text-xs text-gray-400 font-medium uppercase tracking-widest mb-1">Case Study — Anonymous Client</p>
+                <h3 className="font-heading font-bold text-navy-800 text-xl">{caseStudy.title}</h3>
+              </div>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed mb-6">{caseStudy.context}</p>
+            <ul className="space-y-3">
+              {caseStudy.results.map((r) => (
+                <li key={r} className="flex items-start gap-3">
+                  <div className="w-5 h-5 bg-gold-500 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700 text-sm leading-relaxed">{r}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Free Offer */}
       <section className="py-20 bg-navy-800">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">Free Offer</p>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-5">
+                Free Financial Health Assessment
+              </h2>
+              <p className="text-gray-300 text-base leading-relaxed mb-6">
+                Share your current financial situation with us. We'll review your cash flow, reporting,
+                budgeting, profitability, and finance structure — and give you a clear picture of where
+                your gaps are and where to focus first.
+              </p>
+              <ul className="space-y-3 mb-8">
+                {[
+                  "We review your cash flow, reporting, and budgeting process",
+                  "You receive key financial gaps and risk areas",
+                  "Specific improvement opportunities identified for your business",
+                  "No obligation — just clarity on where you stand",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <div className="w-5 h-5 bg-gold-500 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-300 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link href="/contact" className="btn-primary inline-block text-base px-8 py-4">
+                Book a Free CFO Consultation
+              </Link>
+            </div>
+            <div className="bg-navy-700 rounded-2xl p-8">
+              <h3 className="font-heading font-semibold text-white mb-2">Also Available</h3>
+              <p className="text-gray-400 text-sm mb-6">Choose the engagement that fits where you are right now.</p>
+              <div className="space-y-4">
+                {[
+                  { title: "Free 30-Min CFO Consultation", desc: "Talk through your specific financial challenge with a CA — no commitment, no pitch." },
+                  { title: "Free Cash Flow Review", desc: "We review your receivables, payables, and working capital cycle and identify quick wins." },
+                  { title: "Free KPI Dashboard Sample", desc: "See what a well-structured management dashboard looks like for a business like yours." },
+                ].map((offer) => (
+                  <div key={offer.title} className="bg-navy-800 rounded-xl p-4">
+                    <p className="font-semibold text-white text-sm mb-1">{offer.title}</p>
+                    <p className="text-gray-400 text-xs leading-relaxed">{offer.desc}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-gray-500 text-xs mt-6 italic leading-relaxed">
+                Confidential, practical, and business-focused advisory by qualified Chartered Accountants.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Upgrade Your Finance Function?
+          <h2 className="section-heading mb-4">
+            Ready to Improve Financial Visibility &amp; Business Performance?
           </h2>
-          <p className="text-gray-300 text-lg mb-8">
-            Book a free 30-minute discovery call. No obligation — just clarity on what a Virtual CFO can do for your business.
+          <p className="text-gray-500 text-lg mb-8">
+            Speak with MNSAI to explore how Virtual CFO services can support your business growth,
+            improve cash flow management, and give you the financial clarity to make smarter decisions.
           </p>
-          <Link href="/contact" className="btn-primary inline-block text-base px-8 py-4">
-            Book a Free Discovery Call
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/contact" className="btn-primary text-base px-8 py-4">
+              Book Free CFO Consultation
+            </Link>
+            <Link
+              href="/services"
+              className="border-2 border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white font-semibold px-8 py-4 rounded transition-colors duration-200"
+            >
+              View All Services
+            </Link>
+          </div>
         </div>
       </section>
     </>
