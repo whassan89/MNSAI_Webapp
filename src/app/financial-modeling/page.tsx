@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
   title: "Financial Modeling & Valuation Pakistan | MNSAI (SMC-Private) Limited",
@@ -120,20 +121,22 @@ export default function FinancialModelingPage() {
       {/* Model Types */}
       <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What We Build</p>
             <h2 className="section-heading">Types of Financial Models</h2>
             <p className="section-subheading">
               Every model is purpose-built — not templated. Built in Excel, fully documented, fully unlocked.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {modelTypes.map((m) => (
-              <div key={m.title} className="bg-gray-50 border border-gray-100 rounded-xl p-5 hover:shadow-md transition-shadow">
-                <span className="bg-navy-800 text-gold-400 text-xs font-semibold px-2.5 py-1 rounded-full">{m.tag}</span>
-                <h3 className="font-heading font-semibold text-navy-800 mt-3 mb-2">{m.title}</h3>
-                <p className="text-gray-600 text-xs leading-relaxed">{m.desc}</p>
-              </div>
+            {modelTypes.map((m, i) => (
+              <AnimateOnView key={m.title} delay={i * 0.06}>
+                <div className="bg-gray-50 border border-gray-100 rounded-xl p-5 hover:shadow-md transition-shadow h-full">
+                  <span className="bg-navy-800 text-gold-400 text-xs font-semibold px-2.5 py-1 rounded-full">{m.tag}</span>
+                  <h3 className="font-heading font-semibold text-navy-800 mt-3 mb-2">{m.title}</h3>
+                  <p className="text-gray-600 text-xs leading-relaxed">{m.desc}</p>
+                </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -142,19 +145,21 @@ export default function FinancialModelingPage() {
       {/* Use Cases */}
       <section className="py-20 lg:py-[120px] bg-navy-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">Use Cases</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Who We Build For</h2>
             <p className="text-gray-400 mt-3 text-lg max-w-2xl mx-auto">
               Our models are used by founders, CFOs, lenders, and PE investors across Pakistan.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-2 gap-6">
-            {useCases.map((uc) => (
-              <div key={uc.who} className="bg-navy-700 rounded-xl p-6">
-                <h3 className="font-heading font-semibold text-gold-400 text-lg mb-3">{uc.who}</h3>
-                <p className="text-gray-300 text-sm leading-relaxed">{uc.need}</p>
-              </div>
+            {useCases.map((uc, i) => (
+              <AnimateOnView key={uc.who} delay={i * 0.08}>
+                <div className="bg-navy-700 rounded-xl p-6 h-full">
+                  <h3 className="font-heading font-semibold text-gold-400 text-lg mb-3">{uc.who}</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed">{uc.need}</p>
+                </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -163,22 +168,22 @@ export default function FinancialModelingPage() {
       {/* Our Process */}
       <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">How It Works</p>
             <h2 className="section-heading">Our Process</h2>
             <p className="section-subheading">
               From scoping call to handover — a structured engagement, every time.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {process.map((p) => (
-              <div key={p.step} className="text-center">
+            {process.map((p, i) => (
+              <AnimateOnView key={p.step} delay={i * 0.08} className="text-center">
                 <div className="w-12 h-12 bg-navy-800 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-gold-400 font-bold text-sm">{p.step}</span>
                 </div>
                 <h3 className="font-semibold text-navy-800 text-sm mb-2">{p.title}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
-              </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -192,11 +197,13 @@ export default function FinancialModelingPage() {
               { label: "Excel-Native", detail: "No proprietary software — just clean, structured Excel workbooks you can update yourself." },
               { label: "Fully Unlocked", detail: "No hidden sheets, no protected cells. You own the model completely." },
               { label: "Audit-Trailable", detail: "Every assumption is documented and every formula is traceable — built to withstand investor due diligence." },
-            ].map((q) => (
-              <div key={q.label} className="py-6 px-4 border border-gray-100 rounded-xl">
-                <p className="font-heading font-bold text-navy-800 text-lg mb-2">{q.label}</p>
-                <p className="text-gray-500 text-sm leading-relaxed">{q.detail}</p>
-              </div>
+            ].map((q, i) => (
+              <AnimateOnView key={q.label} delay={i * 0.1}>
+                <div className="py-6 px-4 border border-gray-100 rounded-xl h-full">
+                  <p className="font-heading font-bold text-navy-800 text-lg mb-2">{q.label}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">{q.detail}</p>
+                </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -204,7 +211,7 @@ export default function FinancialModelingPage() {
 
       {/* CTA */}
       <section className="py-20 bg-navy-800">
-        <div className="max-w-3xl mx-auto px-4 text-center">
+        <AnimateOnView className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
             Need a Model That Investors Trust?
           </h2>
@@ -214,7 +221,7 @@ export default function FinancialModelingPage() {
           <Link href="/contact" className="btn-primary inline-block text-base px-8 py-4">
             Request a Financial Model
           </Link>
-        </div>
+        </AnimateOnView>
       </section>
     </>
   );

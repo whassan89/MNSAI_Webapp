@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
   title: "Startup Advisory Pakistan | Finance for Founders | MNSAI (SMC-Private) Limited",
@@ -153,30 +154,32 @@ export default function StartupAdvisoryPage() {
       {/* Stage-Based Help */}
       <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Stage-Based Support</p>
             <h2 className="section-heading">Help at Every Stage of Your Journey</h2>
             <p className="section-subheading">
               Your financial needs change as you scale. We're built to grow with you.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {stages.map((s, i) => (
-              <div key={s.stage} className="bg-navy-800 rounded-xl p-6 text-white">
-                <div className="w-8 h-8 bg-gold-400 rounded-full flex items-center justify-center text-navy-900 font-bold text-sm mb-4">
-                  {i + 1}
+              <AnimateOnView key={s.stage} delay={i * 0.08}>
+                <div className="bg-navy-800 rounded-xl p-6 text-white h-full">
+                  <div className="w-8 h-8 bg-gold-400 rounded-full flex items-center justify-center text-navy-900 font-bold text-sm mb-4">
+                    {i + 1}
+                  </div>
+                  <p className="font-heading font-bold text-white text-base mb-1">{s.stage}</p>
+                  <p className="text-gold-400 text-xs font-medium mb-4">{s.label}</p>
+                  <ul className="space-y-2">
+                    {s.services.map((sv) => (
+                      <li key={sv} className="flex items-start gap-2">
+                        <span className="text-gold-400 text-xs mt-0.5 flex-shrink-0">›</span>
+                        <span className="text-gray-300 text-xs leading-relaxed">{sv}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <p className="font-heading font-bold text-white text-base mb-1">{s.stage}</p>
-                <p className="text-gold-400 text-xs font-medium mb-4">{s.label}</p>
-                <ul className="space-y-2">
-                  {s.services.map((sv) => (
-                    <li key={sv} className="flex items-start gap-2">
-                      <span className="text-gold-400 text-xs mt-0.5 flex-shrink-0">›</span>
-                      <span className="text-gray-300 text-xs leading-relaxed">{sv}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -185,20 +188,22 @@ export default function StartupAdvisoryPage() {
       {/* Deliverables */}
       <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What We Deliver</p>
             <h2 className="section-heading">What Founders Get</h2>
             <p className="section-subheading">
               Concrete deliverables — not just advice — that you can put in front of investors, lenders, and co-founders.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {deliverables.map((d) => (
-              <div key={d.title} className="bg-white border border-gray-200 rounded-xl p-6 hover:border-gold-400 transition-colors">
-                <p className="text-2xl mb-3">{d.icon}</p>
-                <h3 className="font-heading font-semibold text-navy-800 mb-2">{d.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{d.desc}</p>
-              </div>
+            {deliverables.map((d, i) => (
+              <AnimateOnView key={d.title} delay={i * 0.07}>
+                <div className="bg-white border border-gray-200 rounded-xl p-6 hover:border-gold-400 transition-colors h-full">
+                  <p className="text-2xl mb-3">{d.icon}</p>
+                  <h3 className="font-heading font-semibold text-navy-800 mb-2">{d.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{d.desc}</p>
+                </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -208,7 +213,7 @@ export default function StartupAdvisoryPage() {
       <section className="py-20 bg-navy-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-14 items-center">
-            <div>
+            <AnimateOnView direction="left">
               <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">Why MNSAI</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
                 Why Founders Choose Us
@@ -232,20 +237,22 @@ export default function StartupAdvisoryPage() {
                   </div>
                 ))}
               </div>
-            </div>
-            <div className="bg-navy-700 rounded-2xl p-8">
-              <h3 className="font-heading text-xl font-semibold text-gold-400 mb-6">Startup Clients We've Worked With</h3>
-              <div className="grid grid-cols-2 gap-3">
-                {["Groundup.AI", "Gomoon", "ASPIRx", "Parse Biosciences", "Ambassify", "Active Prime"].map((co) => (
-                  <div key={co} className="bg-navy-800 rounded-lg px-3 py-2.5 text-center text-sm text-white font-medium">
-                    {co}
-                  </div>
-                ))}
+            </AnimateOnView>
+            <AnimateOnView direction="right" delay={0.12}>
+              <div className="bg-navy-700 rounded-2xl p-8">
+                <h3 className="font-heading text-xl font-semibold text-gold-400 mb-6">Startup Clients We've Worked With</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {["Groundup.AI", "Gomoon", "ASPIRx", "Parse Biosciences", "Ambassify", "Active Prime"].map((co) => (
+                    <div key={co} className="bg-navy-800 rounded-lg px-3 py-2.5 text-center text-sm text-white font-medium">
+                      {co}
+                    </div>
+                  ))}
+                </div>
+                <p className="text-gray-400 text-xs mt-5 leading-relaxed">
+                  Includes technology startups, SaaS businesses, and international ventures operating in and out of Pakistan.
+                </p>
               </div>
-              <p className="text-gray-400 text-xs mt-5 leading-relaxed">
-                Includes technology startups, SaaS businesses, and international ventures operating in and out of Pakistan.
-              </p>
-            </div>
+            </AnimateOnView>
           </div>
         </div>
       </section>
@@ -253,16 +260,18 @@ export default function StartupAdvisoryPage() {
       {/* FAQ */}
       <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <AnimateOnView className="text-center mb-12">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Questions</p>
             <h2 className="section-heading">Frequently Asked</h2>
-          </div>
+          </AnimateOnView>
           <div className="space-y-6">
-            {faqs.map((faq) => (
-              <div key={faq.q} className="border border-gray-200 rounded-xl p-6">
-                <h3 className="font-heading font-semibold text-navy-800 mb-3">{faq.q}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
-              </div>
+            {faqs.map((faq, i) => (
+              <AnimateOnView key={faq.q} delay={i * 0.07}>
+                <div className="border border-gray-200 rounded-xl p-6">
+                  <h3 className="font-heading font-semibold text-navy-800 mb-3">{faq.q}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -270,7 +279,7 @@ export default function StartupAdvisoryPage() {
 
       {/* CTA */}
       <section className="py-20 bg-navy-800">
-        <div className="max-w-3xl mx-auto px-4 text-center">
+        <AnimateOnView className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
             Building Something? Let's Talk.
           </h2>
@@ -281,7 +290,7 @@ export default function StartupAdvisoryPage() {
           <Link href="/contact" className="btn-primary inline-block text-base px-8 py-4">
             Book a Founder Call
           </Link>
-        </div>
+        </AnimateOnView>
       </section>
     </>
   );

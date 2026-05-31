@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
   title: "Virtual CFO Services | Strategic Finance for Growing Businesses | MNSAI",
@@ -212,24 +213,26 @@ export default function VirtualCFOPage() {
       {/* Pain Points */}
       <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Does This Sound Familiar?</p>
             <h2 className="section-heading">Is Your Business Facing These Financial Challenges?</h2>
             <p className="section-subheading">
               These are the problems most growing businesses face before they bring in CFO-level support.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {painPoints.map((p) => (
-              <div key={p.title} className="bg-gray-50 border border-gray-100 rounded-xl p-5 hover:border-gold-400 hover:shadow-sm transition-all">
-                <div className="w-8 h-8 bg-red-50 border border-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
-                  </svg>
+            {painPoints.map((p, i) => (
+              <AnimateOnView key={p.title} delay={i * 0.05}>
+                <div className="bg-gray-50 border border-gray-100 rounded-xl p-5 hover:border-gold-400 hover:shadow-sm transition-all h-full">
+                  <div className="w-8 h-8 bg-red-50 border border-red-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg className="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="font-heading font-semibold text-navy-800 text-sm mb-2">{p.title}</h3>
+                  <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
                 </div>
-                <h3 className="font-heading font-semibold text-navy-800 text-sm mb-2">{p.title}</h3>
-                <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
-              </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -238,26 +241,30 @@ export default function VirtualCFOPage() {
       {/* What Is a Virtual CFO */}
       <section className="py-20 bg-navy-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">The Solution</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
-            What Is a Virtual CFO?
-          </h2>
-          <p className="text-gray-300 text-lg leading-relaxed mb-6">
-            A Virtual CFO provides strategic financial leadership, reporting, planning, and business
-            advisory — without the cost of hiring a full-time executive. You get a senior finance
-            professional embedded in your business on a flexible retainer, managing your numbers and
-            helping you act on them.
-          </p>
+          <AnimateOnView>
+            <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">The Solution</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
+              What Is a Virtual CFO?
+            </h2>
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">
+              A Virtual CFO provides strategic financial leadership, reporting, planning, and business
+              advisory — without the cost of hiring a full-time executive. You get a senior finance
+              professional embedded in your business on a flexible retainer, managing your numbers and
+              helping you act on them.
+            </p>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-3 gap-6 mt-10">
             {[
               { label: "Not a Bookkeeper", detail: "A Virtual CFO interprets your numbers and drives decisions — not just records transactions." },
               { label: "Not a Part-Time Accountant", detail: "You get a dedicated senior advisor with full ownership of your finance function." },
               { label: "Not a Consultant", detail: "We're embedded in your business — your numbers, your team, your outcomes." },
-            ].map((item) => (
-              <div key={item.label} className="bg-navy-700 rounded-xl p-5 text-left">
-                <p className="font-heading font-semibold text-gold-400 mb-2">{item.label}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{item.detail}</p>
-              </div>
+            ].map((item, i) => (
+              <AnimateOnView key={item.label} delay={i * 0.1}>
+                <div className="bg-navy-700 rounded-xl p-5 text-left h-full">
+                  <p className="font-heading font-semibold text-gold-400 mb-2">{item.label}</p>
+                  <p className="text-gray-400 text-sm leading-relaxed">{item.detail}</p>
+                </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -266,31 +273,33 @@ export default function VirtualCFOPage() {
       {/* Services */}
       <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What We Deliver</p>
             <h2 className="section-heading">Our Virtual CFO Services</h2>
             <p className="section-subheading">
               A comprehensive finance function — from monthly reporting to strategic growth decisions.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((s) => (
-              <div key={s.title} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-gold-400 transition-all">
-                <p className="text-2xl mb-4">{s.icon}</p>
-                <h3 className="font-heading font-semibold text-navy-800 mb-4">{s.title}</h3>
-                <ul className="space-y-2">
-                  {s.points.map((pt) => (
-                    <li key={pt} className="flex items-start gap-2">
-                      <div className="w-4 h-4 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-2.5 h-2.5 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <span className="text-gray-600 text-sm leading-relaxed">{pt}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            {services.map((s, i) => (
+              <AnimateOnView key={s.title} delay={i * 0.07}>
+                <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-gold-400 transition-all h-full">
+                  <p className="text-2xl mb-4">{s.icon}</p>
+                  <h3 className="font-heading font-semibold text-navy-800 mb-4">{s.title}</h3>
+                  <ul className="space-y-2">
+                    {s.points.map((pt) => (
+                      <li key={pt} className="flex items-start gap-2">
+                        <div className="w-4 h-4 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <svg className="w-2.5 h-2.5 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <span className="text-gray-600 text-sm leading-relaxed">{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -300,7 +309,7 @@ export default function VirtualCFOPage() {
       <section className="py-20 bg-navy-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-14 items-center">
-            <div>
+            <AnimateOnView direction="left">
               <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">Why Us</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-8">
                 Why Businesses Choose MNSAI
@@ -317,20 +326,22 @@ export default function VirtualCFOPage() {
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { value: "12+", label: "Years of CFO-level experience" },
-                { value: "Big Four", label: "Trained — KPMG & PwC" },
-                { value: "3", label: "Countries — PK, UAE, KSA" },
-                { value: "200+", label: "Businesses served" },
-              ].map((stat) => (
-                <div key={stat.label} className="bg-navy-700 rounded-xl p-6 text-center">
-                  <p className="font-heading text-3xl font-bold text-gold-400 mb-1">{stat.value}</p>
-                  <p className="text-gray-400 text-xs leading-relaxed">{stat.label}</p>
-                </div>
-              ))}
-            </div>
+            </AnimateOnView>
+            <AnimateOnView direction="right" delay={0.12}>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { value: "12+", label: "Years of CFO-level experience" },
+                  { value: "Big Four", label: "Trained — KPMG & PwC" },
+                  { value: "3", label: "Countries — PK, UAE, KSA" },
+                  { value: "200+", label: "Businesses served" },
+                ].map((stat) => (
+                  <div key={stat.label} className="bg-navy-700 rounded-xl p-6 text-center">
+                    <p className="font-heading text-3xl font-bold text-gold-400 mb-1">{stat.value}</p>
+                    <p className="text-gray-400 text-xs leading-relaxed">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+            </AnimateOnView>
           </div>
         </div>
       </section>
@@ -338,14 +349,14 @@ export default function VirtualCFOPage() {
       {/* Who We Serve */}
       <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <AnimateOnView className="text-center mb-10">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Our Clients</p>
             <h2 className="section-heading">Who We Serve</h2>
             <p className="section-subheading">
               From early-stage startups to established family businesses — if you need financial clarity and leadership, we can help.
             </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
+          </AnimateOnView>
+          <AnimateOnView delay={0.1} className="flex flex-wrap justify-center gap-3">
             {whoWeServe.map((type) => (
               <span
                 key={type}
@@ -354,31 +365,33 @@ export default function VirtualCFOPage() {
                 {type}
               </span>
             ))}
-          </div>
+          </AnimateOnView>
         </div>
       </section>
 
       {/* Business Outcomes */}
       <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">The Impact</p>
             <h2 className="section-heading">How Our Virtual CFO Services Help Businesses</h2>
             <p className="section-subheading">
               Not features — outcomes. This is what changes in your business when you have the right financial leadership.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {outcomes.map((o) => (
-              <div key={o.title} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-gold-400 hover:shadow-sm transition-all">
-                <div className="w-8 h-8 bg-gold-400 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-4 h-4 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                  </svg>
+            {outcomes.map((o, i) => (
+              <AnimateOnView key={o.title} delay={i * 0.06}>
+                <div className="bg-white border border-gray-200 rounded-xl p-5 hover:border-gold-400 hover:shadow-sm transition-all h-full">
+                  <div className="w-8 h-8 bg-gold-400 rounded-lg flex items-center justify-center mb-4">
+                    <svg className="w-4 h-4 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <h3 className="font-heading font-semibold text-navy-800 text-sm mb-2">{o.title}</h3>
+                  <p className="text-gray-500 text-xs leading-relaxed">{o.desc}</p>
                 </div>
-                <h3 className="font-heading font-semibold text-navy-800 text-sm mb-2">{o.title}</h3>
-                <p className="text-gray-500 text-xs leading-relaxed">{o.desc}</p>
-              </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -387,36 +400,38 @@ export default function VirtualCFOPage() {
       {/* Case Study */}
       <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <AnimateOnView className="text-center mb-10">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">In Practice</p>
             <h2 className="section-heading">Results We've Delivered</h2>
-          </div>
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="w-10 h-10 bg-gold-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                <svg className="w-5 h-5 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
+          </AnimateOnView>
+          <AnimateOnView delay={0.1}>
+            <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-10 h-10 bg-gold-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs text-gray-400 font-medium uppercase tracking-widest mb-1">Case Study — Anonymous Client</p>
+                  <h3 className="font-heading font-bold text-navy-800 text-xl">{caseStudy.title}</h3>
+                </div>
               </div>
-              <div>
-                <p className="text-xs text-gray-400 font-medium uppercase tracking-widest mb-1">Case Study — Anonymous Client</p>
-                <h3 className="font-heading font-bold text-navy-800 text-xl">{caseStudy.title}</h3>
-              </div>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">{caseStudy.context}</p>
+              <ul className="space-y-3">
+                {caseStudy.results.map((r) => (
+                  <li key={r} className="flex items-start gap-3">
+                    <div className="w-5 h-5 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-700 text-sm leading-relaxed">{r}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed mb-6">{caseStudy.context}</p>
-            <ul className="space-y-3">
-              {caseStudy.results.map((r) => (
-                <li key={r} className="flex items-start gap-3">
-                  <div className="w-5 h-5 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-700 text-sm leading-relaxed">{r}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          </AnimateOnView>
         </div>
       </section>
 
@@ -424,7 +439,7 @@ export default function VirtualCFOPage() {
       <section className="py-20 bg-navy-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <AnimateOnView direction="left">
               <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">Free Offer</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-5">
                 Free Financial Health Assessment
@@ -454,33 +469,35 @@ export default function VirtualCFOPage() {
               <Link href="/contact" className="btn-primary inline-block text-base px-8 py-4">
                 Book a Free CFO Consultation
               </Link>
-            </div>
-            <div className="bg-navy-700 rounded-2xl p-8">
-              <h3 className="font-heading font-semibold text-white mb-2">Also Available</h3>
-              <p className="text-gray-400 text-sm mb-6">Choose the engagement that fits where you are right now.</p>
-              <div className="space-y-4">
-                {[
-                  { title: "Free 30-Min CFO Consultation", desc: "Talk through your specific financial challenge with a CA — no commitment, no pitch." },
-                  { title: "Free Cash Flow Review", desc: "We review your receivables, payables, and working capital cycle and identify quick wins." },
-                  { title: "Free KPI Dashboard Sample", desc: "See what a well-structured management dashboard looks like for a business like yours." },
-                ].map((offer) => (
-                  <div key={offer.title} className="bg-navy-800 rounded-xl p-4">
-                    <p className="font-semibold text-white text-sm mb-1">{offer.title}</p>
-                    <p className="text-gray-400 text-xs leading-relaxed">{offer.desc}</p>
-                  </div>
-                ))}
+            </AnimateOnView>
+            <AnimateOnView direction="right" delay={0.12}>
+              <div className="bg-navy-700 rounded-2xl p-8">
+                <h3 className="font-heading font-semibold text-white mb-2">Also Available</h3>
+                <p className="text-gray-400 text-sm mb-6">Choose the engagement that fits where you are right now.</p>
+                <div className="space-y-4">
+                  {[
+                    { title: "Free 30-Min CFO Consultation", desc: "Talk through your specific financial challenge with a CA — no commitment, no pitch." },
+                    { title: "Free Cash Flow Review", desc: "We review your receivables, payables, and working capital cycle and identify quick wins." },
+                    { title: "Free KPI Dashboard Sample", desc: "See what a well-structured management dashboard looks like for a business like yours." },
+                  ].map((offer) => (
+                    <div key={offer.title} className="bg-navy-800 rounded-xl p-4">
+                      <p className="font-semibold text-white text-sm mb-1">{offer.title}</p>
+                      <p className="text-gray-400 text-xs leading-relaxed">{offer.desc}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-gray-500 text-xs mt-6 italic leading-relaxed">
+                  Confidential, practical, and business-focused advisory by qualified Chartered Accountants.
+                </p>
               </div>
-              <p className="text-gray-500 text-xs mt-6 italic leading-relaxed">
-                Confidential, practical, and business-focused advisory by qualified Chartered Accountants.
-              </p>
-            </div>
+            </AnimateOnView>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="py-20 bg-white border-t border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 text-center">
+        <AnimateOnView className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="section-heading mb-4">
             Ready to Improve Financial Visibility &amp; Business Performance?
           </h2>
@@ -499,7 +516,7 @@ export default function VirtualCFOPage() {
               View All Services
             </Link>
           </div>
-        </div>
+        </AnimateOnView>
       </section>
     </>
   );

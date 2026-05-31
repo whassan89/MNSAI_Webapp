@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
   title: "IFRS Advisory & Implementation Services | MNSAI (SMC-Private) Limited",
@@ -197,25 +198,27 @@ export default function IFRSAdvisoryPage() {
       {/* Pain Points */}
       <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Sound Familiar?</p>
             <h2 className="section-heading">Common IFRS Challenges Businesses Face</h2>
             <p className="section-subheading">
               These are the issues that surface in audits, investor due diligence, and lender reviews —
               and the ones we fix most often.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {painPoints.map((p) => (
-              <div key={p.title} className="bg-gray-50 border border-gray-100 rounded-xl p-5 hover:border-gold-400 hover:shadow-sm transition-all">
-                <div className="w-8 h-8 bg-red-50 border border-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
-                  </svg>
+            {painPoints.map((p, i) => (
+              <AnimateOnView key={p.title} delay={i * 0.06}>
+                <div className="bg-gray-50 border border-gray-100 rounded-xl p-5 hover:border-gold-400 hover:shadow-sm transition-all h-full">
+                  <div className="w-8 h-8 bg-red-50 border border-red-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg className="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="font-heading font-semibold text-navy-800 text-sm mb-2">{p.title}</h3>
+                  <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
                 </div>
-                <h3 className="font-heading font-semibold text-navy-800 text-sm mb-2">{p.title}</h3>
-                <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
-              </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -224,31 +227,33 @@ export default function IFRSAdvisoryPage() {
       {/* Services */}
       <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What We Do</p>
             <h2 className="section-heading">Our IFRS Advisory Services</h2>
             <p className="section-subheading">
               Implementation-focused support — from gap identification to audit-ready financial statements.
             </p>
-          </div>
+          </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((s) => (
-              <div key={s.title} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-gold-400 transition-all">
-                <p className="text-2xl mb-4">{s.icon}</p>
-                <h3 className="font-heading font-semibold text-navy-800 mb-4">{s.title}</h3>
-                <ul className="space-y-2">
-                  {s.points.map((pt) => (
-                    <li key={pt} className="flex items-start gap-2">
-                      <div className="w-4 h-4 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-2.5 h-2.5 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <span className="text-gray-600 text-sm leading-relaxed">{pt}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            {services.map((s, i) => (
+              <AnimateOnView key={s.title} delay={i * 0.07}>
+                <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-gold-400 transition-all h-full">
+                  <p className="text-2xl mb-4">{s.icon}</p>
+                  <h3 className="font-heading font-semibold text-navy-800 mb-4">{s.title}</h3>
+                  <ul className="space-y-2">
+                    {s.points.map((pt) => (
+                      <li key={pt} className="flex items-start gap-2">
+                        <div className="w-4 h-4 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <svg className="w-2.5 h-2.5 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <span className="text-gray-600 text-sm leading-relaxed">{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -258,7 +263,7 @@ export default function IFRSAdvisoryPage() {
       <section className="py-20 bg-navy-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-14 items-center">
-            <div>
+            <AnimateOnView direction="left">
               <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">Why Us</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-8">
                 Why Businesses Choose MNSAI
@@ -275,20 +280,22 @@ export default function IFRSAdvisoryPage() {
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { value: "12+", label: "Years of advisory experience" },
-                { value: "Big Four", label: "Trained — KPMG & PwC" },
-                { value: "3", label: "Countries — PK, UAE, KSA" },
-                { value: "200+", label: "Businesses served" },
-              ].map((stat) => (
-                <div key={stat.label} className="bg-navy-700 rounded-xl p-6 text-center">
-                  <p className="font-heading text-3xl font-bold text-gold-400 mb-1">{stat.value}</p>
-                  <p className="text-gray-400 text-xs leading-relaxed">{stat.label}</p>
-                </div>
-              ))}
-            </div>
+            </AnimateOnView>
+            <AnimateOnView direction="right" delay={0.12}>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { value: "12+", label: "Years of advisory experience" },
+                  { value: "Big Four", label: "Trained — KPMG & PwC" },
+                  { value: "3", label: "Countries — PK, UAE, KSA" },
+                  { value: "200+", label: "Businesses served" },
+                ].map((stat) => (
+                  <div key={stat.label} className="bg-navy-700 rounded-xl p-6 text-center">
+                    <p className="font-heading text-3xl font-bold text-gold-400 mb-1">{stat.value}</p>
+                    <p className="text-gray-400 text-xs leading-relaxed">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+            </AnimateOnView>
           </div>
         </div>
       </section>
@@ -296,11 +303,11 @@ export default function IFRSAdvisoryPage() {
       {/* Industries */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <AnimateOnView className="text-center mb-10">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Sectors</p>
             <h2 className="section-heading">Industries We Serve</h2>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
+          </AnimateOnView>
+          <AnimateOnView delay={0.1} className="flex flex-wrap justify-center gap-3">
             {industries.map((ind) => (
               <span
                 key={ind}
@@ -309,43 +316,45 @@ export default function IFRSAdvisoryPage() {
                 {ind}
               </span>
             ))}
-          </div>
+          </AnimateOnView>
         </div>
       </section>
 
       {/* Case Study */}
       <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <AnimateOnView className="text-center mb-10">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">In Practice</p>
             <h2 className="section-heading">Results We've Delivered</h2>
-          </div>
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-10">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="w-10 h-10 bg-gold-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                <svg className="w-5 h-5 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
+          </AnimateOnView>
+          <AnimateOnView delay={0.1}>
+            <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-10">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-10 h-10 bg-gold-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs text-gray-400 font-medium uppercase tracking-widest mb-1">Case Study — Anonymous Client</p>
+                  <h3 className="font-heading font-bold text-navy-800 text-xl">{caseStudy.title}</h3>
+                </div>
               </div>
-              <div>
-                <p className="text-xs text-gray-400 font-medium uppercase tracking-widest mb-1">Case Study — Anonymous Client</p>
-                <h3 className="font-heading font-bold text-navy-800 text-xl">{caseStudy.title}</h3>
-              </div>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">{caseStudy.context}</p>
+              <ul className="space-y-3">
+                {caseStudy.results.map((r) => (
+                  <li key={r} className="flex items-start gap-3">
+                    <div className="w-5 h-5 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-700 text-sm leading-relaxed">{r}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed mb-6">{caseStudy.context}</p>
-            <ul className="space-y-3">
-              {caseStudy.results.map((r) => (
-                <li key={r} className="flex items-start gap-3">
-                  <div className="w-5 h-5 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-700 text-sm leading-relaxed">{r}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          </AnimateOnView>
         </div>
       </section>
 
@@ -353,7 +362,7 @@ export default function IFRSAdvisoryPage() {
       <section className="py-20 bg-navy-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <AnimateOnView direction="left">
               <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">Free Offer</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-5">
                 Free Preliminary IFRS Compliance Review
@@ -383,33 +392,35 @@ export default function IFRSAdvisoryPage() {
               <Link href="/contact" className="btn-primary inline-block text-base px-8 py-4">
                 Book a Free IFRS Assessment
               </Link>
-            </div>
-            <div className="bg-navy-700 rounded-2xl p-8">
-              <h3 className="font-heading font-semibold text-white mb-2">Also Available</h3>
-              <p className="text-gray-400 text-sm mb-6">Choose the level of engagement that works for you.</p>
-              <div className="space-y-4">
-                {[
-                  { title: "Free 30-Min IFRS Consultation", desc: "Speak with a CA about your specific IFRS challenge — no commitment." },
-                  { title: "IFRS Compliance Checklist", desc: "A practical PDF checklist covering the most common IFRS disclosure and policy requirements." },
-                  { title: "IFRS 16 Readiness Checklist", desc: "Self-assessment tool to identify whether your lease accounting is compliant." },
-                ].map((offer) => (
-                  <div key={offer.title} className="bg-navy-800 rounded-xl p-4">
-                    <p className="font-semibold text-white text-sm mb-1">{offer.title}</p>
-                    <p className="text-gray-400 text-xs leading-relaxed">{offer.desc}</p>
-                  </div>
-                ))}
+            </AnimateOnView>
+            <AnimateOnView direction="right" delay={0.12}>
+              <div className="bg-navy-700 rounded-2xl p-8">
+                <h3 className="font-heading font-semibold text-white mb-2">Also Available</h3>
+                <p className="text-gray-400 text-sm mb-6">Choose the level of engagement that works for you.</p>
+                <div className="space-y-4">
+                  {[
+                    { title: "Free 30-Min IFRS Consultation", desc: "Speak with a CA about your specific IFRS challenge — no commitment." },
+                    { title: "IFRS Compliance Checklist", desc: "A practical PDF checklist covering the most common IFRS disclosure and policy requirements." },
+                    { title: "IFRS 16 Readiness Checklist", desc: "Self-assessment tool to identify whether your lease accounting is compliant." },
+                  ].map((offer) => (
+                    <div key={offer.title} className="bg-navy-800 rounded-xl p-4">
+                      <p className="font-semibold text-white text-sm mb-1">{offer.title}</p>
+                      <p className="text-gray-400 text-xs leading-relaxed">{offer.desc}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-gray-500 text-xs mt-6 italic leading-relaxed">
+                  Confidential, practical, and business-focused advisory by qualified Chartered Accountants.
+                </p>
               </div>
-              <p className="text-gray-500 text-xs mt-6 italic leading-relaxed">
-                Confidential, practical, and business-focused advisory by qualified Chartered Accountants.
-              </p>
-            </div>
+            </AnimateOnView>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="py-20 bg-white border-t border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 text-center">
+        <AnimateOnView className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="section-heading mb-4">Ready to Get IFRS-Compliant?</h2>
           <p className="text-gray-500 text-lg mb-8">
             Talk to an IFRS advisor today. We'll tell you where you stand and what it takes to get
@@ -423,7 +434,7 @@ export default function IFRSAdvisoryPage() {
               View All Services
             </Link>
           </div>
-        </div>
+        </AnimateOnView>
       </section>
     </>
   );
