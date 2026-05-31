@@ -64,10 +64,10 @@ export default function ClientsPage() {
       </section>
 
       {/* Client Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Portfolio</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Portfolio</p>
             <h2 className="section-heading">Companies We&apos;ve Served</h2>
             <p className="section-subheading">
               From local SMEs to international organizations — our client base spans diverse industries and geographies.
@@ -87,7 +87,7 @@ export default function ClientsPage() {
                   </span>
                 </div>
                 <h3 className="font-heading font-semibold text-navy-800 text-sm mb-1">{client.name}</h3>
-                <span className="text-gold-500 text-xs font-medium bg-gold-50 px-2 py-0.5 rounded-full">
+                <span className="text-gold-600 text-xs font-medium bg-gold-50 px-2 py-0.5 rounded-full">
                   {client.sector}
                 </span>
               </div>
@@ -97,10 +97,10 @@ export default function ClientsPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Client Feedback</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Client Feedback</p>
             <h2 className="section-heading">What Our Clients Say</h2>
             <p className="section-subheading">
               We measure our success by the results and trust our clients place in us.
@@ -136,7 +136,7 @@ export default function ClientsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-navy-800">
+      <section className="py-20 bg-navy-800">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl font-bold text-white mb-4">Join Our Client Family</h2>
           <p className="text-gray-300 mb-8">

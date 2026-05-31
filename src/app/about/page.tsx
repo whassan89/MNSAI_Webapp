@@ -48,11 +48,11 @@ export default function AboutPage() {
       </section>
 
       {/* Vision */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-14 items-center">
             <div>
-              <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Vision Statement</p>
+              <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Vision Statement</p>
               <h2 className="section-heading mb-5">Value Your Business Today</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 We are specialist CA advisors — Virtual CFO practitioners, financial modelers,
@@ -91,10 +91,10 @@ export default function AboutPage() {
       </section>
 
       {/* Competence */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Our Background</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Our Background</p>
             <h2 className="section-heading">Competence &amp; Experience</h2>
             <p className="section-subheading">
               Our team has served at senior &amp; strategic levels in leading national and multinational organizations.
@@ -133,10 +133,10 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Our Foundation</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Our Foundation</p>
             <h2 className="section-heading">Our Core Values</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -154,7 +154,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-navy-800">
+      <section className="py-20 bg-navy-800">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl font-bold text-white mb-4">Ready to Partner With Us?</h2>
           <p className="text-gray-300 mb-8">Let our experienced team help you navigate your financial and business challenges.</p>

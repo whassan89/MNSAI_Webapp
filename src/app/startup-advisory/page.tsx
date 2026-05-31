@@ -151,10 +151,10 @@ export default function StartupAdvisoryPage() {
       </section>
 
       {/* Stage-Based Help */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Stage-Based Support</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Stage-Based Support</p>
             <h2 className="section-heading">Help at Every Stage of Your Journey</h2>
             <p className="section-subheading">
               Your financial needs change as you scale. We're built to grow with you.
@@ -183,10 +183,10 @@ export default function StartupAdvisoryPage() {
       </section>
 
       {/* Deliverables */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">What We Deliver</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What We Deliver</p>
             <h2 className="section-heading">What Founders Get</h2>
             <p className="section-subheading">
               Concrete deliverables — not just advice — that you can put in front of investors, lenders, and co-founders.
@@ -251,10 +251,10 @@ export default function StartupAdvisoryPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Questions</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Questions</p>
             <h2 className="section-heading">Frequently Asked</h2>
           </div>
           <div className="space-y-6">

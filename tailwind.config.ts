@@ -28,8 +28,8 @@ const config: Config = {
         // ── END THEME ─────────────────────────────────────────────
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        heading: ["Playfair Display", "serif"],
+        sans: ["Poppins", "sans-serif"],
+        heading: ["Marcellus", "serif"],
       },
     },
   },

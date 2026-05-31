@@ -78,7 +78,7 @@ export default function Home() {
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
               MNSAI (SMC-Private) Limited
             </p>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-3">
+            <h1 className="font-heading text-5xl md:text-6xl lg:text-[70px] font-bold text-white leading-tight mb-3">
               Value Your{" "}
               <span className="bg-gradient-to-r from-gold-500 to-gold-400 bg-clip-text text-transparent">
                 Business
@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* ── About Preview ─────────────────────────────────────────── */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-14 items-center">
             <AnimateOnView direction="left">
@@ -180,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* ── Services Preview ──────────────────────────────────────── */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnView className="text-center mb-12">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What We Do</p>
@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* ── Testimonials ──────────────────────────────────────────── */}
-      <section className="py-20 bg-navy-900">
+      <section className="py-20 lg:py-[120px] bg-navy-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnView className="text-center mb-12">
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">Client Feedback</p>
@@ -253,7 +253,7 @@ export default function Home() {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────── */}
-      <section className="py-20 bg-navy-800 border-t border-navy-700/40">
+      <section className="py-20 lg:py-[120px] bg-navy-800 border-t border-navy-700/40">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <AnimateOnView>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">

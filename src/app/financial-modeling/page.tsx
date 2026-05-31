@@ -118,10 +118,10 @@ export default function FinancialModelingPage() {
       </section>
 
       {/* Model Types */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">What We Build</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What We Build</p>
             <h2 className="section-heading">Types of Financial Models</h2>
             <p className="section-subheading">
               Every model is purpose-built — not templated. Built in Excel, fully documented, fully unlocked.
@@ -140,7 +140,7 @@ export default function FinancialModelingPage() {
       </section>
 
       {/* Use Cases */}
-      <section className="py-20 bg-navy-800">
+      <section className="py-20 lg:py-[120px] bg-navy-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">Use Cases</p>
@@ -161,10 +161,10 @@ export default function FinancialModelingPage() {
       </section>
 
       {/* Our Process */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">How It Works</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">How It Works</p>
             <h2 className="section-heading">Our Process</h2>
             <p className="section-subheading">
               From scoping call to handover — a structured engagement, every time.
@@ -185,7 +185,7 @@ export default function FinancialModelingPage() {
       </section>
 
       {/* Quality Marks */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-3 gap-8 text-center">
             {[

@@ -195,10 +195,10 @@ export default function IFRSAdvisoryPage() {
       </section>
 
       {/* Pain Points */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Sound Familiar?</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Sound Familiar?</p>
             <h2 className="section-heading">Common IFRS Challenges Businesses Face</h2>
             <p className="section-subheading">
               These are the issues that surface in audits, investor due diligence, and lender reviews —
@@ -222,10 +222,10 @@ export default function IFRSAdvisoryPage() {
       </section>
 
       {/* Services */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">What We Do</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What We Do</p>
             <h2 className="section-heading">Our IFRS Advisory Services</h2>
             <p className="section-subheading">
               Implementation-focused support — from gap identification to audit-ready financial statements.
@@ -294,10 +294,10 @@ export default function IFRSAdvisoryPage() {
       </section>
 
       {/* Industries */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Sectors</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Sectors</p>
             <h2 className="section-heading">Industries We Serve</h2>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
@@ -314,10 +314,10 @@ export default function IFRSAdvisoryPage() {
       </section>
 
       {/* Case Study */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">In Practice</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">In Practice</p>
             <h2 className="section-heading">Results We've Delivered</h2>
           </div>
           <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-10">
@@ -408,7 +408,7 @@ export default function IFRSAdvisoryPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="section-heading mb-4">Ready to Get IFRS-Compliant?</h2>
           <p className="text-gray-500 text-lg mb-8">

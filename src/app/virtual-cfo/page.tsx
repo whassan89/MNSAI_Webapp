@@ -210,10 +210,10 @@ export default function VirtualCFOPage() {
       </section>
 
       {/* Pain Points */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Does This Sound Familiar?</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Does This Sound Familiar?</p>
             <h2 className="section-heading">Is Your Business Facing These Financial Challenges?</h2>
             <p className="section-subheading">
               These are the problems most growing businesses face before they bring in CFO-level support.
@@ -236,7 +236,7 @@ export default function VirtualCFOPage() {
       </section>
 
       {/* What Is a Virtual CFO */}
-      <section className="py-16 bg-navy-800">
+      <section className="py-20 bg-navy-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">The Solution</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
@@ -264,10 +264,10 @@ export default function VirtualCFOPage() {
       </section>
 
       {/* Services */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">What We Deliver</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What We Deliver</p>
             <h2 className="section-heading">Our Virtual CFO Services</h2>
             <p className="section-subheading">
               A comprehensive finance function — from monthly reporting to strategic growth decisions.
@@ -336,10 +336,10 @@ export default function VirtualCFOPage() {
       </section>
 
       {/* Who We Serve */}
-      <section className="py-16 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">Our Clients</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Our Clients</p>
             <h2 className="section-heading">Who We Serve</h2>
             <p className="section-subheading">
               From early-stage startups to established family businesses — if you need financial clarity and leadership, we can help.
@@ -359,10 +359,10 @@ export default function VirtualCFOPage() {
       </section>
 
       {/* Business Outcomes */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">The Impact</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">The Impact</p>
             <h2 className="section-heading">How Our Virtual CFO Services Help Businesses</h2>
             <p className="section-subheading">
               Not features — outcomes. This is what changes in your business when you have the right financial leadership.
@@ -385,10 +385,10 @@ export default function VirtualCFOPage() {
       </section>
 
       {/* Case Study */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <p className="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-3">In Practice</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">In Practice</p>
             <h2 className="section-heading">Results We've Delivered</h2>
           </div>
           <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10">
@@ -479,7 +479,7 @@ export default function VirtualCFOPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="section-heading mb-4">
             Ready to Improve Financial Visibility &amp; Business Performance?

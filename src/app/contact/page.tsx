@@ -70,7 +70,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Info */}
@@ -164,7 +164,7 @@ export default function ContactPage() {
             Office No. 7, First Floor, Al-Rehman Arcade
           </p>
           <p className="text-gray-500 text-sm">PIA Road, Johar Town, Lahore</p>
-          <p className="text-gold-500 text-xs mt-2 font-medium">Click to open in Google Maps →</p>
+          <p className="text-gold-600 text-xs mt-2 font-medium">Click to open in Google Maps →</p>
         </a>
       </section>
     </>
