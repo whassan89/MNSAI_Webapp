@@ -85,7 +85,7 @@ export default function TeamPage() {
               {/* Profile Card */}
               <AnimateOnView direction={index % 2 !== 0 ? "right" : "left"} className={index % 2 !== 0 ? "md:order-3" : ""}>
               <div className="bg-navy-800 rounded-2xl p-8 text-center">
-                <div className="w-24 h-24 bg-gold-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-24 h-24 bg-gold-400 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-heading font-bold text-4xl">{member.initial}</span>
                 </div>
                 <h3 className="font-heading font-bold text-white text-xl mb-1">{member.name}</h3>

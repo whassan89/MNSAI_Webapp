@@ -83,7 +83,7 @@ export default function ClientsPage() {
                 className="group bg-gray-50 border border-gray-100 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:border-gold-400 hover:shadow-md transition-all duration-300"
               >
                 {/* Logo placeholder with initial */}
-                <div className="w-14 h-14 bg-navy-800 rounded-full flex items-center justify-center mb-4 group-hover:bg-gold-500 transition-colors">
+                <div className="w-14 h-14 bg-navy-800 rounded-full flex items-center justify-center mb-4 group-hover:bg-gold-400 transition-colors">
                   <span className="text-white font-heading font-bold text-xl">
                     {client.name.charAt(0)}
                   </span>

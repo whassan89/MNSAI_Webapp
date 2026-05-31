@@ -162,7 +162,7 @@ export default function ServicesPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-800/40 to-transparent" />
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-gold-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    <span className="bg-gold-400 text-white text-xs font-semibold px-3 py-1 rounded-full">
                       {service.tagline}
                     </span>
                   </div>

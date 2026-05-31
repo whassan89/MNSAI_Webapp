@@ -163,7 +163,7 @@ export default function StartupAdvisoryPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {stages.map((s, i) => (
               <div key={s.stage} className="bg-navy-800 rounded-xl p-6 text-white">
-                <div className="w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center text-navy-900 font-bold text-sm mb-4">
+                <div className="w-8 h-8 bg-gold-400 rounded-full flex items-center justify-center text-navy-900 font-bold text-sm mb-4">
                   {i + 1}
                 </div>
                 <p className="font-heading font-bold text-white text-base mb-1">{s.stage}</p>
@@ -220,7 +220,7 @@ export default function StartupAdvisoryPage() {
                   { title: "We're not just accountants", detail: "We help you structure your business, challenge your assumptions, and build financial narratives that close investment rounds." },
                 ].map((item) => (
                   <div key={item.title} className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-gold-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-8 h-8 bg-gold-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg className="w-4 h-4 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>

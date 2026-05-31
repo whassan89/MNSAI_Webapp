@@ -281,7 +281,7 @@ export default function VirtualCFOPage() {
                 <ul className="space-y-2">
                   {s.points.map((pt) => (
                     <li key={pt} className="flex items-start gap-2">
-                      <div className="w-4 h-4 bg-gold-500 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-4 h-4 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
                         <svg className="w-2.5 h-2.5 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
@@ -308,7 +308,7 @@ export default function VirtualCFOPage() {
               <ul className="space-y-4">
                 {whyMNSAI.map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <div className="w-5 h-5 bg-gold-500 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-5 h-5 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -371,7 +371,7 @@ export default function VirtualCFOPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {outcomes.map((o) => (
               <div key={o.title} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-gold-400 hover:shadow-sm transition-all">
-                <div className="w-8 h-8 bg-gold-500 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-8 h-8 bg-gold-400 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-4 h-4 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                   </svg>
@@ -393,7 +393,7 @@ export default function VirtualCFOPage() {
           </div>
           <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-10 h-10 bg-gold-500 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-gold-400 rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg className="w-5 h-5 text-navy-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
@@ -407,7 +407,7 @@ export default function VirtualCFOPage() {
             <ul className="space-y-3">
               {caseStudy.results.map((r) => (
                 <li key={r} className="flex items-start gap-3">
-                  <div className="w-5 h-5 bg-gold-500 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -442,7 +442,7 @@ export default function VirtualCFOPage() {
                   "No obligation — just clarity on where you stand",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <div className="w-5 h-5 bg-gold-500 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-5 h-5 bg-gold-400 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg className="w-3 h-3 text-navy-900" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>

@@ -40,9 +40,9 @@ export default function Counter({ value, label }: Props) {
   return (
     <div
       ref={ref}
-      className="text-center py-6 px-4 rounded-xl border border-navy-700 hover:-translate-y-1 transition-all duration-300 hover:border-gold-500 hover:shadow-lg hover:shadow-gold-500/10 cursor-default"
+      className="text-center py-6 px-4 rounded-xl border border-navy-700 hover:-translate-y-1 transition-all duration-300 hover:border-gold-400 hover:shadow-lg hover:shadow-gold-400/10 cursor-default"
     >
-      <p className="font-heading text-4xl font-bold text-gold-500 mb-1">
+      <p className="font-heading text-4xl font-bold text-gold-400 mb-1">
         {isInView ? count : numericPart}{suffix}
       </p>
       <p className="text-gray-400 text-sm">{label}</p>

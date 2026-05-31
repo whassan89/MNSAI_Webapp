@@ -73,7 +73,7 @@ export default function ContactForm() {
   if (status === "success") {
     return (
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 flex flex-col items-center justify-center text-center min-h-[420px]">
-        <div className="w-16 h-16 bg-gold-500 rounded-full flex items-center justify-center mb-5">
+        <div className="w-16 h-16 bg-gold-400 rounded-full flex items-center justify-center mb-5">
           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
           </svg>
@@ -102,7 +102,7 @@ export default function ContactForm() {
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
           <label className="text-gray-600 text-sm font-medium block mb-1.5">
-            Full Name <span className="text-gold-500">*</span>
+            Full Name <span className="text-gold-400">*</span>
           </label>
           <input
             type="text"
@@ -116,7 +116,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label className="text-gray-600 text-sm font-medium block mb-1.5">
-            Email Address <span className="text-gold-500">*</span>
+            Email Address <span className="text-gold-400">*</span>
           </label>
           <input
             type="email"
@@ -159,7 +159,7 @@ export default function ContactForm() {
 
       <div>
         <label className="text-gray-600 text-sm font-medium block mb-1.5">
-          Message <span className="text-gold-500">*</span>
+          Message <span className="text-gold-400">*</span>
         </label>
         <textarea
           name="message"

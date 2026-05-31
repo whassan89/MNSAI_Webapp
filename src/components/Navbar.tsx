@@ -130,7 +130,7 @@ export default function Navbar() {
                 <span className="text-white font-heading font-bold text-xl leading-tight block">
                   MNSAI
                 </span>
-                <span className="text-gold-500 text-xs font-medium tracking-wider">
+                <span className="text-gold-400 text-xs font-medium tracking-wider">
                   (SMC-PRIVATE) LIMITED
                 </span>
               </div>

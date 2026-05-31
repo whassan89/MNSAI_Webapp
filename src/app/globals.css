@@ -191,7 +191,7 @@
     animation: upDown 3s ease-in-out infinite;
   }
   .text-gradient-gold {
-    background: linear-gradient(to right, #F4D39A, #C2F380);
+    background: linear-gradient(to right, #C2F380, #9ECC6A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

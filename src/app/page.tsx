@@ -80,7 +80,7 @@ export default function Home() {
             </p>
             <h1 className="font-heading text-5xl md:text-6xl lg:text-[70px] font-bold text-white leading-tight mb-3">
               Value Your{" "}
-              <span className="bg-gradient-to-r from-gold-500 to-gold-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gold-400 to-gold-400 bg-clip-text text-transparent">
                 Business
               </span>{" "}
               Today
@@ -102,7 +102,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent" />
       </section>
 
       {/* ── Stats ─────────────────────────────────────────────────── */}
@@ -131,7 +131,7 @@ export default function Home() {
             {[...carouselClients, ...carouselClients].map((c, i) => (
               <span
                 key={i}
-                className="inline-flex items-center gap-2 text-gray-400 text-sm font-medium px-5 py-2.5 border border-navy-700 rounded-full whitespace-nowrap hover:border-gold-500 hover:text-gold-500 transition-colors duration-300 cursor-default flex-shrink-0"
+                className="inline-flex items-center gap-2 text-gray-400 text-sm font-medium px-5 py-2.5 border border-navy-700 rounded-full whitespace-nowrap hover:border-gold-400 hover:text-gold-400 transition-colors duration-300 cursor-default flex-shrink-0"
               >
                 <span className="w-1.5 h-1.5 bg-gold-400 rounded-full flex-shrink-0" />
                 {c}
@@ -162,12 +162,12 @@ export default function Home() {
             </AnimateOnView>
             <AnimateOnView direction="right" delay={0.15}>
               <div className="bg-navy-800 rounded-2xl p-8 text-white">
-                <h3 className="font-heading text-xl font-semibold mb-6 text-gold-500">Working Experience With</h3>
+                <h3 className="font-heading text-xl font-semibold mb-6 text-gold-400">Working Experience With</h3>
                 <div className="grid grid-cols-2 gap-4">
                   {["KPMG", "PwC", "Fatima Group", "Starlet"].map((co) => (
                     <div
                       key={co}
-                      className="bg-navy-700 hover:bg-gold-500 hover:text-navy-900 rounded-lg px-4 py-3 text-center font-semibold text-sm transition-all duration-300 cursor-default"
+                      className="bg-navy-700 hover:bg-gold-400 hover:text-navy-900 rounded-lg px-4 py-3 text-center font-semibold text-sm transition-all duration-300 cursor-default"
                     >
                       {co}
                     </div>
@@ -194,7 +194,7 @@ export default function Home() {
               <AnimateOnView key={s.title} delay={i * 0.08}>
                 <Link
                   href={s.href}
-                  className="group block h-full bg-gray-50 hover:bg-navy-800 border border-gray-100 hover:border-gold-500 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy-900/20"
+                  className="group block h-full bg-gray-50 hover:bg-navy-800 border border-gray-100 hover:border-gold-400 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy-900/20"
                 >
                   <p className="text-2xl mb-3">{s.icon}</p>
                   <p className="font-heading font-semibold text-navy-800 group-hover:text-white transition-colors">
@@ -226,15 +226,15 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((t, i) => (
               <AnimateOnView key={i} delay={i * 0.12} className="flex flex-col">
-                <div className="flex flex-col flex-1 bg-navy-800 border border-navy-700 rounded-xl p-7 hover:border-gold-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-gold-500/10 transition-all duration-300 relative">
-                  <div className="absolute top-5 right-6 text-gold-500/20 text-6xl font-heading leading-none select-none">
+                <div className="flex flex-col flex-1 bg-navy-800 border border-navy-700 rounded-xl p-7 hover:border-gold-400 hover:-translate-y-1 hover:shadow-xl hover:shadow-gold-400/10 transition-all duration-300 relative">
+                  <div className="absolute top-5 right-6 text-gold-400/20 text-6xl font-heading leading-none select-none">
                     &ldquo;
                   </div>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6 relative z-10 flex-1">
                     &ldquo;{t.quote}&rdquo;
                   </p>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-gold-400 rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-navy-900 font-bold text-sm">{t.initial}</span>
                     </div>
                     <div>
