@@ -200,8 +200,8 @@ export default function Home() {
                   <p className="font-heading font-semibold text-navy-800 group-hover:text-white transition-colors">
                     {s.title}
                   </p>
-                  <p className="text-gray-400 text-xs mt-2 group-hover:text-gray-300 transition-colors">
-                    Learn more →
+                  <p className="link-arrow text-gray-400 text-xs mt-2 group-hover:text-gold-400 transition-colors">
+                    Learn more <span className="arrow">→</span>
                   </p>
                 </Link>
               </AnimateOnView>

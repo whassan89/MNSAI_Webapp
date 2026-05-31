@@ -25,36 +25,120 @@
   .btn-primary:hover {
     @apply bg-gold-600;
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(244, 211, 154, 0.35);
+    box-shadow: 0 12px 32px rgba(244, 211, 154, 0.40);
   }
   .btn-primary::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: rgba(255, 255, 255, 0.22);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.55s ease-out, height 0.55s ease-out, opacity 0.55s ease-out;
+    top: 0;
+    left: -80%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255, 255, 255, 0.30) 50%,
+      transparent 100%
+    );
+    transform: skewX(-20deg);
+    transition: left 0.55s ease;
     pointer-events: none;
   }
   .btn-primary:hover::before {
-    width: 440px;
-    height: 440px;
-    opacity: 0;
+    left: 130%;
   }
 
   .btn-outline {
-    @apply relative border-2 border-gold-500 text-gold-500 font-semibold px-7 py-3.5 rounded font-sans inline-block;
+    @apply relative overflow-hidden border-2 border-gold-500 text-gold-500 font-semibold px-7 py-3.5 rounded font-sans inline-block;
     font-size: 15px;
     transition: all 0.3s ease-out;
   }
   .btn-outline:hover {
     @apply bg-gold-500 text-navy-900;
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(244, 211, 154, 0.25);
+    box-shadow: 0 12px 32px rgba(244, 211, 154, 0.30);
+  }
+  .btn-outline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255, 255, 255, 0.22) 50%,
+      transparent 100%
+    );
+    transform: skewX(-20deg);
+    transition: left 0.55s ease;
+    pointer-events: none;
+  }
+  .btn-outline:hover::before {
+    left: 130%;
+  }
+
+  .btn-white {
+    @apply relative overflow-hidden border-2 border-white text-white font-semibold px-7 py-3.5 rounded font-sans inline-block;
+    font-size: 15px;
+    transition: all 0.3s ease-out;
+  }
+  .btn-white:hover {
+    @apply bg-white text-navy-800;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.18);
+  }
+  .btn-white::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255, 255, 255, 0.22) 50%,
+      transparent 100%
+    );
+    transform: skewX(-20deg);
+    transition: left 0.55s ease;
+    pointer-events: none;
+  }
+  .btn-white:hover::before {
+    left: 130%;
+  }
+
+  .btn-navy {
+    @apply relative overflow-hidden border-2 border-navy-800 text-navy-800 font-semibold px-7 py-3.5 rounded font-sans inline-block;
+    font-size: 15px;
+    transition: all 0.3s ease-out;
+  }
+  .btn-navy:hover {
+    @apply bg-navy-800 text-white;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(25, 41, 41, 0.20);
+  }
+  .btn-navy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255, 255, 255, 0.18) 50%,
+      transparent 100%
+    );
+    transform: skewX(-20deg);
+    transition: left 0.55s ease;
+    pointer-events: none;
+  }
+  .btn-navy:hover::before {
+    left: 130%;
   }
 
   /* ── TYPOGRAPHY ───────────────────────────────────────────────── */
@@ -65,6 +149,18 @@
   .section-subheading {
     @apply text-gray-500 mt-4 text-lg max-w-2xl mx-auto;
     line-height: 1.75;
+  }
+
+  /* ── ARROW SLIDE (inline text links) ─────────────────────────── */
+  .link-arrow {
+    @apply inline-flex items-center gap-1.5;
+  }
+  .link-arrow .arrow {
+    display: inline-block;
+    transition: transform 0.22s ease-out;
+  }
+  .link-arrow:hover .arrow {
+    transform: translateX(5px);
   }
 
   /* ── NAV LINK UNDERLINE ANIMATION ─────────────────────────────── */

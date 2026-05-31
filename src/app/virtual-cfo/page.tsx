@@ -200,7 +200,7 @@ export default function VirtualCFOPage() {
               <Link href="/contact" className="btn-primary">Book a Free CFO Consultation</Link>
               <Link
                 href="/contact"
-                className="border-2 border-white text-white hover:bg-white hover:text-navy-800 font-semibold px-6 py-3 rounded transition-colors duration-200"
+                className="btn-white"
               >
                 Get Free Financial Health Review
               </Link>
@@ -494,7 +494,7 @@ export default function VirtualCFOPage() {
             </Link>
             <Link
               href="/services"
-              className="border-2 border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white font-semibold px-8 py-4 rounded transition-colors duration-200"
+              className="btn-navy"
             >
               View All Services
             </Link>

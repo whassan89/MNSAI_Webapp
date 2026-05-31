@@ -185,7 +185,7 @@ export default function IFRSAdvisoryPage() {
               <Link href="/contact" className="btn-primary">Book Free IFRS Assessment</Link>
               <Link
                 href="/contact"
-                className="border-2 border-white text-white hover:bg-white hover:text-navy-800 font-semibold px-6 py-3 rounded transition-colors duration-200"
+                className="btn-white"
               >
                 Get Free Gap Analysis
               </Link>
@@ -419,7 +419,7 @@ export default function IFRSAdvisoryPage() {
             <Link href="/contact" className="btn-primary text-base px-8 py-4">
               Book a Free IFRS Assessment
             </Link>
-            <Link href="/services" className="border-2 border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white font-semibold px-8 py-4 rounded transition-colors duration-200">
+            <Link href="/services" className="btn-navy">
               View All Services
             </Link>
           </div>
