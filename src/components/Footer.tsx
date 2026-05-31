@@ -1,21 +1,21 @@
 import Link from "next/link";
 
 const services = [
-  { label: "Audit & Assurance", href: "/services" },
-  { label: "Virtual CFO & Managed Finance", href: "/services" },
-  { label: "Tax & Business Consulting", href: "/services" },
-  { label: "Financial Modeling & Valuation", href: "/services" },
-  { label: "IFRS Advisory & Reporting", href: "/services" },
-  { label: "ERP Implementation", href: "/services" },
+  { label: "Audit & Assurance",           href: "/services" },
+  { label: "Virtual CFO & Managed Finance", href: "/virtual-cfo" },
+  { label: "Tax & Business Consulting",    href: "/services" },
+  { label: "Financial Modeling & Valuation", href: "/financial-modeling" },
+  { label: "IFRS Advisory & Reporting",    href: "/ifrs-advisory" },
+  { label: "ERP Implementation",           href: "/services" },
 ];
 
 const quickLinks = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
+  { label: "Home",         href: "/" },
+  { label: "About Us",     href: "/about" },
   { label: "Our Services", href: "/services" },
-  { label: "Our Clients", href: "/clients" },
+  { label: "Our Clients",  href: "/clients" },
   { label: "Meet the Team", href: "/team" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact",      href: "/contact" },
 ];
 
 const socials = [
@@ -82,21 +82,24 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-heading font-bold text-sm">M</span>
+                <span className="text-navy-900 font-heading font-bold text-sm">M</span>
               </div>
               <div>
                 <span className="text-white font-heading font-bold text-lg leading-tight block">MNSAI</span>
-                <span className="text-gold-400 text-xs font-medium tracking-wider">(SMC-PRIVATE) LIMITED</span>
+                <span className="text-gold-500 text-xs font-medium tracking-wider">(SMC-PRIVATE) LIMITED</span>
               </div>
             </Link>
             <p className="text-sm leading-relaxed mb-6">
               Specialist CA advisors delivering Virtual CFO, Financial Modeling, IFRS Advisory,
               and Tax &amp; Business Consulting to businesses across Pakistan.
             </p>
-            {/* Memberships */}
             <div className="space-y-1.5">
               <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Memberships</p>
-              {["Institute of Chartered Accountants of Pakistan (ICAP)", "PIPFA Pakistan", "FBR Registered Tax Practitioner"].map((m) => (
+              {[
+                "Institute of Chartered Accountants of Pakistan (ICAP)",
+                "PIPFA Pakistan",
+                "FBR Registered Tax Practitioner",
+              ].map((m) => (
                 <p key={m} className="text-xs text-gray-500 flex items-center gap-1.5">
                   <span className="w-1 h-1 bg-gold-400 rounded-full flex-shrink-0" />
                   {m}
@@ -111,9 +114,11 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href}
-                    className="text-sm hover:text-gold-400 transition-colors duration-200 flex items-center gap-2">
-                    <span className="w-1 h-1 bg-gold-500 rounded-full" />
+                  <Link
+                    href={link.href}
+                    className="text-sm hover:text-gold-500 transition-colors duration-200 flex items-center gap-2 group"
+                  >
+                    <span className="w-1 h-1 bg-gold-500 rounded-full group-hover:bg-gold-400 transition-colors" />
                     {link.label}
                   </Link>
                 </li>
@@ -127,9 +132,11 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {services.map((s) => (
                 <li key={s.label}>
-                  <Link href={s.href}
-                    className="text-sm hover:text-gold-400 transition-colors duration-200 flex items-center gap-2">
-                    <span className="w-1 h-1 bg-gold-500 rounded-full" />
+                  <Link
+                    href={s.href}
+                    className="text-sm hover:text-gold-500 transition-colors duration-200 flex items-center gap-2 group"
+                  >
+                    <span className="w-1 h-1 bg-gold-500 rounded-full group-hover:bg-gold-400 transition-colors" />
                     {s.label}
                   </Link>
                 </li>
@@ -142,7 +149,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">Contact Us</h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <svg className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -153,21 +160,21 @@ export default function Footer() {
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <svg className="w-4 h-4 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 <div>
-                  <a href="tel:+923324452894" className="text-sm hover:text-gold-400 transition-colors block">+92-332-4452894</a>
-                  <a href="tel:+923214452894" className="text-sm hover:text-gold-400 transition-colors block">+92-321-4452894</a>
+                  <a href="tel:+923324452894" className="text-sm hover:text-gold-500 transition-colors block">+92-332-4452894</a>
+                  <a href="tel:+923214452894" className="text-sm hover:text-gold-500 transition-colors block">+92-321-4452894</a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <svg className="w-4 h-4 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:ceo@mnsai.com" className="text-sm hover:text-gold-400 transition-colors">ceo@mnsai.com</a>
+                <a href="mailto:ceo@mnsai.com" className="text-sm hover:text-gold-500 transition-colors">ceo@mnsai.com</a>
               </div>
             </div>
 
@@ -182,7 +189,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title={s.name}
-                    className="w-9 h-9 bg-navy-700 hover:bg-gold-500 rounded-lg flex items-center justify-center text-gray-300 hover:text-white transition-all duration-200"
+                    className="w-9 h-9 bg-navy-700 hover:bg-gold-500 rounded-lg flex items-center justify-center text-gray-400 hover:text-navy-900 transition-all duration-300 hover:-translate-y-1"
                   >
                     {s.icon}
                   </a>
@@ -205,9 +212,9 @@ export default function Footer() {
             All rights reserved.
           </p>
           <div className="flex gap-5">
-            <Link href="/about" className="hover:text-gold-400 transition-colors">About</Link>
-            <Link href="/services" className="hover:text-gold-400 transition-colors">Services</Link>
-            <Link href="/contact" className="hover:text-gold-400 transition-colors">Contact</Link>
+            <Link href="/about"   className="hover:text-gold-500 transition-colors">About</Link>
+            <Link href="/services" className="hover:text-gold-500 transition-colors">Services</Link>
+            <Link href="/contact" className="hover:text-gold-500 transition-colors">Contact</Link>
           </div>
           <p>Registered in Pakistan | SECP Compliant</p>
         </div>
