@@ -18,14 +18,14 @@
 @layer components {
   /* ── BUTTONS ──────────────────────────────────────────────────── */
   .btn-primary {
-    @apply relative overflow-hidden bg-gold-500 text-navy-900 font-semibold px-7 py-3.5 rounded font-sans inline-block;
+    @apply relative overflow-hidden bg-gold-400 text-navy-900 font-semibold px-7 py-3.5 rounded font-sans inline-block;
     font-size: 15px;
     transition: all 0.3s ease-out;
   }
   .btn-primary:hover {
-    @apply bg-gold-600;
+    @apply bg-gold-300;
     transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(244, 211, 154, 0.40);
+    box-shadow: 0 12px 32px rgba(194, 243, 128, 0.40);
   }
   .btn-primary::before {
     content: '';
@@ -49,14 +49,14 @@
   }
 
   .btn-outline {
-    @apply relative overflow-hidden border-2 border-gold-500 text-gold-500 font-semibold px-7 py-3.5 rounded font-sans inline-block;
+    @apply relative overflow-hidden border-2 border-gold-400 text-gold-400 font-semibold px-7 py-3.5 rounded font-sans inline-block;
     font-size: 15px;
     transition: all 0.3s ease-out;
   }
   .btn-outline:hover {
-    @apply bg-gold-500 text-navy-900;
+    @apply bg-gold-400 text-navy-900;
     transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(244, 211, 154, 0.30);
+    box-shadow: 0 12px 32px rgba(194, 243, 128, 0.30);
   }
   .btn-outline::before {
     content: '';
@@ -174,7 +174,7 @@
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: #F4D39A;
+    background-color: #C2F380;
     transition: width 0.28s ease-out;
   }
   .nav-link:hover::after,

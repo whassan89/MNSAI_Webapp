@@ -21,9 +21,10 @@ const config: Config = {
         },
         gold: {
           50:  "#FAF7F2",   // warm cream — light section bg tints
-          400: "#C2F380",   // lime green — accent labels on dark bg
-          500: "#F4D39A",   // warm gold — buttons & primary accent
-          600: "#D4A85C",   // darker gold — hover states
+          300: "#9ECC6A",   // darker lime — button hover state
+          400: "#C2F380",   // lime green — buttons & primary accent
+          500: "#F4D39A",   // warm gold — accent labels on dark bg
+          600: "#D4A85C",   // darker gold — hover states for gold labels
         },
         // ── END THEME ─────────────────────────────────────────────
       },

@@ -76,13 +76,13 @@ export default function Navbar() {
       <div className="hidden md:block bg-navy-900 border-b border-navy-700/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between">
           <div className="flex items-center gap-5 text-xs text-gray-400">
-            <a href="tel:+923324452894" className="flex items-center gap-1.5 hover:text-gold-500 transition-colors duration-200">
+            <a href="tel:+923324452894" className="flex items-center gap-1.5 hover:text-gold-400 transition-colors duration-200">
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               +92-332-4452894
             </a>
-            <a href="mailto:ceo@mnsai.com" className="flex items-center gap-1.5 hover:text-gold-500 transition-colors duration-200">
+            <a href="mailto:ceo@mnsai.com" className="flex items-center gap-1.5 hover:text-gold-400 transition-colors duration-200">
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
@@ -99,7 +99,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={s.name}
-                className="w-6 h-6 flex items-center justify-center text-gray-500 hover:text-gold-500 transition-colors duration-200"
+                className="w-6 h-6 flex items-center justify-center text-gray-500 hover:text-gold-400 transition-colors duration-200"
               >
                 {s.icon}
               </a>
@@ -143,7 +143,7 @@ export default function Navbar() {
               <Link
                 href="/"
                 className={`nav-link font-medium text-sm tracking-wide transition-colors duration-200 ${
-                  pathname === "/" ? "text-gold-500 active" : "text-gray-300 hover:text-gold-500"
+                  pathname === "/" ? "text-gold-400 active" : "text-gray-300 hover:text-gold-400"
                 }`}
               >
                 Home
@@ -157,7 +157,7 @@ export default function Navbar() {
               >
                 <button
                   className={`nav-link flex items-center gap-1 font-medium text-sm tracking-wide transition-colors duration-200 ${
-                    isServicesActive ? "text-gold-500 active" : "text-gray-300 hover:text-gold-500"
+                    isServicesActive ? "text-gold-400 active" : "text-gray-300 hover:text-gold-400"
                   }`}
                 >
                   Services
@@ -173,8 +173,8 @@ export default function Navbar() {
                         href={s.href}
                         className={`block px-4 py-2.5 text-sm transition-colors duration-150 ${
                           s.href === "/services"
-                            ? "border-t border-navy-700 mt-1 pt-3 font-semibold text-gold-500 hover:text-gold-400"
-                            : "text-gray-300 hover:bg-navy-800 hover:text-gold-500"
+                            ? "border-t border-navy-700 mt-1 pt-3 font-semibold text-gold-400 hover:text-gold-300"
+                            : "text-gray-300 hover:bg-navy-800 hover:text-gold-400"
                         }`}
                       >
                         {s.label}
@@ -191,8 +191,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`nav-link font-medium text-sm tracking-wide transition-colors duration-200 ${
                     pathname === link.href
-                      ? "text-gold-500 active"
-                      : "text-gray-300 hover:text-gold-500"
+                      ? "text-gold-400 active"
+                      : "text-gray-300 hover:text-gold-400"
                   }`}
                 >
                   {link.label}
@@ -229,7 +229,7 @@ export default function Navbar() {
                 href="/"
                 onClick={() => setMenuOpen(false)}
                 className={`block font-medium py-2.5 text-sm border-b border-navy-700/50 transition-colors duration-200 ${
-                  pathname === "/" ? "text-gold-500" : "text-gray-300 hover:text-gold-500"
+                  pathname === "/" ? "text-gold-400" : "text-gray-300 hover:text-gold-400"
                 }`}
               >
                 Home
@@ -242,7 +242,7 @@ export default function Navbar() {
                     href={s.href}
                     onClick={() => setMenuOpen(false)}
                     className={`block pl-3 py-2 text-sm transition-colors duration-200 ${
-                      pathname === s.href ? "text-gold-500" : "text-gray-400 hover:text-gold-500"
+                      pathname === s.href ? "text-gold-400" : "text-gray-400 hover:text-gold-400"
                     }`}
                   >
                     {s.label}
@@ -255,7 +255,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
                   className={`block font-medium py-2.5 text-sm border-b border-navy-700/50 transition-colors duration-200 ${
-                    pathname === link.href ? "text-gold-500" : "text-gray-300 hover:text-gold-500"
+                    pathname === link.href ? "text-gold-400" : "text-gray-300 hover:text-gold-400"
                   }`}
                 >
                   {link.label}
@@ -266,8 +266,8 @@ export default function Navbar() {
               </Link>
               {/* Mobile contact info */}
               <div className="mt-4 pt-3 border-t border-navy-700/50 flex flex-col gap-1.5 text-xs text-gray-500">
-                <a href="tel:+923324452894" className="hover:text-gold-500 transition-colors">📞 +92-332-4452894</a>
-                <a href="mailto:ceo@mnsai.com" className="hover:text-gold-500 transition-colors">✉ ceo@mnsai.com</a>
+                <a href="tel:+923324452894" className="hover:text-gold-400 transition-colors">📞 +92-332-4452894</a>
+                <a href="mailto:ceo@mnsai.com" className="hover:text-gold-400 transition-colors">✉ ceo@mnsai.com</a>
               </div>
             </div>
           </nav>
