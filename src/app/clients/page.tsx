@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
   title: "Our Clients | MNSAI (SMC-Private) Limited",
@@ -53,29 +54,30 @@ export default function ClientsPage() {
     <>
       {/* Page Header */}
       <section className="bg-navy-800 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimateOnView className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">Trusted By Many</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Our Clients</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             We are proud to have served businesses ranging from startups to multinational corporations
             across a wide range of industries.
           </p>
-        </div>
+        </AnimateOnView>
       </section>
 
       {/* Client Grid */}
       <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <AnimateOnView className="text-center mb-12">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Portfolio</p>
             <h2 className="section-heading">Companies We&apos;ve Served</h2>
             <p className="section-subheading">
               From local SMEs to international organizations — our client base spans diverse industries and geographies.
             </p>
-          </div>
+          </AnimateOnView>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {clients.map((client) => (
+            {clients.map((client, i) => (
+              <AnimateOnView key={client.name} delay={i * 0.05}>
               <div
                 key={client.name}
                 className="group bg-gray-50 border border-gray-100 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:border-gold-400 hover:shadow-md transition-all duration-300"
@@ -91,6 +93,7 @@ export default function ClientsPage() {
                   {client.sector}
                 </span>
               </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -99,16 +102,17 @@ export default function ClientsPage() {
       {/* Testimonials */}
       <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <AnimateOnView className="text-center mb-12">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Client Feedback</p>
             <h2 className="section-heading">What Our Clients Say</h2>
             <p className="section-subheading">
               We measure our success by the results and trust our clients place in us.
             </p>
-          </div>
+          </AnimateOnView>
 
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((t, i) => (
+              <AnimateOnView key={i} delay={i * 0.1}>
               <div
                 key={i}
                 className="bg-white rounded-xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative"
@@ -130,6 +134,7 @@ export default function ClientsPage() {
                   </div>
                 </div>
               </div>
+              </AnimateOnView>
             ))}
           </div>
         </div>
@@ -137,13 +142,13 @@ export default function ClientsPage() {
 
       {/* CTA */}
       <section className="py-20 bg-navy-800">
-        <div className="max-w-3xl mx-auto px-4 text-center">
+        <AnimateOnView className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl font-bold text-white mb-4">Join Our Client Family</h2>
           <p className="text-gray-300 mb-8">
             Let us show you why businesses across Pakistan and internationally trust MNSAI.
           </p>
           <Link href="/contact" className="btn-primary inline-block">Get Started Today</Link>
-        </div>
+        </AnimateOnView>
       </section>
     </>
   );

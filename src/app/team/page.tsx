@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
   title: "Meet the Team | MNSAI (SMC-Private) Limited",
@@ -63,14 +64,14 @@ export default function TeamPage() {
     <>
       {/* Page Header */}
       <section className="bg-navy-800 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimateOnView className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">Our People</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Meet the Team</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Our leadership team combines decades of experience across audit, taxation, financial
             advisory, and organizational development.
           </p>
-        </div>
+        </AnimateOnView>
       </section>
 
       {/* Team Members */}
@@ -82,7 +83,8 @@ export default function TeamPage() {
               className={`grid md:grid-cols-3 gap-10 items-start ${index % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
             >
               {/* Profile Card */}
-              <div className={`bg-navy-800 rounded-2xl p-8 text-center ${index % 2 !== 0 ? "md:order-3" : ""}`}>
+              <AnimateOnView direction={index % 2 !== 0 ? "right" : "left"} className={index % 2 !== 0 ? "md:order-3" : ""}>
+              <div className="bg-navy-800 rounded-2xl p-8 text-center">
                 <div className="w-24 h-24 bg-gold-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-heading font-bold text-4xl">{member.initial}</span>
                 </div>
@@ -97,9 +99,10 @@ export default function TeamPage() {
                   <span className="text-gold-400 text-xs font-semibold">{member.experience} Experience</span>
                 </div>
               </div>
+              </AnimateOnView>
 
               {/* Bio & Expertise */}
-              <div className={`md:col-span-2 ${index % 2 !== 0 ? "md:order-1 md:col-start-1" : ""}`}>
+              <AnimateOnView direction={index % 2 !== 0 ? "left" : "right"} delay={0.12} className={`md:col-span-2 ${index % 2 !== 0 ? "md:order-1 md:col-start-1" : ""}`}>
                 <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-2">{member.role}</p>
                 <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy-800 mb-4">{member.name}</h2>
                 <p className="text-gray-600 leading-relaxed mb-6">{member.bio}</p>
@@ -114,7 +117,7 @@ export default function TeamPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </AnimateOnView>
             </div>
           ))}
         </div>
@@ -122,11 +125,11 @@ export default function TeamPage() {
 
       {/* CTA */}
       <section className="py-20 bg-navy-800">
-        <div className="max-w-3xl mx-auto px-4 text-center">
+        <AnimateOnView className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl font-bold text-white mb-4">Work With Our Experts</h2>
           <p className="text-gray-300 mb-8">Our team is ready to bring their expertise to your business challenges.</p>
           <Link href="/contact" className="btn-primary inline-block">Get in Touch</Link>
-        </div>
+        </AnimateOnView>
       </section>
     </>
   );

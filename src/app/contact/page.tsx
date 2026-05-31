@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
   title: "Contact Us | MNSAI (SMC-Private) Limited",
@@ -60,13 +61,13 @@ export default function ContactPage() {
     <>
       {/* Page Header */}
       <section className="bg-navy-800 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimateOnView className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">Reach Out</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             We&apos;d love to hear about your business needs. Get in touch and our team will respond promptly.
           </p>
-        </div>
+        </AnimateOnView>
       </section>
 
       {/* Contact Section */}
@@ -74,7 +75,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Info */}
-            <div>
+            <AnimateOnView direction="left">
               <h2 className="font-heading text-2xl font-bold text-navy-800 mb-8">Get in Touch With Us</h2>
               <div className="space-y-6">
                 {contactDetails.map((item) => (
@@ -139,10 +140,12 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
-            </div>
+            </AnimateOnView>
 
             {/* Form */}
+            <AnimateOnView direction="right" delay={0.12}>
             <ContactForm />
+            </AnimateOnView>
           </div>
         </div>
       </section>

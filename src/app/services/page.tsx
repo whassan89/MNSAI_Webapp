@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
   title: "Our Services | MNSAI (SMC-Private) Limited",
@@ -130,14 +131,14 @@ export default function ServicesPage() {
     <>
       {/* Page Header */}
       <section className="bg-navy-800 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <AnimateOnView className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">What We Offer</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Comprehensive financial, audit, tax, and advisory solutions — designed to support your
             business at every stage of growth.
           </p>
-        </div>
+        </AnimateOnView>
       </section>
 
       {/* Services */}
@@ -150,7 +151,8 @@ export default function ServicesPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 {/* Image */}
-                <div className={`relative rounded-2xl overflow-hidden shadow-xl h-72 md:h-96 ${service.reverse ? "md:order-2" : ""}`}>
+                <AnimateOnView direction={service.reverse ? "right" : "left"} className={service.reverse ? "md:order-2" : ""}>
+                <div className="relative rounded-2xl overflow-hidden shadow-xl h-72 md:h-96">
                   <Image
                     src={service.image}
                     alt={service.imageAlt}
@@ -165,9 +167,10 @@ export default function ServicesPage() {
                     </span>
                   </div>
                 </div>
+                </AnimateOnView>
 
                 {/* Content */}
-                <div className={service.reverse ? "md:order-1" : ""}>
+                <AnimateOnView direction={service.reverse ? "left" : "right"} delay={0.12} className={service.reverse ? "md:order-1" : ""}>
                   <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy-800 mb-3">
                     {service.title}
                   </h2>
@@ -183,7 +186,7 @@ export default function ServicesPage() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </AnimateOnView>
               </div>
             </div>
           </section>
@@ -192,11 +195,11 @@ export default function ServicesPage() {
 
       {/* CTA */}
       <section className="py-20 bg-navy-800">
-        <div className="max-w-3xl mx-auto px-4 text-center">
+        <AnimateOnView className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl font-bold text-white mb-4">Need a Specific Service?</h2>
           <p className="text-gray-300 mb-8">Talk to our team and we&apos;ll design a solution tailored to your business needs.</p>
           <Link href="/contact" className="btn-primary inline-block">Book a Consultation</Link>
-        </div>
+        </AnimateOnView>
       </section>
     </>
   );
