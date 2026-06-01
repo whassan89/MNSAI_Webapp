@@ -117,7 +117,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center flex-shrink-0">
               <div className="h-12 w-auto relative">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/mnsai-GREEN.png"
                   alt="MNSAI Logo"
                   height={48}
                   width={160}
