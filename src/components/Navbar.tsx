@@ -115,18 +115,14 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link href="/" className="flex items-center flex-shrink-0">
-              <div className="h-12 w-auto relative">
-                <Image
-                  src="/images/mnsai-GREEN.png"
-                  alt="MNSAI Logo"
-                  height={48}
-                  width={160}
-                  className="object-contain h-12 w-auto"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).style.display = "none";
-                  }}
-                />
-              </div>
+              <Image
+                src="/images/mnsai-GREEN.png"
+                alt="MNSAI Logo"
+                width={129}
+                height={48}
+                priority
+                className="object-contain"
+              />
             </Link>
 
             {/* Desktop Nav */}
