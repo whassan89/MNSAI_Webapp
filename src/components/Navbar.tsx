@@ -114,25 +114,18 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-[96px]">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-              <div className="w-12 h-12 relative">
+            <Link href="/" className="flex items-center flex-shrink-0">
+              <div className="h-12 w-auto relative">
                 <Image
                   src="/images/logo.png"
                   alt="MNSAI Logo"
-                  fill
-                  className="object-contain"
+                  height={48}
+                  width={160}
+                  className="object-contain h-12 w-auto"
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
                 />
-              </div>
-              <div>
-                <span className="text-white font-heading font-bold text-xl leading-tight block">
-                  MNSAI
-                </span>
-                <span className="text-gold-400 text-xs font-medium tracking-wider">
-                  (SMC-PRIVATE) LIMITED
-                </span>
               </div>
             </Link>
 
