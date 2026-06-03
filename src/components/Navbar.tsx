@@ -10,6 +10,7 @@ const serviceDropdown = [
   { label: "IFRS Advisory",         href: "/ifrs-advisory" },
   { label: "Financial Modeling",    href: "/financial-modeling" },
   { label: "Startup Advisory",      href: "/startup-advisory" },
+  { label: "UAE Clients",           href: "/uae" },
   { label: "All Services",          href: "/services" },
 ];
 
