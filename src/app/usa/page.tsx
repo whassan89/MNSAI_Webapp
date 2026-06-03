@@ -4,64 +4,64 @@ import Image from "next/image";
 import AnimateOnView from "@/components/AnimateOnView";
 
 export const metadata: Metadata = {
-  title: "Virtual CFO & IFRS Advisory for UAE Businesses | MNSAI",
+  title: "Financial Modeling & Virtual CFO for US Businesses | MNSAI USA Wing",
   description:
-    "Remote CA advisory for UAE businesses — Virtual CFO, IFRS compliance, UAE Corporate Tax (9%), and Financial Modeling. Pakistan-based expertise at a fraction of local UAE rates.",
+    "Remote CA advisory for US businesses and Pakistani diaspora entrepreneurs — financial modeling for US investors, Virtual CFO services, IFRS advisory, and Pakistan market entry support.",
   keywords:
-    "Virtual CFO UAE, IFRS advisory UAE, UAE corporate tax consultant, financial modeling UAE, CA firm for UAE businesses, remote CFO Dubai, DIFC financial reporting, DMCC accounting",
+    "financial modeling US investors, Virtual CFO USA, IFRS advisory USA, Pakistan market entry, Pakistani diaspora business USA, remote CFO New York, financial model for US VC",
 };
 
 const challenges = [
   {
-    title: "UAE Corporate Tax (9%)",
-    desc: "Corporate Tax came into effect June 2023. Many SMEs and freezone entities are still navigating registration, qualifying income exemptions, and first-year filings.",
+    title: "Financial Models for US Investors",
+    desc: "US VCs and angels have very specific expectations — unit economics, cohort analysis, SaaS metrics, and defensible assumptions. We build models that hold up under investor scrutiny.",
   },
   {
-    title: "IFRS Compliance",
-    desc: "UAE mainland and DIFC/ADGM entities must prepare IFRS-compliant financial statements. IFRS 16, IFRS 9, and IFRS 15 are frequently misapplied — and costly to fix late.",
+    title: "IFRS vs US GAAP",
+    desc: "Companies raising internationally or expanding to global markets often need IFRS-compliant reporting alongside US GAAP. We bridge the gap and manage the conversion.",
   },
   {
-    title: "VAT & FTA Reporting",
-    desc: "VAT compliance, FTA audit readiness, and input tax recovery require structured record-keeping. A clean bookkeeping foundation is non-negotiable.",
+    title: "Pakistan Market Entry",
+    desc: "US companies looking to establish operations, hire talent, or source from Pakistan need a local advisory partner who understands the regulatory and financial landscape.",
   },
   {
-    title: "Fundraising from GCC Investors",
-    desc: "GCC family offices and regional VCs expect IFRS-compliant financials and credible, well-structured financial models before committing capital.",
+    title: "Diaspora Business Advisory",
+    desc: "Pakistani-American entrepreneurs often run businesses with operations on both sides. We understand the complexity of cross-border business between the US and Pakistan.",
   },
   {
-    title: "CFO-Level Expertise",
-    desc: "A full-time CFO in Dubai costs AED 40,000–70,000/month. A Virtual CFO retainer gives you the same strategic oversight at a fraction of that cost.",
+    title: "US Investors Evaluating Pakistan",
+    desc: "US family offices, PE firms, and angels increasingly look at Pakistan. We provide financial due diligence, market analysis, and local financial advisory to support investment decisions.",
   },
   {
-    title: "Cross-Border Operations",
-    desc: "Businesses operating across UAE and Pakistan need advisory that understands both regulatory environments — tax treaties, transfer pricing, and dual reporting.",
+    title: "CFO Function Without US Costs",
+    desc: "A full-time CFO in New York costs $200,000–$300,000/year. Our Virtual CFO retainer delivers the same strategic financial oversight at a small fraction of that — fully remote.",
   },
 ];
 
 const services = [
   {
-    title: "Virtual CFO for UAE",
+    title: "Financial Modeling for US Investors",
+    tag: "Fundraising",
+    desc: "Investor-grade financial models built to US VC and angel standards — 3-statement models, DCF, SaaS metrics, unit economics, cap table, and use of funds. Clean Excel, fully unlocked.",
+    href: "/financial-modeling",
+  },
+  {
+    title: "Virtual CFO",
     tag: "Retainer",
-    desc: "Monthly CFO retainer — financial reporting, board presentations, cash flow management, investor relations, and strategic financial planning. Remote, responsive, cost-effective.",
+    desc: "Monthly CFO retainer covering strategic financial planning, investor reporting, cash flow management, and board-level financial guidance — remote and fully async-capable.",
     href: "/virtual-cfo",
   },
   {
-    title: "IFRS Advisory",
+    title: "IFRS & US GAAP Advisory",
     tag: "Compliance",
-    desc: "IFRS 16 lease accounting, IFRS 15 revenue recognition, IFRS 9 financial instruments, and first-time IFRS adoption. We handle the complexity so your team doesn't have to.",
+    desc: "For companies operating across markets — IFRS adoption, US GAAP to IFRS conversion, and dual-standard financial reporting for international stakeholders.",
     href: "/ifrs-advisory",
   },
   {
-    title: "UAE Corporate Tax",
-    tag: "Tax",
-    desc: "CT registration, qualifying income assessment, freezone entity analysis, and filing support. Navigate the 9% Corporate Tax regime with expert guidance.",
+    title: "Pakistan Market Entry",
+    tag: "Advisory",
+    desc: "Financial and regulatory advisory for US companies establishing Pakistan operations — entity structure, tax registration, local compliance, and financial setup.",
     href: "/contact",
-  },
-  {
-    title: "Financial Modeling",
-    tag: "Fundraising",
-    desc: "Fundraising models, business valuations, and investor decks built to GCC investor standards — with scenario analysis, sensitivity tables, and clean Excel workbooks.",
-    href: "/financial-modeling",
   },
 ];
 
@@ -69,66 +69,66 @@ const process = [
   {
     step: "01",
     title: "Discovery Call",
-    desc: "30-minute video call to understand your business, UAE entity structure, and what you need from us.",
+    desc: "30-minute video call to understand your business, investor context, and what you need.",
   },
   {
     step: "02",
     title: "Proposal",
-    desc: "A clear scope of work and fixed-fee proposal within 24 hours — no retainers you don't need.",
+    desc: "Clear scope and fixed-fee proposal within 24 hours. Straightforward pricing, no ambiguity.",
   },
   {
     step: "03",
     title: "Onboarding",
-    desc: "Shared cloud workspace, document checklist, and a dedicated point of contact from day one.",
+    desc: "Shared cloud workspace, document checklist, and a dedicated contact from day one.",
   },
   {
     step: "04",
     title: "Delivery",
-    desc: "Regular calls, async updates, and deliverables on schedule — CFO-level output without the Dubai overhead.",
+    desc: "Async-friendly workflow with regular updates — built for the US–Pakistan time difference.",
   },
 ];
 
 const whoWeWorkWith = [
-  "UAE mainland SMEs navigating Corporate Tax",
-  "DIFC & ADGM registered companies",
-  "Freezone businesses (DMCC, JAFZA, RAKEZ)",
-  "Pakistani diaspora entrepreneurs in the UAE",
-  "UAE startups raising from GCC investors",
-  "International businesses with UAE + Pakistan operations",
+  "US-based Pakistani entrepreneurs and founders",
+  "Pakistan startups raising from US VCs or angels",
+  "US companies entering the Pakistan market",
+  "US investors evaluating Pakistan opportunities",
+  "Pakistani-American family offices and businesses",
+  "US funds with Pakistan portfolio companies",
 ];
 
 const whyMnsai = [
   {
-    title: "Pakistan-based cost advantage",
+    title: "We build to US investor standards",
     detail:
-      "Our CA-qualified team delivers the same rigour as a UAE-based advisory firm at 40–60% lower cost. You get Big Four-trained expertise without Big Four fees.",
+      "We've worked with Pakistan founders raising from US-based VCs and angels. We know what US investors interrogate — unit economics, cohort analysis, and defensible assumptions — and we build for it.",
   },
   {
-    title: "Deep IFRS expertise",
+    title: "Pakistan expertise, international standards",
     detail:
-      "Pakistan follows full IFRS — our team has applied these standards across hundreds of engagements. IFRS is not a compliance checkbox for us; it is what we do every day.",
+      "For US companies entering Pakistan or US investors evaluating Pakistani businesses, we are the local expert — combining Pakistan regulatory knowledge with internationally recognised CA qualification.",
   },
   {
-    title: "UAE regulatory familiarity",
+    title: "Async-friendly workflow",
     detail:
-      "We have worked with UAE-registered entities on Corporate Tax, FTA compliance, DIFC reporting, and investor-ready financials. We understand the UAE regulatory landscape.",
+      "The US–Pakistan time difference (9–10 hours) means we work while you sleep. Deliverables are ready when you start your day. We're built for async collaboration.",
   },
   {
-    title: "Cross-border expertise",
+    title: "Cost advantage is significant",
     detail:
-      "Unique in the market: we understand both UAE and Pakistan tax and accounting frameworks — essential for businesses that operate across both jurisdictions.",
+      "US advisory rates are among the highest in the world. Our Pakistan-based team delivers comparable quality at 50–70% lower cost — making CFO-level oversight accessible to early-stage companies.",
   },
 ];
 
-export default function UAEPage() {
+export default function USAPage() {
   return (
     <>
       {/* Hero */}
       <section className="relative bg-navy-800 pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80"
-            alt="Dubai skyline at night"
+            src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1920&q=80"
+            alt="New York City skyline"
             fill
             className="object-cover object-center opacity-20"
             priority
@@ -138,20 +138,20 @@ export default function UAEPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
-              UAE Chapter — International Affairs
+              USA Wing — International Affairs
             </p>
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-              CA Advisory for the UAE.{" "}
-              <span className="text-gold-400">Delivered Remotely.</span>
+              CA Advisory for US Businesses.{" "}
+              <span className="text-gold-400">Built for US Investors.</span>
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
-              Virtual CFO services, IFRS compliance, UAE Corporate Tax advisory, and financial
-              modeling — delivered by a specialist CA team in Lahore to businesses across Dubai,
-              Abu Dhabi, and the wider UAE.
+              Financial modeling to US investor standards, Virtual CFO services, IFRS advisory,
+              and Pakistan market entry support — delivered by a specialist CA team in Lahore
+              for businesses and investors across the United States.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">Book a Free Call</Link>
-              <Link href="/services" className="btn-outline">Our Services</Link>
+              <Link href="/international" className="btn-outline">All Regions</Link>
             </div>
           </div>
         </div>
@@ -161,10 +161,10 @@ export default function UAEPage() {
       <section className="py-20 lg:py-[120px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnView className="text-center mb-14">
-            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What UAE Businesses Face</p>
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">What US Clients Need</p>
             <h2 className="section-heading">Challenges We Solve</h2>
             <p className="section-subheading">
-              The UAE's regulatory landscape has changed significantly in recent years. We help businesses stay compliant and financially sharp.
+              US businesses, founders, and investors have distinct financial advisory needs — especially when Pakistan is part of the picture.
             </p>
           </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -185,9 +185,9 @@ export default function UAEPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnView className="text-center mb-14">
             <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-3">What We Offer</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Services for UAE Clients</h2>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Services for US Clients</h2>
             <p className="text-gray-400 mt-3 text-lg max-w-2xl mx-auto">
-              Specialist advisory across the areas UAE businesses need most — all delivered remotely with no compromise on quality.
+              Specialist advisory built for US context — investor-grade models, cross-border compliance, and Pakistan market knowledge.
             </p>
           </AnimateOnView>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -224,7 +224,7 @@ export default function UAEPage() {
             <AnimateOnView direction="left">
               <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-4">Why MNSAI</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy-800 mb-6">
-                Why UAE Businesses Choose Us
+                Why US Clients Choose Us
               </h2>
               <div className="space-y-5">
                 {whyMnsai.map((item) => (
@@ -244,7 +244,7 @@ export default function UAEPage() {
             </AnimateOnView>
             <AnimateOnView direction="right" delay={0.12}>
               <div className="bg-navy-800 rounded-2xl p-8">
-                <h3 className="font-heading text-xl font-semibold text-gold-400 mb-6">Who We Work With in the UAE</h3>
+                <h3 className="font-heading text-xl font-semibold text-gold-400 mb-6">Who We Work With in the US</h3>
                 <div className="space-y-3">
                   {whoWeWorkWith.map((item) => (
                     <div key={item} className="flex items-center gap-3">
@@ -255,7 +255,7 @@ export default function UAEPage() {
                 </div>
                 <div className="mt-6 pt-6 border-t border-navy-700">
                   <p className="text-gray-400 text-xs leading-relaxed">
-                    Based in Lahore, Pakistan — serving UAE clients fully remotely via video call, email, and shared cloud platforms.
+                    Based in Lahore, Pakistan — serving US clients fully remotely. Async-friendly workflow designed for the US–Pakistan time difference.
                   </p>
                 </div>
               </div>
@@ -269,9 +269,9 @@ export default function UAEPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnView className="text-center mb-14">
             <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Remote Engagement</p>
-            <h2 className="section-heading">How We Work with UAE Clients</h2>
+            <h2 className="section-heading">How We Work with US Clients</h2>
             <p className="section-subheading">
-              A structured, remote-first process — designed so geography is never a friction point.
+              An async-first process built for the US–Pakistan time difference — work progresses while you sleep.
             </p>
           </AnimateOnView>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -293,9 +293,9 @@ export default function UAEPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-3 gap-8 text-center">
             {[
-              { label: "IFRS-Compliant", detail: "All financial statements and reporting prepared to full IFRS standards — as required by UAE mainland and free zone regulators." },
-              { label: "Fixed-Fee Engagements", detail: "No surprise invoices. Every engagement is scoped and priced upfront so you know exactly what you're getting." },
-              { label: "Remote-First", detail: "All work delivered remotely via video, email, and cloud platforms. Time zone overlap with UAE is straightforward." },
+              { label: "US Investor Standards", detail: "Financial models built to the standards US VCs and angels actually use — unit economics, cohort analysis, and defensible assumptions." },
+              { label: "Fixed-Fee Pricing", detail: "Every engagement is scoped and priced upfront. No billable-hour surprises in a currency you have to convert." },
+              { label: "Async-First Workflow", detail: "We work while you sleep. Deliverables are ready when your US workday starts — the time difference becomes an advantage." },
             ].map((q, i) => (
               <AnimateOnView key={q.label} delay={i * 0.1}>
                 <div className="py-6 px-4 border border-gray-100 rounded-xl bg-white h-full">
@@ -312,11 +312,11 @@ export default function UAEPage() {
       <section className="py-20 bg-navy-800">
         <AnimateOnView className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
-            Based in the UAE? Let's Talk.
+            Based in the US? Let's Connect.
           </h2>
           <p className="text-gray-300 text-lg mb-8">
-            Book a free 30-minute call. Tell us about your business, your UAE entity structure, and
-            what you need — we'll tell you exactly how we can help.
+            Book a free call. Tell us about your business, your investors, or your Pakistan
+            plans — we'll tell you exactly how we can help.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary inline-block text-base px-8 py-4">

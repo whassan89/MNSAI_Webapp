@@ -10,8 +10,14 @@ const serviceDropdown = [
   { label: "IFRS Advisory",         href: "/ifrs-advisory" },
   { label: "Financial Modeling",    href: "/financial-modeling" },
   { label: "Startup Advisory",      href: "/startup-advisory" },
-  { label: "UAE Clients",           href: "/uae" },
   { label: "All Services",          href: "/services" },
+];
+
+const internationalDropdown = [
+  { label: "UAE Chapter",  href: "/uae" },
+  { label: "UK Venture",   href: "/uk" },
+  { label: "USA Wing",     href: "/usa" },
+  { label: "All Regions",  href: "/international" },
 ];
 
 const navLinks = [
@@ -66,9 +72,12 @@ const topSocials = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [internationalOpen, setInternationalOpen] = useState(false);
   const pathname = usePathname();
 
   const isServicesActive = serviceDropdown.some((s) => pathname === s.href);
+  const isInternationalActive =
+    internationalDropdown.some((s) => pathname === s.href) || pathname === "/international";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
@@ -174,6 +183,41 @@ export default function Navbar() {
                 )}
               </div>
 
+              {/* International Affairs Dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setInternationalOpen(true)}
+                onMouseLeave={() => setInternationalOpen(false)}
+              >
+                <button
+                  className={`nav-link flex items-center gap-1 font-medium text-sm tracking-wide transition-colors duration-200 ${
+                    isInternationalActive ? "text-gold-400 active" : "text-gray-300 hover:text-gold-400"
+                  }`}
+                >
+                  International Affairs
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {internationalOpen && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-52 bg-navy-900 border border-navy-700 rounded-xl shadow-2xl py-2 z-50">
+                    {internationalDropdown.map((s) => (
+                      <Link
+                        key={s.href}
+                        href={s.href}
+                        className={`block px-4 py-2.5 text-sm transition-colors duration-150 ${
+                          s.href === "/international"
+                            ? "border-t border-navy-700 mt-1 pt-3 font-semibold text-gold-400 hover:text-gold-300"
+                            : "text-gray-300 hover:bg-navy-800 hover:text-gold-400"
+                        }`}
+                      >
+                        {s.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               {/* Other nav links */}
               {navLinks.map((link) => (
                 <Link
@@ -224,6 +268,8 @@ export default function Navbar() {
               >
                 Home
               </Link>
+
+              {/* Mobile Services */}
               <div className="border-b border-navy-700/50">
                 <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase py-2.5">Services</p>
                 {serviceDropdown.map((s) => (
@@ -239,6 +285,24 @@ export default function Navbar() {
                   </Link>
                 ))}
               </div>
+
+              {/* Mobile International */}
+              <div className="border-b border-navy-700/50">
+                <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase py-2.5">International Affairs</p>
+                {internationalDropdown.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    onClick={() => setMenuOpen(false)}
+                    className={`block pl-3 py-2 text-sm transition-colors duration-200 ${
+                      pathname === s.href ? "text-gold-400" : "text-gray-400 hover:text-gold-400"
+                    }`}
+                  >
+                    {s.label}
+                  </Link>
+                ))}
+              </div>
+
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
