@@ -165,20 +165,22 @@ export default function Navbar() {
                   </svg>
                 </button>
                 {servicesOpen && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-52 bg-navy-900 border border-navy-700 rounded-xl shadow-2xl py-2 z-50">
-                    {serviceDropdown.map((s) => (
-                      <Link
-                        key={s.href}
-                        href={s.href}
-                        className={`block px-4 py-2.5 text-sm transition-colors duration-150 ${
-                          s.href === "/services"
-                            ? "border-t border-navy-700 mt-1 pt-3 font-semibold text-gold-400 hover:text-gold-300"
-                            : "text-gray-300 hover:bg-navy-800 hover:text-gold-400"
-                        }`}
-                      >
-                        {s.label}
-                      </Link>
-                    ))}
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-52 pt-2 z-50">
+                    <div className="bg-navy-900 border border-navy-700 rounded-xl shadow-2xl py-2">
+                      {serviceDropdown.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          className={`block px-4 py-2.5 text-sm transition-colors duration-150 ${
+                            s.href === "/services"
+                              ? "border-t border-navy-700 mt-1 pt-3 font-semibold text-gold-400 hover:text-gold-300"
+                              : "text-gray-300 hover:bg-navy-800 hover:text-gold-400"
+                          }`}
+                        >
+                          {s.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -200,20 +202,22 @@ export default function Navbar() {
                   </svg>
                 </button>
                 {internationalOpen && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-52 bg-navy-900 border border-navy-700 rounded-xl shadow-2xl py-2 z-50">
-                    {internationalDropdown.map((s) => (
-                      <Link
-                        key={s.href}
-                        href={s.href}
-                        className={`block px-4 py-2.5 text-sm transition-colors duration-150 ${
-                          s.href === "/international"
-                            ? "border-t border-navy-700 mt-1 pt-3 font-semibold text-gold-400 hover:text-gold-300"
-                            : "text-gray-300 hover:bg-navy-800 hover:text-gold-400"
-                        }`}
-                      >
-                        {s.label}
-                      </Link>
-                    ))}
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-52 pt-2 z-50">
+                    <div className="bg-navy-900 border border-navy-700 rounded-xl shadow-2xl py-2">
+                      {internationalDropdown.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          className={`block px-4 py-2.5 text-sm transition-colors duration-150 ${
+                            s.href === "/international"
+                              ? "border-t border-navy-700 mt-1 pt-3 font-semibold text-gold-400 hover:text-gold-300"
+                              : "text-gray-300 hover:bg-navy-800 hover:text-gold-400"
+                          }`}
+                        >
+                          {s.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
