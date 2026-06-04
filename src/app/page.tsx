@@ -7,9 +7,9 @@ import Counter from "@/components/Counter";
 export const metadata: Metadata = {
   title: "MNSAI (SMC-Private) Limited | Virtual CFO · Financial Modeling · IFRS Advisory · Tax Consulting",
   description:
-    "MNSAI is a specialist CA advisory firm in Lahore delivering Virtual CFO services, Financial Modeling, IFRS Advisory, and Tax & Business Consulting to businesses across Pakistan.",
+    "MNSAI is a specialist CA advisory firm delivering Virtual CFO services, Financial Modeling, IFRS Advisory, and Tax & Business Consulting to businesses across Pakistan and beyond.",
   keywords:
-    "Virtual CFO Pakistan, financial modeling Lahore, IFRS advisory Pakistan, tax consulting Lahore, CA firm Pakistan, business consulting Lahore",
+    "Virtual CFO Pakistan, financial modeling Pakistan, IFRS advisory Pakistan, tax consulting Pakistan, CA firm Pakistan, business consulting Pakistan",
 };
 
 const stats = [

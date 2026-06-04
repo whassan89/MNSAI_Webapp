@@ -146,7 +146,7 @@ export default function UAEPage() {
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
               Virtual CFO services, IFRS compliance, UAE Corporate Tax advisory, and financial
-              modeling — delivered by a specialist CA team in Lahore to businesses across Dubai,
+              modeling — delivered by a specialist CA team in Pakistan to businesses across Dubai,
               Abu Dhabi, and the wider UAE.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -255,7 +255,7 @@ export default function UAEPage() {
                 </div>
                 <div className="mt-6 pt-6 border-t border-navy-700">
                   <p className="text-gray-400 text-xs leading-relaxed">
-                    Based in Lahore, Pakistan — serving UAE clients fully remotely via video call, email, and shared cloud platforms.
+                    Based in Pakistan — serving UAE clients fully remotely via video call, email, and shared cloud platforms.
                   </p>
                 </div>
               </div>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Practical IFRS advisory, implementation, and compliance support for businesses in Pakistan, UAE, and beyond. Chartered Accountants helping SMEs, startups, and groups achieve audit-ready, investor-grade financial reporting.",
   keywords:
-    "IFRS advisory Pakistan, IFRS implementation Pakistan, IFRS compliance UAE, IFRS gap analysis, IFRS 16 lease accounting Pakistan, IFRS 15 revenue recognition, audit readiness Pakistan, financial reporting Lahore",
+    "IFRS advisory Pakistan, IFRS implementation Pakistan, IFRS compliance UAE, IFRS gap analysis, IFRS 16 lease accounting Pakistan, IFRS 15 revenue recognition, audit readiness Pakistan, financial reporting Pakistan",
 };
 
 const painPoints = [
@@ -144,7 +144,7 @@ const industries = [
 const caseStudy = {
   title: "Improved Financial Reporting Accuracy for a Growing SME",
   context:
-    "A mid-sized trading business in Lahore with PKR 400M revenue was preparing for its first institutional lender audit. Their existing accounts were prepared under local GAAP with significant IFRS gaps.",
+    "A mid-sized trading business in Pakistan with PKR 400M revenue was preparing for its first institutional lender audit. Their existing accounts were prepared under local GAAP with significant IFRS gaps.",
   results: [
     "Identified 11 material IFRS disclosure gaps across revenue, leases, and financial instruments",
     "Assisted finance team in restating comparatives and drafting full IFRS disclosure notes",

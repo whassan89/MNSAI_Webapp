@@ -142,11 +142,11 @@ export default function UKPage() {
             </p>
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
               CA Advisory for UK Businesses.{" "}
-              <span className="text-gold-400">Delivered from Lahore.</span>
+              <span className="text-gold-400">Delivered from Pakistan.</span>
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
               Virtual CFO services, IFRS financial statements, Companies House compliance, and
-              financial modeling — delivered by a specialist CA team in Lahore to businesses
+              financial modeling — delivered by a specialist CA team in Pakistan to businesses
               across London, Manchester, Birmingham, and the wider UK.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -255,7 +255,7 @@ export default function UKPage() {
                 </div>
                 <div className="mt-6 pt-6 border-t border-navy-700">
                   <p className="text-gray-400 text-xs leading-relaxed">
-                    Based in Lahore, Pakistan — serving UK clients fully remotely via video call, email, and shared cloud platforms with convenient time zone overlap.
+                    Based in Pakistan — serving UK clients fully remotely via video call, email, and shared cloud platforms with convenient time zone overlap.
                   </p>
                 </div>
               </div>
@@ -295,7 +295,7 @@ export default function UKPage() {
             {[
               { label: "UK-Adopted IFRS", detail: "All financial statements prepared to UK-adopted IFRS standards — Companies House ready and investor ready." },
               { label: "Fixed-Fee Pricing", detail: "Every engagement is scoped and priced upfront. No billable-hour surprises." },
-              { label: "UK Time Zone Friendly", detail: "Pakistan is UTC+5. Morning UK calls are afternoon Lahore time — real-time collaboration during UK business hours." },
+              { label: "UK Time Zone Friendly", detail: "Pakistan is UTC+5. Morning UK calls are afternoon Pakistan time — real-time collaboration during UK business hours." },
             ].map((q, i) => (
               <AnimateOnView key={q.label} delay={i * 0.1}>
                 <div className="py-6 px-4 border border-gray-100 rounded-xl bg-white h-full">

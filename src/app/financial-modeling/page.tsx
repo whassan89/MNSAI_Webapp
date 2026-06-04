@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Professional financial models for fundraising, M&A, business planning, and investor presentations. MNSAI builds DCF, LBO, and 3-statement models for businesses across Pakistan.",
   keywords:
-    "financial modeling Pakistan, business valuation Lahore, DCF model Pakistan, fundraising financial model, investor deck model Pakistan, LBO model Pakistan",
+    "financial modeling Pakistan, business valuation Pakistan, DCF model Pakistan, fundraising financial model, investor deck model Pakistan, LBO model Pakistan",
 };
 
 const modelTypes = [

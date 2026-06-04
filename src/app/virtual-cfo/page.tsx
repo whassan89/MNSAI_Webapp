@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Chartered Accountants providing Virtual CFO, financial planning, budgeting, cash flow management, and strategic advisory for startups, SMEs, and growing businesses in Pakistan and UAE.",
   keywords:
-    "virtual CFO Pakistan, outsourced CFO Lahore, cash flow management Pakistan, financial planning SME Pakistan, management reporting Pakistan, CFO services UAE",
+    "virtual CFO Pakistan, outsourced CFO Pakistan, cash flow management Pakistan, financial planning SME Pakistan, management reporting Pakistan, CFO services UAE",
 };
 
 const painPoints = [
@@ -158,7 +158,7 @@ const outcomes = [
 const caseStudy = {
   title: "Improved Cash Flow Visibility for a Growing SME",
   context:
-    "A Lahore-based trading company with PKR 250M in annual revenue had no structured reporting, no cash flow forecasts, and a receivable cycle stretching beyond 90 days. The owner was making decisions based on gut feel, with no financial visibility.",
+    "A Pakistan-based trading company with PKR 250M in annual revenue had no structured reporting, no cash flow forecasts, and a receivable cycle stretching beyond 90 days. The owner was making decisions based on gut feel, with no financial visibility.",
   results: [
     "Established a monthly management reporting system delivered within 5 days of month-end",
     "Reduced the receivable collection cycle from 90+ days to under 45 days within two quarters",

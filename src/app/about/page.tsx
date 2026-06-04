@@ -5,7 +5,7 @@ import AnimateOnView from "@/components/AnimateOnView";
 export const metadata: Metadata = {
   title: "About Us | MNSAI (SMC-Private) Limited",
   description:
-    "Learn about MNSAI — a professional CA firm in Lahore with 12+ years of experience in audit, tax, financial advisory, and ERP services across Pakistan.",
+    "Learn about MNSAI — a professional CA firm with 12+ years of experience in audit, tax, financial advisory, and ERP services across Pakistan and internationally.",
 };
 
 const values = [

@@ -146,7 +146,7 @@ export default function USAPage() {
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
               Financial modeling to US investor standards, Virtual CFO services, IFRS advisory,
-              and Pakistan market entry support — delivered by a specialist CA team in Lahore
+              and Pakistan market entry support — delivered by a specialist CA team in Pakistan
               for businesses and investors across the United States.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -255,7 +255,7 @@ export default function USAPage() {
                 </div>
                 <div className="mt-6 pt-6 border-t border-navy-700">
                   <p className="text-gray-400 text-xs leading-relaxed">
-                    Based in Lahore, Pakistan — serving US clients fully remotely. Async-friendly workflow designed for the US–Pakistan time difference.
+                    Based in Pakistan — serving US clients fully remotely. Async-friendly workflow designed for the US–Pakistan time difference.
                   </p>
                 </div>
               </div>

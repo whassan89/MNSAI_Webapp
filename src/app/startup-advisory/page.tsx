@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "MNSAI helps Pakistani startups with financial modeling, pitch decks, business plans, IFRS reporting, and CFO support — from idea to Series A and beyond.",
   keywords:
-    "startup advisory Pakistan, startup CFO Pakistan, pitch deck financial model Pakistan, business plan Pakistan, startup accounting Lahore, founder advisory Pakistan",
+    "startup advisory Pakistan, startup CFO Pakistan, pitch deck financial model Pakistan, business plan Pakistan, startup accounting Pakistan, founder advisory Pakistan",
 };
 
 const stages = [

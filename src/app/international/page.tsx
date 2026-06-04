@@ -6,7 +6,7 @@ import AnimateOnView from "@/components/AnimateOnView";
 export const metadata: Metadata = {
   title: "International Affairs | MNSAI Global Chapters",
   description:
-    "MNSAI serves businesses and investors across Pakistan, UAE, UK, and USA — delivering specialist CA advisory, Virtual CFO, IFRS compliance, and financial modeling remotely from Lahore.",
+    "MNSAI serves businesses and investors across Pakistan, UAE, UK, and USA — delivering specialist CA advisory, Virtual CFO, IFRS compliance, and financial modeling remotely from Pakistan.",
   keywords:
     "MNSAI international, CA advisory UAE UK USA Pakistan, Virtual CFO international, IFRS advisory global, financial modeling international, remote CA firm Pakistan",
 };
@@ -17,7 +17,7 @@ const chapters = [
     label: "Home Base",
     tagline: "Where We Are Built",
     description:
-      "Lahore is where MNSAI was founded and where our team is based. We serve businesses across Pakistan — from Karachi to Islamabad — with Virtual CFO services, IFRS advisory, tax consulting, and financial modeling.",
+      "Pakistan is where MNSAI was founded and where our team is based. We serve businesses across the country — from Karachi to Islamabad — with Virtual CFO services, IFRS advisory, tax consulting, and financial modeling.",
     highlights: [
       "Virtual CFO for Pakistan businesses",
       "IFRS advisory & financial reporting",
@@ -89,7 +89,7 @@ const chapters = [
 const whyRemote = [
   {
     title: "Same Rigour, Lower Cost",
-    desc: "Our CA-qualified team delivers Big Four-trained expertise. Operating from Lahore means you pay 40–70% less than equivalent advisory in Dubai, London, or New York — with no compromise on quality.",
+    desc: "Our CA-qualified team delivers Big Four-trained expertise. Operating from Pakistan means you pay 40–70% less than equivalent advisory in Dubai, London, or New York — with no compromise on quality.",
   },
   {
     title: "IFRS Across All Markets",
@@ -132,7 +132,7 @@ export default function InternationalPage() {
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
               MNSAI serves businesses and investors across Pakistan, UAE, United Kingdom, and
               United States — delivering specialist CA advisory, Virtual CFO, IFRS compliance,
-              and financial modeling remotely from Lahore.
+              and financial modeling remotely from Pakistan.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">Book a Free Call</Link>
