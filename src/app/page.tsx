@@ -167,38 +167,43 @@ export default function Home() {
                 IFRS experts, and tax consultants — with Big Four-trained professionals serving
                 SMEs and international organizations across Pakistan.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-8">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 Our team has held senior roles at KPMG and PwC, serving clients across
                 Manufacturing, Real Estate, and Technology sectors. We bring that institutional
                 expertise directly to your business — so you get more than a bookkeeper,
                 you get a strategic finance partner.
               </p>
-              <Link href="/about" className="btn-primary inline-block">Learn More</Link>
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Our international exposure spans UK and US taxation frameworks, equipping us to
+                advise cross-border businesses with precision. From crafting investor-ready startup
+                pitches to building sophisticated financial models, we deliver analysis that drives
+                confident business decisions.
+              </p>
+              <Link href="/about" className="btn-primary self-start">Learn More</Link>
             </AnimateOnView>
             <AnimateOnView direction="right" delay={0.15} className="h-full">
               <div className="bg-navy-800 rounded-2xl p-8 text-white h-full flex flex-col justify-around">
                 {/* Big 4 */}
                 <div className="text-center">
-                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-5">Big4 Exposure</p>
+                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-5">Specialist Stem From</p>
                   <div className="flex gap-4 justify-center">
                     {["KPMG", "PwC", "EY"].map((f) => (
-                      <span key={f} className="px-7 py-3 bg-navy-700 rounded-full text-base font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
+                      <span key={f} className="px-8 py-4 bg-navy-700 rounded-full text-lg font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
                         {f}
                       </span>
                     ))}
                   </div>
                 </div>
                 <div className="border-t border-navy-700" />
-                {/* Industries */}
+                {/* Regions & Industries */}
                 <div className="text-center">
-                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-5">Multiple Industries</p>
+                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-5">Key Regions &amp; Industries</p>
                   <div className="flex gap-3 justify-center flex-wrap">
-                    {["Manufacturing", "Information Technology"].map((ind) => (
-                      <span key={ind} className="px-6 py-3 bg-navy-700 rounded-full text-sm font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
-                        {ind}
+                    {["United States", "United Kingdom", "Manufacturing"].map((item) => (
+                      <span key={item} className="px-6 py-3 bg-navy-700 rounded-full text-sm font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
+                        {item}
                       </span>
                     ))}
-                    <span className="px-4 py-3 text-sm text-gray-500 cursor-default">& more →</span>
                   </div>
                 </div>
               </div>
