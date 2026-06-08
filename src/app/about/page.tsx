@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateOnView from "@/components/AnimateOnView";
+import Counter from "@/components/Counter";
 
 export const metadata: Metadata = {
   title: "About Us | MNSAI (SMC-Private) Limited",
@@ -77,15 +78,12 @@ export default function AboutPage() {
             <AnimateOnView direction="right" delay={0.15}>
             <div className="grid grid-cols-2 gap-5">
               {[
-                { v: "12+", l: "Years of Experience" },
-                { v: "200+", l: "Clients Served" },
-                { v: "15+", l: "Industries" },
-                { v: "25+", l: "Professionals" },
+                { value: "12+", label: "Years of Experience" },
+                { value: "200+", label: "Clients Served" },
+                { value: "15+", label: "Industries" },
+                { value: "25+", label: "Professionals" },
               ].map((s) => (
-                <div key={s.l} className="bg-gray-50 rounded-xl p-6 text-center border border-gray-100 hover:shadow-md transition-shadow">
-                  <p className="font-heading text-4xl font-bold text-navy-700 mb-2">{s.v}</p>
-                  <p className="text-gray-500 text-sm">{s.l}</p>
-                </div>
+                <Counter key={s.label} value={s.value} label={s.label} />
               ))}
             </div>
             </AnimateOnView>
