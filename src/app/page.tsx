@@ -63,66 +63,62 @@ export default function Home() {
   return (
     <>
       {/* ── Hero ──────────────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex items-center bg-navy-800 overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
 
-            {/* Text */}
-            <div>
-              <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
-                MNSAI (SMC-Private) Limited
-              </p>
-              <h1 className="font-heading text-5xl md:text-6xl lg:text-[70px] font-bold text-white leading-tight mb-3">
-                Value Your{" "}
-                <span className="bg-gradient-to-r from-gold-400 to-gold-400 bg-clip-text text-transparent">
-                  Business
-                </span>{" "}
-                Today
-              </h1>
-              <p className="text-gold-400 text-xs font-medium tracking-widest uppercase mb-6">
-                Virtual CFO · Financial Modeling · IFRS Advisory · Tax &amp; Business Consulting
-              </p>
-              <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4 max-w-2xl">
-                Specialist CA advisors delivering Virtual CFO services, financial modeling,
-                IFRS-compliant reporting, and strategic tax consulting to businesses across Pakistan.
-              </p>
-              <p className="text-gray-400 text-base leading-relaxed mb-10 max-w-2xl">
-                Big Four-trained professionals bringing institutional-grade expertise to growing
-                businesses — at a fraction of the cost of an in-house finance team.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/services" className="btn-primary">Our Services</Link>
-                <Link href="/contact" className="btn-outline">Contact Us</Link>
-              </div>
+        {/* Right image — fills right half, sits behind */}
+        <div className="absolute inset-y-0 right-0 w-1/2">
+          <Image
+            src="/images/Home/hero-right.png"
+            alt=""
+            fill
+            className="object-cover object-center"
+            sizes="50vw"
+          />
+        </div>
+
+        {/* Left image — fills left half + slight overlap, sits in front */}
+        <div className="absolute inset-y-0 left-0 w-[55%] z-10">
+          <Image
+            src="/images/Home/hero-left.jpeg"
+            alt="MNSAI advisory professionals"
+            fill
+            className="object-cover object-center"
+            sizes="55vw"
+            priority
+          />
+        </div>
+
+        {/* Text content — above both images */}
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 w-full">
+          <div className="max-w-xl">
+            <p className="text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
+              MNSAI (SMC-Private) Limited
+            </p>
+            <h1 className="font-heading text-5xl md:text-6xl lg:text-[70px] font-bold text-white leading-tight mb-3">
+              Value Your{" "}
+              <span className="bg-gradient-to-r from-gold-400 to-gold-400 bg-clip-text text-transparent">
+                Business
+              </span>{" "}
+              Today
+            </h1>
+            <p className="text-gold-400 text-xs font-medium tracking-widest uppercase mb-6">
+              Virtual CFO · Financial Modeling · IFRS Advisory · Tax &amp; Business Consulting
+            </p>
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4 max-w-2xl">
+              Specialist CA advisors delivering Virtual CFO services, financial modeling,
+              IFRS-compliant reporting, and strategic tax consulting to businesses across Pakistan.
+            </p>
+            <p className="text-gray-400 text-base leading-relaxed mb-10 max-w-2xl">
+              Big Four-trained professionals bringing institutional-grade expertise to growing
+              businesses — at a fraction of the cost of an in-house finance team.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/services" className="btn-primary">Our Services</Link>
+              <Link href="/contact" className="btn-outline">Contact Us</Link>
             </div>
-
-            {/* Overlapping Images */}
-            <div className="hidden lg:block relative h-[560px]">
-              {/* Image 2 — right side, partially hidden behind Image 1 */}
-              <div className="absolute right-0 top-8 bottom-0 w-[62%] rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/Home/hero-right.png"
-                  alt=""
-                  fill
-                  className="object-cover object-center"
-                  sizes="(min-width: 1024px) 32vw, 0vw"
-                />
-              </div>
-              {/* Image 1 — left side, fully visible, in front */}
-              <div className="absolute left-0 top-0 bottom-0 w-[62%] z-10 rounded-2xl overflow-hidden shadow-2xl border border-navy-700/40">
-                <Image
-                  src="/images/Home/hero-left.jpeg"
-                  alt="MNSAI advisory professionals"
-                  fill
-                  className="object-contain object-center"
-                  sizes="(min-width: 1024px) 32vw, 0vw"
-                  priority
-                />
-              </div>
-            </div>
-
           </div>
         </div>
+
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent" />
       </section>
 
