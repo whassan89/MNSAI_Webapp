@@ -28,11 +28,11 @@ const values = [
   },
 ];
 
-const experience = [
-  { firm: "KPMG", desc: "Big Four audit and advisory experience" },
-  { firm: "PwC / AF Fergusson", desc: "International network, assurance & tax" },
-  { firm: "Fatima Group", desc: "17+ years senior management in a large conglomerate" },
-  { firm: "Starlet", desc: "Financial and corporate advisory" },
+const big4 = ["KPMG", "PwC", "EY"];
+
+const industries = [
+  "Manufacturing", "Information Technology", "FMCG Export",
+  "Textile", "Sugar", "Leather", "Real Estate", "Transport", "Mortgage",
 ];
 
 export default function AboutPage() {
@@ -119,16 +119,27 @@ export default function AboutPage() {
             </AnimateOnView>
             <AnimateOnView direction="right" delay={0.12}>
             <div className="bg-navy-800 rounded-xl p-7 text-white">
-              <h3 className="font-heading text-xl font-semibold text-gold-400 mb-6">Working Experience With</h3>
-              <div className="space-y-4">
-                {experience.map((e) => (
-                  <div key={e.firm} className="flex items-start gap-3 border-b border-navy-700 pb-4 last:border-0 last:pb-0">
-                    <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0" />
-                    <div>
-                      <p className="font-semibold text-white">{e.firm}</p>
-                      <p className="text-gray-400 text-sm">{e.desc}</p>
-                    </div>
-                  </div>
+              {/* Big 4 */}
+              <h3 className="font-heading text-base font-semibold text-gold-400 uppercase tracking-widest mb-3">
+                International Exposure from Big4
+              </h3>
+              <div className="flex gap-3 mb-6">
+                {big4.map((f) => (
+                  <span key={f} className="px-4 py-1.5 bg-navy-700 rounded-full text-sm font-semibold text-white border border-navy-600">
+                    {f}
+                  </span>
+                ))}
+              </div>
+              <div className="border-t border-navy-700 mb-5" />
+              {/* Industries */}
+              <h3 className="font-heading text-base font-semibold text-gold-400 uppercase tracking-widest mb-3">
+                Industries
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {industries.map((ind) => (
+                  <span key={ind} className="px-3 py-1 bg-navy-700 rounded-full text-xs font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200">
+                    {ind}
+                  </span>
                 ))}
               </div>
             </div>
