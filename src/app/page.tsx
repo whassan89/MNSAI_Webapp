@@ -176,16 +176,25 @@ export default function Home() {
             </AnimateOnView>
             <AnimateOnView direction="right" delay={0.15}>
               <div className="bg-navy-800 rounded-2xl p-8 text-white">
-                <h3 className="font-heading text-xl font-semibold mb-6 text-gold-400">Working Experience With</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {["KPMG", "PwC", "Fatima Group", "Starlet"].map((co) => (
-                    <div
-                      key={co}
-                      className="bg-navy-700 hover:bg-gold-400 hover:text-navy-900 rounded-lg px-4 py-3 text-center font-semibold text-sm transition-all duration-300 cursor-default"
-                    >
-                      {co}
-                    </div>
+                {/* Big 4 */}
+                <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-3">Big4 Exposure</p>
+                <div className="flex gap-2 mb-5">
+                  {["KPMG", "PwC", "EY"].map((f) => (
+                    <span key={f} className="px-4 py-1.5 bg-navy-700 rounded-full text-sm font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
+                      {f}
+                    </span>
                   ))}
+                </div>
+                <div className="border-t border-navy-700 mb-5" />
+                {/* Industries */}
+                <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-3">Multiple Industries</p>
+                <div className="flex gap-2 flex-wrap">
+                  {["Manufacturing", "Information Technology"].map((ind) => (
+                    <span key={ind} className="px-3 py-1.5 bg-navy-700 rounded-full text-sm font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
+                      {ind}
+                    </span>
+                  ))}
+                  <span className="px-3 py-1.5 text-sm text-gray-500 cursor-default">& more →</span>
                 </div>
               </div>
             </AnimateOnView>
