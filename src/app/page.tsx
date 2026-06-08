@@ -101,7 +101,7 @@ export default function Home() {
               {/* Image 2 — right side, partially hidden behind Image 1 */}
               <div className="absolute right-0 top-8 bottom-0 w-[62%] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/Home/Image%202%20-%20Right%20Side.png"
+                  src="/images/Home/hero-right.png"
                   alt=""
                   fill
                   className="object-cover object-center"
@@ -111,7 +111,7 @@ export default function Home() {
               {/* Image 1 — left side, fully visible, in front */}
               <div className="absolute left-0 top-0 bottom-0 w-[62%] z-10 rounded-2xl overflow-hidden shadow-2xl border border-navy-700/40">
                 <Image
-                  src="/images/Home/Image%201%20-%20Left%20Side.jpeg"
+                  src="/images/Home/hero-left.jpeg"
                   alt="MNSAI advisory professionals"
                   fill
                   className="object-contain object-center"
