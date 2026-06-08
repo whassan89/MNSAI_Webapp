@@ -158,10 +158,16 @@ export default function Home() {
       {/* ── About Preview ─────────────────────────────────────────── */}
       <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-14 items-stretch">
-            <AnimateOnView direction="left" className="flex flex-col justify-center">
-              <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Who We Are</p>
-              <h2 className="section-heading mb-5">Specialists, Not Generalists</h2>
+
+          {/* Heading — full width above grid */}
+          <AnimateOnView direction="left" className="mb-8">
+            <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Who We Are</p>
+            <h2 className="section-heading">Specialists, Not Generalists</h2>
+          </AnimateOnView>
+
+          {/* Grid — paragraphs left, dark box right */}
+          <div className="grid md:grid-cols-2 gap-14 items-stretch mb-8">
+            <AnimateOnView direction="left" className="flex flex-col">
               <p className="text-gray-600 leading-relaxed mb-4">
                 We are specialist CA advisors — Virtual CFO practitioners, financial modelers,
                 IFRS experts, and tax consultants — with Big Four-trained professionals serving
@@ -173,22 +179,21 @@ export default function Home() {
                 expertise directly to your business — so you get more than a bookkeeper,
                 you get a strategic finance partner.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-8">
+              <p className="text-gray-600 leading-relaxed">
                 Our international exposure spans UK and US taxation frameworks, equipping us to
                 advise cross-border businesses with precision. From crafting investor-ready startup
                 pitches to building sophisticated financial models, we deliver analysis that drives
                 confident business decisions.
               </p>
-              <Link href="/about" className="btn-primary self-start">Learn More</Link>
             </AnimateOnView>
             <AnimateOnView direction="right" delay={0.15} className="h-full">
-              <div className="bg-navy-800 rounded-2xl p-6 text-white h-full flex flex-col justify-around">
+              <div className="bg-navy-800 rounded-2xl p-8 text-white h-full flex flex-col justify-around">
                 {/* Big 4 */}
                 <div className="text-center">
-                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-3">Specialist Stem From</p>
-                  <div className="flex gap-3 justify-center">
+                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-4">Specialist Stem From</p>
+                  <div className="flex gap-4 justify-center">
                     {["KPMG", "PwC", "EY"].map((f) => (
-                      <span key={f} className="px-6 py-3 bg-navy-700 rounded-full text-base font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
+                      <span key={f} className="px-8 py-4 bg-navy-700 rounded-full text-lg font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
                         {f}
                       </span>
                     ))}
@@ -197,10 +202,10 @@ export default function Home() {
                 <div className="border-t border-navy-700" />
                 {/* Regions & Industries */}
                 <div className="text-center">
-                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-3">Key Regions &amp; Industries</p>
-                  <div className="flex gap-2 justify-center flex-wrap">
+                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-4">Key Regions &amp; Industries</p>
+                  <div className="flex gap-3 justify-center flex-wrap">
                     {["United States", "United Kingdom", "Manufacturing"].map((item) => (
-                      <span key={item} className="px-4 py-2 bg-navy-700 rounded-full text-xs font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
+                      <span key={item} className="px-6 py-3 bg-navy-700 rounded-full text-sm font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
                         {item}
                       </span>
                     ))}
@@ -209,6 +214,12 @@ export default function Home() {
               </div>
             </AnimateOnView>
           </div>
+
+          {/* Button — below grid */}
+          <AnimateOnView direction="left">
+            <Link href="/about" className="btn-primary inline-block">Learn More</Link>
+          </AnimateOnView>
+
         </div>
       </section>
 
