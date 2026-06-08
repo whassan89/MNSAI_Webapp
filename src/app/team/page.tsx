@@ -46,7 +46,7 @@ const team = [
     role: "Director — OD & Risk",
     qualifications: ["Member, ICAP (ACA)", "22+ Years Senior Management Experience"],
     experience: "22+ Years",
-    bio: "Mr. Mansoor Ali is a qualified CA and member of the Institute of Chartered Accountants of Pakistan. In an over 22-year career, he served in Fatima Group for 17 years at a senior management position in financial management, strategic business planning, business development and reengineering of reporting structure and reporting lines.",
+    bio: "Mr. Mansoor Ali is a qualified CA and member of the Institute of Chartered Accountants of Pakistan. In an over 22-year career, he served for 17 years at senior management level in a large manufacturing and industrial conglomerate, covering financial management, strategic business planning, business development and reengineering of reporting structure and reporting lines.",
     expertise: [
       "Organizational Development",
       "Risk Assessment & Management",

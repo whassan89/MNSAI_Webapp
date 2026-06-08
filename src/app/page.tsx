@@ -168,9 +168,10 @@ export default function Home() {
                 SMEs and international organizations across Pakistan.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Our team has held senior roles at KPMG, PwC, and Fatima Group. We bring
-                that institutional expertise directly to your business — so you get more
-                than a bookkeeper, you get a strategic finance partner.
+                Our team has held senior roles at KPMG and PwC, serving clients across
+                Manufacturing, Real Estate, and Technology sectors. We bring that institutional
+                expertise directly to your business — so you get more than a bookkeeper,
+                you get a strategic finance partner.
               </p>
               <Link href="/about" className="btn-primary inline-block">Learn More</Link>
             </AnimateOnView>
