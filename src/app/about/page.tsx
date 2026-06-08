@@ -101,9 +101,9 @@ export default function AboutPage() {
               Our team has served at senior &amp; strategic levels in leading national and multinational organizations.
             </p>
           </AnimateOnView>
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <AnimateOnView direction="left">
-            <div className="bg-white rounded-xl p-7 border border-gray-100 shadow-sm">
+          <div className="grid md:grid-cols-2 gap-8 mb-12 items-stretch">
+            <AnimateOnView direction="left" className="h-full">
+            <div className="bg-white rounded-xl p-7 border border-gray-100 shadow-sm h-full flex flex-col justify-center">
               <p className="text-gray-600 leading-relaxed mb-4">
                 We are specialist CA advisors with Big Four-trained professionals. Our expertise spans
                 Virtual CFO services, financial modeling, IFRS advisory, and tax consulting — delivered
@@ -117,30 +117,34 @@ export default function AboutPage() {
               </p>
             </div>
             </AnimateOnView>
-            <AnimateOnView direction="right" delay={0.12}>
-            <div className="bg-navy-800 rounded-xl p-7 text-white">
+            <AnimateOnView direction="right" delay={0.12} className="h-full">
+            <div className="bg-navy-800 rounded-xl p-7 text-white h-full flex flex-col justify-around">
               {/* Big 4 */}
-              <h3 className="font-heading text-base font-semibold text-gold-400 uppercase tracking-widest mb-3">
-                International Exposure from Big4
-              </h3>
-              <div className="flex gap-3 mb-6">
-                {big4.map((f) => (
-                  <span key={f} className="px-4 py-1.5 bg-navy-700 rounded-full text-sm font-semibold text-white border border-navy-600">
-                    {f}
-                  </span>
-                ))}
+              <div className="text-center">
+                <h3 className="font-heading text-base font-semibold text-gold-400 uppercase tracking-widest mb-5">
+                  International Exposure from Big4
+                </h3>
+                <div className="flex gap-4 justify-center">
+                  {big4.map((f) => (
+                    <span key={f} className="px-7 py-3 bg-navy-700 rounded-full text-base font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
+                      {f}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className="border-t border-navy-700 mb-5" />
+              <div className="border-t border-navy-700" />
               {/* Industries */}
-              <h3 className="font-heading text-base font-semibold text-gold-400 uppercase tracking-widest mb-3">
-                Industries
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {industries.map((ind) => (
-                  <span key={ind} className="px-3 py-1 bg-navy-700 rounded-full text-xs font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200">
-                    {ind}
-                  </span>
-                ))}
+              <div className="text-center">
+                <h3 className="font-heading text-base font-semibold text-gold-400 uppercase tracking-widest mb-5">
+                  Industries
+                </h3>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {industries.map((ind) => (
+                    <span key={ind} className="px-5 py-2.5 bg-navy-700 rounded-full text-sm font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
+                      {ind}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
             </AnimateOnView>

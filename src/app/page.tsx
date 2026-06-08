@@ -158,8 +158,8 @@ export default function Home() {
       {/* ── About Preview ─────────────────────────────────────────── */}
       <section className="py-20 lg:py-[120px] bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-14 items-center">
-            <AnimateOnView direction="left">
+          <div className="grid md:grid-cols-2 gap-14 items-stretch">
+            <AnimateOnView direction="left" className="flex flex-col justify-center">
               <p className="text-gold-600 font-semibold text-sm tracking-widest uppercase mb-3">Who We Are</p>
               <h2 className="section-heading mb-5">Specialists, Not Generalists</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -174,27 +174,31 @@ export default function Home() {
               </p>
               <Link href="/about" className="btn-primary inline-block">Learn More</Link>
             </AnimateOnView>
-            <AnimateOnView direction="right" delay={0.15}>
-              <div className="bg-navy-800 rounded-2xl p-8 text-white">
+            <AnimateOnView direction="right" delay={0.15} className="h-full">
+              <div className="bg-navy-800 rounded-2xl p-8 text-white h-full flex flex-col justify-around">
                 {/* Big 4 */}
-                <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-3">Big4 Exposure</p>
-                <div className="flex gap-2 mb-5">
-                  {["KPMG", "PwC", "EY"].map((f) => (
-                    <span key={f} className="px-4 py-1.5 bg-navy-700 rounded-full text-sm font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
-                      {f}
-                    </span>
-                  ))}
+                <div className="text-center">
+                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-5">Big4 Exposure</p>
+                  <div className="flex gap-4 justify-center">
+                    {["KPMG", "PwC", "EY"].map((f) => (
+                      <span key={f} className="px-7 py-3 bg-navy-700 rounded-full text-base font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
+                        {f}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <div className="border-t border-navy-700 mb-5" />
+                <div className="border-t border-navy-700" />
                 {/* Industries */}
-                <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-3">Multiple Industries</p>
-                <div className="flex gap-2 flex-wrap">
-                  {["Manufacturing", "Information Technology"].map((ind) => (
-                    <span key={ind} className="px-3 py-1.5 bg-navy-700 rounded-full text-sm font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
-                      {ind}
-                    </span>
-                  ))}
-                  <span className="px-3 py-1.5 text-sm text-gray-500 cursor-default">& more →</span>
+                <div className="text-center">
+                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-5">Multiple Industries</p>
+                  <div className="flex gap-3 justify-center flex-wrap">
+                    {["Manufacturing", "Information Technology"].map((ind) => (
+                      <span key={ind} className="px-6 py-3 bg-navy-700 rounded-full text-sm font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
+                        {ind}
+                      </span>
+                    ))}
+                    <span className="px-4 py-3 text-sm text-gray-500 cursor-default">& more →</span>
+                  </div>
                 </div>
               </div>
             </AnimateOnView>
