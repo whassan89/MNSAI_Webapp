@@ -65,25 +65,25 @@ export default function Home() {
       {/* ── Hero ──────────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
 
-        {/* Right image — fills right 73%, sits behind */}
-        <div className="absolute inset-y-0 right-0 w-[73%]">
+        {/* Right image — fills right 60%, sits behind */}
+        <div className="absolute inset-y-0 right-0 w-[60%]">
           <Image
             src="/images/Home/hero-right.png"
             alt=""
             fill
             className="object-cover object-center"
-            sizes="73vw"
+            sizes="60vw"
           />
         </div>
 
-        {/* Left image — fills left 27%, sits in front */}
-        <div className="absolute inset-y-0 left-0 w-[27%] z-10">
+        {/* Left image — fills left 40%, sits in front */}
+        <div className="absolute inset-y-0 left-0 w-[40%] z-10">
           <Image
             src="/images/Home/hero-left.jpeg"
             alt="MNSAI advisory professionals"
             fill
             className="object-cover object-center"
-            sizes="27vw"
+            sizes="40vw"
             priority
           />
         </div>
