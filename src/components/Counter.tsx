@@ -45,7 +45,7 @@ export default function Counter({ value, label }: Props) {
       <p className="font-heading text-4xl font-bold text-gold-400 mb-1">
         {isInView ? count : numericPart}{suffix}
       </p>
-      <p className="text-gray-400 text-sm">{label}</p>
+      <p className="text-white text-sm">{label}</p>
     </div>
   );
 }

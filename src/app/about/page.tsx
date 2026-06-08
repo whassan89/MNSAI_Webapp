@@ -76,7 +76,7 @@ export default function AboutPage() {
               </p>
             </AnimateOnView>
             <AnimateOnView direction="right" delay={0.15}>
-            <div className="grid grid-cols-2 gap-5">
+            <div className="bg-navy-900 rounded-2xl p-6 grid grid-cols-2 gap-5">
               {[
                 { value: "12+", label: "Years of Experience" },
                 { value: "200+", label: "Clients Served" },
