@@ -33,6 +33,16 @@ export const metadata: Metadata = {
       "Specialist CA advisory firm based in Pakistan — Virtual CFO, Financial Modeling, IFRS Advisory, and Tax Consulting for businesses across Pakistan and UAE.",
     images: ["/images/mnsai-GREEN.png"],
   },
+  icons: {
+    icon: [
+      { url: "/images/favicon_io/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/favicon_io/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/images/favicon_io/apple-touch-icon.png" }],
+    other: [
+      { rel: "manifest", url: "/site.webmanifest" },
+    ],
+  },
 };
 
 export default function RootLayout({
