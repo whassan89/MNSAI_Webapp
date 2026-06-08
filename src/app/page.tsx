@@ -182,13 +182,13 @@ export default function Home() {
               <Link href="/about" className="btn-primary self-start">Learn More</Link>
             </AnimateOnView>
             <AnimateOnView direction="right" delay={0.15} className="h-full">
-              <div className="bg-navy-800 rounded-2xl p-8 text-white h-full flex flex-col justify-around">
+              <div className="bg-navy-800 rounded-2xl p-6 text-white h-full flex flex-col justify-around">
                 {/* Big 4 */}
                 <div className="text-center">
-                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-5">Specialist Stem From</p>
-                  <div className="flex gap-4 justify-center">
+                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-3">Specialist Stem From</p>
+                  <div className="flex gap-3 justify-center">
                     {["KPMG", "PwC", "EY"].map((f) => (
-                      <span key={f} className="px-8 py-4 bg-navy-700 rounded-full text-lg font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
+                      <span key={f} className="px-6 py-3 bg-navy-700 rounded-full text-base font-semibold text-white border border-navy-600 hover:bg-gold-400 hover:text-navy-900 hover:border-gold-400 transition-all duration-300 cursor-default">
                         {f}
                       </span>
                     ))}
@@ -197,10 +197,10 @@ export default function Home() {
                 <div className="border-t border-navy-700" />
                 {/* Regions & Industries */}
                 <div className="text-center">
-                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-5">Key Regions &amp; Industries</p>
-                  <div className="flex gap-3 justify-center flex-wrap">
+                  <p className="text-gold-400 text-xs font-semibold tracking-widest uppercase mb-3">Key Regions &amp; Industries</p>
+                  <div className="flex gap-2 justify-center flex-wrap">
                     {["United States", "United Kingdom", "Manufacturing"].map((item) => (
-                      <span key={item} className="px-6 py-3 bg-navy-700 rounded-full text-sm font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
+                      <span key={item} className="px-4 py-2 bg-navy-700 rounded-full text-xs font-medium text-gray-300 border border-navy-600 hover:border-gold-400 hover:text-gold-400 transition-colors duration-200 cursor-default">
                         {item}
                       </span>
                     ))}
