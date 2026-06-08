@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   { label: "Audit & Assurance",           href: "/services" },
@@ -80,14 +81,14 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-gold-400 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span className="text-navy-900 font-heading font-bold text-sm">M</span>
-              </div>
-              <div>
-                <span className="text-white font-heading font-bold text-lg leading-tight block">MNSAI</span>
-                <span className="text-gold-400 text-xs font-medium tracking-wider">(SMC-PRIVATE) LIMITED</span>
-              </div>
+            <Link href="/" className="flex flex-col gap-1 mb-5">
+              <Image
+                src="/images/mnsai-GREEN.png"
+                alt="MNSAI Logo"
+                width={129}
+                height={48}
+              />
+              <span className="text-gold-400 text-xs font-medium tracking-wider">(SMC-PRIVATE) LIMITED</span>
             </Link>
             <p className="text-sm leading-relaxed mb-6">
               Specialist CA advisors delivering Virtual CFO, Financial Modeling, IFRS Advisory,
